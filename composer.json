@@ -1,0 +1,42 @@
+{
+    "name": "dynamic/recipe-silverstripe-essentials-fixtures",
+    "description": "A Silverstripe recipe that provides demo fixtures and images for Essentials websites",
+    "license": "BSD-3-Clause",
+    "type": "silverstripe-recipe",
+    "keywords": [
+        "silverstripe",
+        "CMS",
+        "fixtures",
+        "demo"
+    ],
+    "authors": [
+        {
+            "name": "Dynamic",
+            "email": "dev@dynamicagency.com",
+            "homepage": "https://www.dynamicagency.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "dnadesign/silverstripe-populate": "~3.0@stable"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "silverstripe/recipe-plugin": true,
+            "silverstripe/vendor-plugin": true
+        },
+        "process-timeout": 600
+    },
+    "extra": {
+        "project-files": [
+            "app/_config/fixtures-populate.yml",
+            "app/fixtures/*"
+        ]
+    }
+}
