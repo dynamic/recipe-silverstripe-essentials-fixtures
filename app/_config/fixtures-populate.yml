@@ -8,51 +8,10 @@ DNADesign\Populate\Populate:
     - 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/site-demo-content.yml'
     - 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/element-template-library.yml'
     - 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/element-template-expanded.yml'
-
-  # Simplified truncate_objects using base classes
-  # This covers all subclasses automatically
+  
+  # Minimal truncate - only assets due to populate module merge bug
+  # File/Image merging with PopulateMergeAny causes issues, so we truncate them
+  # All other content uses PopulateMergeMatch for safe updates
   truncate_objects:
-    # Assets - SilverStripe\Assets\File covers Image and Folder
     - SilverStripe\Assets\File
-
-    # All elements via base class (covers 20+ element types)
-    - DNADesign\Elemental\Models\BaseElement
-    - DNADesign\Elemental\Models\ElementalArea
-
-    # Element child records (not covered by BaseElement inheritance)
-    - Dynamic\Elements\StatCounters\Model\StatCounter
-    - Dynamic\Elements\Accordion\Model\AccordionPanel
-    - Dynamic\Elements\Model\Testimonial
-    - Dynamic\Elements\Model\TestimonialCategory
-    - Dynamic\Elements\Gallery\Model\GalleryImage
-    - Dynamic\Elements\Sponsors\Model\Sponsor
-    - Dynamic\Elements\Links\Model\LinkListObject
-    - Dynamic\Carousel\Model\ImageSlide
-    - Dynamic\Carousel\Model\VideoSlide
-
-    # Templates
-    - Dynamic\ElememtalTemplates\Models\Template
-
-    # Pages - specific types only (not SiteTree to preserve ErrorPage etc)
-    - Dynamic\Base\Page\BlockPage
-    - SilverStripe\Blog\Model\Blog
-    - SilverStripe\Blog\Model\BlogPost
-    - SilverStripe\ErrorPage\ErrorPage
-
-    # Links via base class (covers SiteTreeLink, ExternalLink, EmailLink, etc)
-    - SilverStripe\LinkField\Models\Link
-
-    # Staff
-    - Dynamic\Essentials\Model\StaffMember
-
-    # Navigation
-    - Dynamic\Base\Model\NavigationColumn
-    - Dynamic\Base\Model\NavigationGroup
-    - Dynamic\Base\Model\SocialLink
-
-    # User forms
-    - SilverStripe\UserForms\Model\UserDefinedForm
-    - SilverStripe\UserForms\Model\EditableFormField
-
-  truncate_tables:
-    - ElementStaff_Staff
+  truncate_tables: []
