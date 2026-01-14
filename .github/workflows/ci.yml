@@ -1,0 +1,91 @@
+# https://help.github.com/en/categories/automating-your-workflow-with-github-actions
+
+on:
+  push:
+    branches: [ '**' ]
+  pull_request:
+    branches: [ '**' ]
+
+name: "CI"
+
+jobs:
+  tests:
+    name: "Tests"
+
+    runs-on: "ubuntu-latest"
+
+    env:
+      php_extensions: curl, dom, gd, intl, json, ldap, mbstring, mysql, tidy, xdebug, zip
+
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_HOST: 127.0.0.1
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: SS_mysite
+        ports:
+          - 3380:3306
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=10
+    strategy:
+      fail-fast: false
+      matrix:
+        php-version:
+          - "8.1"
+          - "8.2"
+          - "8.3"
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v3"
+
+      - name: "Install PHP with extensions"
+        uses: "shivammathur/setup-php@v2"
+        with:
+          php-version: "${{ matrix.php-version }}"
+          extensions: "${{ env.php_extensions }}"
+          tools: composer:v2
+          coverage: "xdebug"
+
+      - name: "Start mysql service"
+        run: "sudo /etc/init.d/mysql start"
+
+      - name: Enable shared composer cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/composer
+          key: shared-composer-cache
+
+      - name: "Authorize GitHub"
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: "if [[ $GH_TOKEN ]]; then composer config -g github-oauth.github.com $GH_TOKEN; fi"
+
+      - name: "Install dependencies with composer"
+        run: "composer install --no-ansi --no-interaction --no-progress"
+
+      - name: Final preparation
+        env:
+          GITHUB_WORKSPACE: ${{ github.workspace }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          cat <<EOF > .env
+            SS_DATABASE_CLASS="MySQLDatabase"
+            SS_DATABASE_PORT="3380"
+          EOF
+
+          cat <<EOF >> .env
+            SS_DATABASE_SERVER="127.0.0.1"
+            SS_DATABASE_USERNAME="root"
+            SS_DATABASE_PASSWORD="root"
+            SS_DATABASE_NAME="SS_mysite"
+          EOF
+
+          # debug
+          echo ".env is"
+          cat .env
+
+          # run dev/build flush to help debug any issues
+          if [[ -f vendor/bin/sake ]]; then
+            vendor/bin/sake dev/build flush=1
+          fi
