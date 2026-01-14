@@ -103,3 +103,38 @@ available in the Dynamic Essentials ecosystem.
 | Footer Columns | `ElementRow` + 4× `ElementContent` |
 | Portfolio Grid | `ElementRow` + `ElementPhotoGallery` |
 | Client Logos | `ElementRow` + `ElementSponsor` |
+
+## Gutenberg Blocks Without Elemental Equivalents
+
+The following Gutenberg patterns **cannot** be directly recreated with current Essentials elements:
+
+| Gutenberg Block | Description | Potential Silverstripe Element |
+|----------------|-------------|-------------------------------|
+| **Table** | Data tables with sortable columns | `ElementTable` (new) |
+| **Countdown Timer** | Event countdown | `ElementCountdown` (new) |
+| **Progress Bar** | Visual progress indicators | `ElementProgress` (new) |
+| **Tabs** | Tabbed content panels | `ElementTabs` (new) |
+| **Timeline** | Vertical event timeline | `ElementTimeline` (new) |
+| **Map** | Google/OpenStreetMap embeds | `ElementMap` (new) |
+| **Pricing Toggle** | Monthly/yearly toggle pricing | Could extend `ElementCard` |
+| **Before/After Slider** | Image comparison slider | `ElementComparisonSlider` (new) |
+| **Social Feed** | Instagram/Twitter embeds | `ElementSocialFeed` (new) |
+| **Team Popup/Modal** | Team member detail modals | Styling enhancement to `ElementStaff` |
+
+### Workarounds Using Existing Elements
+
+| Pattern | Workaround |
+|---------|-----------|
+| Table | Use `ElementContent` with HTML table |
+| Map | Use `ElementEmbeddedCode` with iframe |
+| Tabs | Use `ElementAccordion` as alternative |
+| Social Feed | Use `ElementOembed` for individual posts |
+
+### Recommended New Elements
+
+Priority additions to consider for the Essentials recipe:
+
+1. **`ElementTable`** - Common need for product specs, comparison charts
+2. **`ElementTabs`** - Popular pattern for organizing content
+3. **`ElementMap`** - Contact pages, location-based content
+4. **`ElementTimeline`** - Company history, project milestones
