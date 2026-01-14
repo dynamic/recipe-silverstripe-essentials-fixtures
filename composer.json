@@ -35,8 +35,7 @@
     },
     "extra": {
         "project-files": [
-            "app/_config/fixtures-populate.yml",
-            "app/fixtures/*"
+            "app/_config/fixtures-populate.yml"
         ]
     }
 }

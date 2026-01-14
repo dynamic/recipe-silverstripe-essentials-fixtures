@@ -14,182 +14,182 @@
 # ============================================================================
 SilverStripe\Assets\Image:
   siteLogo:
-    PopulateFileFrom: "app/fixtures/images/logo.svg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/logo.svg"
     Filename: "assets/Demo/logo.svg"
     Title: "Precision MFG Co. Logo"
     PopulateMergeAny: true
 
   heroHome:
-    PopulateFileFrom: "app/fixtures/images/hero-home.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/hero-home.jpg"
     Filename: "assets/Demo/Heroes/hero-home.jpg"
     Title: "Manufacturing Floor"
     PopulateMergeAny: true
 
   heroAbout:
-    PopulateFileFrom: "app/fixtures/images/hero-about-v2.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/hero-about-v2.jpg"
     Filename: "assets/Demo/Heroes/hero-about-v2.jpg"
     Title: "Team at Work"
     PopulateMergeAny: true
 
   heroCapabilities:
-    PopulateFileFrom: "app/fixtures/images/hero-capabilities.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/hero-capabilities.jpg"
     Filename: "assets/Demo/Heroes/hero-capabilities.jpg"
     Title: "CNC Machinery"
 
   heroIndustries:
-    PopulateFileFrom: "app/fixtures/images/hero-industries.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/hero-industries.jpg"
     Filename: "assets/Demo/Heroes/hero-industries.jpg"
     Title: "Industrial Equipment"
 
   heroQuality:
-    PopulateFileFrom: "app/fixtures/images/hero-quality.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/hero-quality.jpg"
     Filename: "assets/Demo/Heroes/hero-quality.jpg"
     Title: "Quality Inspection"
 
   heroContact:
-    PopulateFileFrom: "app/fixtures/images/hero-contact.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/hero-contact.jpg"
     Filename: "assets/Demo/Heroes/hero-contact.jpg"
     Title: "Contact Us"
 
   heroElements:
-    PopulateFileFrom: "app/fixtures/images/hero-elements.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/hero-elements.jpg"
     Filename: "assets/Demo/Heroes/hero-elements.jpg"
     Title: "Element Showcase"
 
   # Card images
   cardAgriculture:
-    PopulateFileFrom: "app/fixtures/images/gallery-1.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gallery-1.jpg"
     Filename: "assets/Demo/Cards/card-agriculture.jpg"
     Title: "Agriculture"
 
   cardConstruction:
-    PopulateFileFrom: "app/fixtures/images/gallery-3.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gallery-3.jpg"
     Filename: "assets/Demo/Cards/card-construction.jpg"
     Title: "Construction"
 
   cardIndustrial:
-    PopulateFileFrom: "app/fixtures/images/gallery-4.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gallery-4.jpg"
     Filename: "assets/Demo/Cards/card-industrial.jpg"
     Title: "Industrial"
 
   # Gallery images
   gallery1:
-    PopulateFileFrom: "app/fixtures/images/gallery-1.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gallery-1.jpg"
     Filename: "assets/Demo/Gallery/gallery-1.jpg"
     Title: "Precision Machining"
 
   gallery2:
-    PopulateFileFrom: "app/fixtures/images/gallery-2.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gallery-2.jpg"
     Filename: "assets/Demo/Gallery/gallery-2.jpg"
     Title: "Quality Control"
 
   gallery3:
-    PopulateFileFrom: "app/fixtures/images/gallery-3.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gallery-3.jpg"
     Filename: "assets/Demo/Gallery/gallery-3.jpg"
     Title: "CNC Operations"
 
   gallery4:
-    PopulateFileFrom: "app/fixtures/images/gallery-4.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gallery-4.jpg"
     Filename: "assets/Demo/Gallery/gallery-4.jpg"
     Title: "Finished Parts"
 
   # Testimonial images
   testimonial1:
-    PopulateFileFrom: "app/fixtures/images/testimonial-1.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/testimonial-1.jpg"
     Filename: "assets/Demo/Testimonials/testimonial-1.jpg"
     Title: "Mike Johnson"
 
   testimonial2:
-    PopulateFileFrom: "app/fixtures/images/testimonial-2.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/testimonial-2.jpg"
     Filename: "assets/Demo/Testimonials/testimonial-2.jpg"
     Title: "Sarah Chen"
 
   # Staff images
   staff1:
-    PopulateFileFrom: "app/fixtures/images/staff-1.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/staff-1.jpg"
     Filename: "assets/Demo/Staff/staff-1.jpg"
     Title: "Staff Member 1"
 
   staff2:
-    PopulateFileFrom: "app/fixtures/images/staff-2.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/staff-2.jpg"
     Filename: "assets/Demo/Staff/staff-2.jpg"
     Title: "Staff Member 2"
 
   staffMike:
-    PopulateFileFrom: "app/fixtures/images/staff-mike-v2.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/staff-mike-v2.jpg"
     Filename: "assets/Demo/Staff/staff-mike-v2.jpg"
     Title: "Mike Anderson"
 
   # Carousel images
   carousel1:
-    PopulateFileFrom: "app/fixtures/images/carousel-1.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/carousel-1.jpg"
     Filename: "assets/Demo/Carousel/carousel-1.jpg"
     Title: "Slide 1"
 
   carousel2:
-    PopulateFileFrom: "app/fixtures/images/carousel-2.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/carousel-2.jpg"
     Filename: "assets/Demo/Carousel/carousel-2.jpg"
     Title: "Slide 2"
 
   carousel3:
-    PopulateFileFrom: "app/fixtures/images/carousel-3.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/carousel-3.jpg"
     Filename: "assets/Demo/Carousel/carousel-3.jpg"
     Title: "Slide 3"
 
   carousel4:
-    PopulateFileFrom: "app/fixtures/images/carousel-4.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/carousel-4.jpg"
     Filename: "assets/Demo/Carousel/carousel-4.jpg"
     Title: "Slide 4"
 
   # Content image
   contentImage:
-    PopulateFileFrom: "app/fixtures/images/promo-1.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/promo-1.jpg"
     Filename: "assets/Demo/Content/content-image.jpg"
     Title: "Manufacturing Process"
 
   contentValues:
-    PopulateFileFrom: "app/fixtures/images/content-values.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/content-values.jpg"
     Filename: "assets/Demo/Content/content-values.jpg"
     Title: "Core Values"
 
   # Sponsor images
   sponsorImage1:
-    PopulateFileFrom: "app/fixtures/images/sponsor-1.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/sponsor-1.jpg"
     Filename: "assets/Demo/Sponsors/sponsor-1.jpg"
     Title: "Sponsor 1"
 
   sponsorImage2:
-    PopulateFileFrom: "app/fixtures/images/sponsor-2.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/sponsor-2.jpg"
     Filename: "assets/Demo/Sponsors/sponsor-2.jpg"
     Title: "Sponsor 2"
 
   sponsorImage3:
-    PopulateFileFrom: "app/fixtures/images/sponsor-3.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/sponsor-3.jpg"
     Filename: "assets/Demo/Sponsors/sponsor-3.jpg"
     Title: "Sponsor 3"
 
   sponsorImage4:
-    PopulateFileFrom: "app/fixtures/images/sponsor-4.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/sponsor-4.jpg"
     Filename: "assets/Demo/Sponsors/sponsor-4.jpg"
     Title: "Sponsor 4"
 
   sponsorImage5:
-    PopulateFileFrom: "app/fixtures/images/sponsor-5.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/sponsor-5.jpg"
     Filename: "assets/Demo/Sponsors/sponsor-5.jpg"
     Title: "Sponsor 5"
 
   sponsorImage6:
-    PopulateFileFrom: "app/fixtures/images/sponsor-6.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/sponsor-6.jpg"
     Filename: "assets/Demo/Sponsors/sponsor-6.jpg"
     Title: "Sponsor 6"
 
   sponsorImage7:
-    PopulateFileFrom: "app/fixtures/images/sponsor-7.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/sponsor-7.jpg"
     Filename: "assets/Demo/Sponsors/sponsor-7.jpg"
     Title: "Sponsor 7"
 
   sponsorImage8:
-    PopulateFileFrom: "app/fixtures/images/sponsor-8.jpg"
+    PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/sponsor-8.jpg"
     Filename: "assets/Demo/Sponsors/sponsor-8.jpg"
     Title: "Sponsor 8"
 

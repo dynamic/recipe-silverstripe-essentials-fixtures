@@ -12,147 +12,147 @@
 SilverStripe\Assets\Image:
   # Card images
   templateCardInnovation:
-    PopulateFileFrom: 'app/fixtures/images/templates/template-card-innovation.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/templates/template-card-innovation.jpg'
     Filename: 'assets/Templates/Cards/innovation.jpg'
     Title: 'Innovation Card Image'
     PopulateMergeAny: true
 
   templateCardSupport:
-    PopulateFileFrom: 'app/fixtures/images/templates/template-card-support.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/templates/template-card-support.jpg'
     Filename: 'assets/Templates/Cards/support.jpg'
     Title: 'Support Card Image'
     PopulateMergeAny: true
 
   templateCardExpertise:
-    PopulateFileFrom: 'app/fixtures/images/templates/template-card-expertise.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/templates/template-card-expertise.jpg'
     Filename: 'assets/Templates/Cards/expertise.jpg'
     Title: 'Expertise Card Image'
     PopulateMergeAny: true
 
   # Hero image
   templateHeroCTA:
-    PopulateFileFrom: 'app/fixtures/images/templates/template-hero-cta.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/templates/template-hero-cta.jpg'
     Filename: 'assets/Templates/Heroes/hero-cta.jpg'
     Title: 'Hero CTA Background'
     PopulateMergeAny: true
 
   # Content image
   templateContentAbout:
-    PopulateFileFrom: 'app/fixtures/images/templates/template-content-about.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/templates/template-content-about.jpg'
     Filename: 'assets/Templates/Content/about.jpg'
     Title: 'About Content Image'
     PopulateMergeAny: true
 
   # Testimonial images
   templateTestimonial1:
-    PopulateFileFrom: 'app/fixtures/images/templates/template-testimonial-1.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/templates/template-testimonial-1.jpg'
     Filename: 'assets/Templates/Testimonials/client-1.jpg'
     Title: 'Sarah Johnson Photo'
     PopulateMergeAny: true
 
   templateTestimonial2:
-    PopulateFileFrom: 'app/fixtures/images/templates/template-testimonial-2.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/templates/template-testimonial-2.jpg'
     Filename: 'assets/Templates/Testimonials/client-2.jpg'
     Title: 'Michael Chen Photo'
     PopulateMergeAny: true
 
   # Product detail images
   templateProductMain:
-    PopulateFileFrom: 'app/fixtures/images/templates/template-product-main.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/templates/template-product-main.jpg'
     Filename: 'assets/Templates/Products/product-main.jpg'
     Title: 'Product Main Image'
     PopulateMergeAny: true
 
   templateProductDetail1:
-    PopulateFileFrom: 'app/fixtures/images/templates/template-product-detail-1.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/templates/template-product-detail-1.jpg'
     Filename: 'assets/Templates/Products/detail-1.jpg'
     Title: 'Product Detail 1'
     PopulateMergeAny: true
 
   templateProductDetail2:
-    PopulateFileFrom: 'app/fixtures/images/templates/template-product-detail-2.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/templates/template-product-detail-2.jpg'
     Filename: 'assets/Templates/Products/detail-2.jpg'
     Title: 'Product Detail 2'
     PopulateMergeAny: true
 
   # Carousel images
   templateCarousel1:
-    PopulateFileFrom: 'app/fixtures/images/templates/template-carousel-1.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/templates/template-carousel-1.jpg'
     Filename: 'assets/Templates/Carousel/slide-1.jpg'
     Title: 'Product Gallery Image 1'
     PopulateMergeAny: true
 
   templateCarousel2:
-    PopulateFileFrom: 'app/fixtures/images/templates/template-carousel-2.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/templates/template-carousel-2.jpg'
     Filename: 'assets/Templates/Carousel/slide-2.jpg'
     Title: 'Product Gallery Image 2'
     PopulateMergeAny: true
 
   templateCarousel3:
-    PopulateFileFrom: 'app/fixtures/images/templates/template-carousel-3.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/templates/template-carousel-3.jpg'
     Filename: 'assets/Templates/Carousel/slide-3.jpg'
     Title: 'Product Gallery Image 3'
     PopulateMergeAny: true
 
   # FAQ Panel image
   templateFaqImage:
-    PopulateFileFrom: 'app/fixtures/images/templates/template-content-about.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/templates/template-content-about.jpg'
     Filename: 'assets/Templates/FAQ/faq-visual.jpg'
     Title: 'FAQ Visual Guide'
     PopulateMergeAny: true
 
   # Template preview screenshots
   template_preview_1:
-    PopulateFileFrom: 'app/fixtures/images/template-preview-1-three-column-cards.png'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-preview-1-three-column-cards.png'
     Filename: 'assets/Templates/Previews/three-column-cards.png'
     Title: '3-Column Feature Cards Preview'
     PopulateMergeMatch:
       - Title
 
   template_preview_2:
-    PopulateFileFrom: 'app/fixtures/images/template-preview-2-hero-cta.png'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-preview-2-hero-cta.png'
     Filename: 'assets/Templates/Previews/hero-cta.png'
     Title: 'Hero Section with CTA Preview'
     PopulateMergeMatch:
       - Title
 
   template_preview_3:
-    PopulateFileFrom: 'app/fixtures/images/template-preview-3-faq-accordion.png'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-preview-3-faq-accordion.png'
     Filename: 'assets/Templates/Previews/faq-accordion.png'
     Title: 'FAQ Accordion Preview'
     PopulateMergeMatch:
       - Title
 
   template_preview_4:
-    PopulateFileFrom: 'app/fixtures/images/template-preview-4-two-column-content.png'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-preview-4-two-column-content.png'
     Filename: 'assets/Templates/Previews/two-column-content.png'
     Title: 'Two-Column Content Preview'
     PopulateMergeMatch:
       - Title
 
   template_preview_5:
-    PopulateFileFrom: 'app/fixtures/images/template-preview-5-product-detail.png'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-preview-5-product-detail.png'
     Filename: 'assets/Templates/Previews/product-detail.png'
     Title: 'Product Detail Page Preview'
     PopulateMergeMatch:
       - Title
 
   template_preview_6:
-    PopulateFileFrom: 'app/fixtures/images/template_preview_6.png'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template_preview_6.png'
     Filename: 'assets/Templates/Previews/service-landing.png'
     Title: 'Service Landing Page Preview'
     PopulateMergeMatch:
       - Title
 
   template_preview_7:
-    PopulateFileFrom: 'app/fixtures/images/template_preview_7.png'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template_preview_7.png'
     Filename: 'assets/Templates/Previews/contact-page.png'
     Title: 'Contact Page Preview'
     PopulateMergeMatch:
       - Title
 
   template_preview_8:
-    PopulateFileFrom: 'app/fixtures/images/template-preview-8-company-leadership.png'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-preview-8-company-leadership.png'
     Filename: 'assets/Templates/Previews/company-leadership.png'
     Title: 'Company Leadership & Governance Preview'
     PopulateMergeMatch:
@@ -160,50 +160,50 @@ SilverStripe\Assets\Image:
 
   # Content element images for left/right positioning
   templateContentLeft:
-    PopulateFileFrom: 'app/fixtures/images/templates/template-product-main.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/templates/template-product-main.jpg'
     Filename: 'assets/Templates/Content/content-left.jpg'
     Title: 'Content Image Left'
     PopulateMergeAny: true
 
   templateContentRight:
-    PopulateFileFrom: 'app/fixtures/images/templates/template-product-detail-1.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/templates/template-product-detail-1.jpg'
     Filename: 'assets/Templates/Content/content-right.jpg'
     Title: 'Content Image Right'
     PopulateMergeAny: true
 
   # Staff member images
   templateStaffJohnDoe:
-    PopulateFileFrom: 'app/fixtures/images/john-doe.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/john-doe.jpg'
     Filename: 'assets/Templates/Staff/john-doe.jpg'
     Title: 'John Doe Photo'
     PopulateMergeAny: true
 
   templateStaffJaneSmith:
-    PopulateFileFrom: 'app/fixtures/images/jane-smith.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/jane-smith.jpg'
     Filename: 'assets/Templates/Staff/jane-smith.jpg'
     Title: 'Jane Smith Photo'
     PopulateMergeAny: true
 
   templateStaffMikeBrown:
-    PopulateFileFrom: 'app/fixtures/images/mike-brown.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/mike-brown.jpg'
     Filename: 'assets/Templates/Staff/mike-brown.jpg'
     Title: 'Mike Brown Photo'
     PopulateMergeAny: true
 
   templateStaffSarahChen:
-    PopulateFileFrom: 'app/fixtures/images/sarah-chen.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/sarah-chen.jpg'
     Filename: 'assets/Templates/Staff/sarah-chen.jpg'
     Title: 'Sarah Chen Photo'
     PopulateMergeAny: true
 
   templateStaffRobertMartinez:
-    PopulateFileFrom: 'app/fixtures/images/robert-martinez.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/robert-martinez.jpg'
     Filename: 'assets/Templates/Staff/robert-martinez.jpg'
     Title: 'Robert Martinez Photo'
     PopulateMergeAny: true
 
   templateStaffEmilyWilliams:
-    PopulateFileFrom: 'app/fixtures/images/emily-williams.jpg'
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/emily-williams.jpg'
     Filename: 'assets/Templates/Staff/emily-williams.jpg'
     Title: 'Emily Williams Photo'
     PopulateMergeAny: true
