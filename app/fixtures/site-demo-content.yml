@@ -1,0 +1,2098 @@
+# Populate fixture for Midwest Manufacturing Demo Site
+# Precision MFG Co. - A mid-sized manufacturer in the Upper Midwest
+#
+# IMPORTANT: In YAML fixtures, each class can only appear once as a top-level key.
+# All fixtures for a class must be grouped together.
+#
+# Elements are connected to pages via ElementalArea:
+# - Page.ElementalArea => ElementalArea
+# - Element.Parent => ElementalArea
+
+# ============================================================================
+# IMAGES - Define images FIRST so they can be referenced by other fixtures
+# Each hero uses a unique image for variety
+# ============================================================================
+SilverStripe\Assets\Image:
+  siteLogo:
+    PopulateFileFrom: "app/fixtures/images/logo.svg"
+    Filename: "assets/Demo/logo.svg"
+    Title: "Precision MFG Co. Logo"
+    PopulateMergeAny: true
+
+  heroHome:
+    PopulateFileFrom: "app/fixtures/images/hero-home.jpg"
+    Filename: "assets/Demo/Heroes/hero-home.jpg"
+    Title: "Manufacturing Floor"
+    PopulateMergeAny: true
+
+  heroAbout:
+    PopulateFileFrom: "app/fixtures/images/hero-about-v2.jpg"
+    Filename: "assets/Demo/Heroes/hero-about-v2.jpg"
+    Title: "Team at Work"
+    PopulateMergeAny: true
+
+  heroCapabilities:
+    PopulateFileFrom: "app/fixtures/images/hero-capabilities.jpg"
+    Filename: "assets/Demo/Heroes/hero-capabilities.jpg"
+    Title: "CNC Machinery"
+
+  heroIndustries:
+    PopulateFileFrom: "app/fixtures/images/hero-industries.jpg"
+    Filename: "assets/Demo/Heroes/hero-industries.jpg"
+    Title: "Industrial Equipment"
+
+  heroQuality:
+    PopulateFileFrom: "app/fixtures/images/hero-quality.jpg"
+    Filename: "assets/Demo/Heroes/hero-quality.jpg"
+    Title: "Quality Inspection"
+
+  heroContact:
+    PopulateFileFrom: "app/fixtures/images/hero-contact.jpg"
+    Filename: "assets/Demo/Heroes/hero-contact.jpg"
+    Title: "Contact Us"
+
+  heroElements:
+    PopulateFileFrom: "app/fixtures/images/hero-elements.jpg"
+    Filename: "assets/Demo/Heroes/hero-elements.jpg"
+    Title: "Element Showcase"
+
+  # Card images
+  cardAgriculture:
+    PopulateFileFrom: "app/fixtures/images/gallery-1.jpg"
+    Filename: "assets/Demo/Cards/card-agriculture.jpg"
+    Title: "Agriculture"
+
+  cardConstruction:
+    PopulateFileFrom: "app/fixtures/images/gallery-3.jpg"
+    Filename: "assets/Demo/Cards/card-construction.jpg"
+    Title: "Construction"
+
+  cardIndustrial:
+    PopulateFileFrom: "app/fixtures/images/gallery-4.jpg"
+    Filename: "assets/Demo/Cards/card-industrial.jpg"
+    Title: "Industrial"
+
+  # Gallery images
+  gallery1:
+    PopulateFileFrom: "app/fixtures/images/gallery-1.jpg"
+    Filename: "assets/Demo/Gallery/gallery-1.jpg"
+    Title: "Precision Machining"
+
+  gallery2:
+    PopulateFileFrom: "app/fixtures/images/gallery-2.jpg"
+    Filename: "assets/Demo/Gallery/gallery-2.jpg"
+    Title: "Quality Control"
+
+  gallery3:
+    PopulateFileFrom: "app/fixtures/images/gallery-3.jpg"
+    Filename: "assets/Demo/Gallery/gallery-3.jpg"
+    Title: "CNC Operations"
+
+  gallery4:
+    PopulateFileFrom: "app/fixtures/images/gallery-4.jpg"
+    Filename: "assets/Demo/Gallery/gallery-4.jpg"
+    Title: "Finished Parts"
+
+  # Testimonial images
+  testimonial1:
+    PopulateFileFrom: "app/fixtures/images/testimonial-1.jpg"
+    Filename: "assets/Demo/Testimonials/testimonial-1.jpg"
+    Title: "Mike Johnson"
+
+  testimonial2:
+    PopulateFileFrom: "app/fixtures/images/testimonial-2.jpg"
+    Filename: "assets/Demo/Testimonials/testimonial-2.jpg"
+    Title: "Sarah Chen"
+
+  # Staff images
+  staff1:
+    PopulateFileFrom: "app/fixtures/images/staff-1.jpg"
+    Filename: "assets/Demo/Staff/staff-1.jpg"
+    Title: "Staff Member 1"
+
+  staff2:
+    PopulateFileFrom: "app/fixtures/images/staff-2.jpg"
+    Filename: "assets/Demo/Staff/staff-2.jpg"
+    Title: "Staff Member 2"
+
+  staffMike:
+    PopulateFileFrom: "app/fixtures/images/staff-mike-v2.jpg"
+    Filename: "assets/Demo/Staff/staff-mike-v2.jpg"
+    Title: "Mike Anderson"
+
+  # Carousel images
+  carousel1:
+    PopulateFileFrom: "app/fixtures/images/carousel-1.jpg"
+    Filename: "assets/Demo/Carousel/carousel-1.jpg"
+    Title: "Slide 1"
+
+  carousel2:
+    PopulateFileFrom: "app/fixtures/images/carousel-2.jpg"
+    Filename: "assets/Demo/Carousel/carousel-2.jpg"
+    Title: "Slide 2"
+
+  carousel3:
+    PopulateFileFrom: "app/fixtures/images/carousel-3.jpg"
+    Filename: "assets/Demo/Carousel/carousel-3.jpg"
+    Title: "Slide 3"
+
+  carousel4:
+    PopulateFileFrom: "app/fixtures/images/carousel-4.jpg"
+    Filename: "assets/Demo/Carousel/carousel-4.jpg"
+    Title: "Slide 4"
+
+  # Content image
+  contentImage:
+    PopulateFileFrom: "app/fixtures/images/promo-1.jpg"
+    Filename: "assets/Demo/Content/content-image.jpg"
+    Title: "Manufacturing Process"
+
+  contentValues:
+    PopulateFileFrom: "app/fixtures/images/content-values.jpg"
+    Filename: "assets/Demo/Content/content-values.jpg"
+    Title: "Core Values"
+
+  # Sponsor images
+  sponsorImage1:
+    PopulateFileFrom: "app/fixtures/images/sponsor-1.jpg"
+    Filename: "assets/Demo/Sponsors/sponsor-1.jpg"
+    Title: "Sponsor 1"
+
+  sponsorImage2:
+    PopulateFileFrom: "app/fixtures/images/sponsor-2.jpg"
+    Filename: "assets/Demo/Sponsors/sponsor-2.jpg"
+    Title: "Sponsor 2"
+
+  sponsorImage3:
+    PopulateFileFrom: "app/fixtures/images/sponsor-3.jpg"
+    Filename: "assets/Demo/Sponsors/sponsor-3.jpg"
+    Title: "Sponsor 3"
+
+  sponsorImage4:
+    PopulateFileFrom: "app/fixtures/images/sponsor-4.jpg"
+    Filename: "assets/Demo/Sponsors/sponsor-4.jpg"
+    Title: "Sponsor 4"
+
+  sponsorImage5:
+    PopulateFileFrom: "app/fixtures/images/sponsor-5.jpg"
+    Filename: "assets/Demo/Sponsors/sponsor-5.jpg"
+    Title: "Sponsor 5"
+
+  sponsorImage6:
+    PopulateFileFrom: "app/fixtures/images/sponsor-6.jpg"
+    Filename: "assets/Demo/Sponsors/sponsor-6.jpg"
+    Title: "Sponsor 6"
+
+  sponsorImage7:
+    PopulateFileFrom: "app/fixtures/images/sponsor-7.jpg"
+    Filename: "assets/Demo/Sponsors/sponsor-7.jpg"
+    Title: "Sponsor 7"
+
+  sponsorImage8:
+    PopulateFileFrom: "app/fixtures/images/sponsor-8.jpg"
+    Filename: "assets/Demo/Sponsors/sponsor-8.jpg"
+    Title: "Sponsor 8"
+
+# ============================================================================
+# SITE CONFIG - Company name, tagline, logo, social sharing, and metadata
+# ============================================================================
+SilverStripe\SiteConfig\SiteConfig:
+  main:
+    Title: "Precision MFG Co."
+    Tagline: "Quality Precision Parts Since 1985"
+    TitleLogo: "Logo"
+    Logo: =>SilverStripe\Assets\Image.siteLogo
+    LogoFooter: =>SilverStripe\Assets\Image.siteLogo
+    # Social Sharing - Enable all networks with normal links
+    SharingType: "Links"
+    ShareOnFacebook: true
+    ShareOnBluesky: true
+    ShareOnThreads: true
+    ShareOnTwitter: true
+    ShareOnLinkedin: true
+    ShareOnPinterest: true
+    ShareOnReddit: true
+    DefaultSharingTitle: "Precision MFG Co."
+    DefaultSharingDescription: "Quality Precision Parts Since 1985. Serving the Upper Midwest with precision-machined components for over 40 years."
+    # Social Metadata - Business information
+    SocialMetaSiteName: "Precision MFG Co."
+    SocialMetaSiteDescription: "Family-owned precision manufacturing company serving the Upper Midwest since 1985. ISO 9001:2015 certified."
+    MicroDataType: "LocalBusiness"
+    MicroDataTypeSpecific: "ProfessionalService"
+    MicroDataStreetAddress: "1234 Industrial Parkway"
+    MicroDataCity: "Green Bay"
+    MicroDataPostCode: "54304"
+    MicroDataRegion: "WI"
+    MicroDataCountry: "US"
+    MicroDataPhone: "+1-920-555-1234"
+    MicroDataFax: "+1-920-555-1235"
+    MicroDataEmail: "sales@precisionmfgco.com"
+    # Footer Location Display
+    ShowPrimaryLocationInFooter: true
+    # Footer Content
+    FooterNote: "<p>Precision MFG Co. is a family-owned manufacturing company specializing in precision machining and fabrication services. We are committed to quality, reliability, and customer satisfaction.</p>"
+    FooterCopyright: "© 2025 Precision MFG Co. All rights reserved. | Privacy Policy | Terms of Service"
+    PopulateMergeAny: true
+
+# ============================================================================
+# NAVIGATION COLUMNS - Footer navigation structure
+# ============================================================================
+Dynamic\Base\Model\NavigationColumn:
+  navColCompany:
+    Title: "Company"
+    SortOrder: 1
+    Config: =>SilverStripe\SiteConfig\SiteConfig.main
+
+  navColServices:
+    Title: "Services"
+    SortOrder: 2
+    Config: =>SilverStripe\SiteConfig\SiteConfig.main
+
+  navColResources:
+    Title: "Resources"
+    SortOrder: 3
+    Config: =>SilverStripe\SiteConfig\SiteConfig.main
+
+# ============================================================================
+# NAVIGATION GROUPS - Groups of links within each column
+# ============================================================================
+Dynamic\Base\Model\NavigationGroup:
+  navGroupCompany:
+    Title: "Company Links"
+    SortOrder: 1
+    NavigationColumn: =>Dynamic\Base\Model\NavigationColumn.navColCompany
+
+  navGroupServices:
+    Title: "Services Links"
+    SortOrder: 1
+    NavigationColumn: =>Dynamic\Base\Model\NavigationColumn.navColServices
+
+  navGroupResources:
+    Title: "Resources Links"
+    SortOrder: 1
+    NavigationColumn: =>Dynamic\Base\Model\NavigationColumn.navColResources
+
+# ============================================================================
+# SOCIAL LINKS - Footer social media links
+# ============================================================================
+Dynamic\Base\Model\SocialLink:
+  socialFacebook:
+    Title: "Facebook"
+    SocialChannel: "facebook"
+    ExternalUrl: "https://www.facebook.com/precisionmfgco"
+    OpenInNew: true
+    Owner: =>SilverStripe\SiteConfig\SiteConfig.main
+    OwnerRelation: "SocialLinks"
+
+  socialInstagram:
+    Title: "Instagram"
+    SocialChannel: "instagram"
+    ExternalUrl: "https://www.instagram.com/precisionmfgco"
+    OpenInNew: true
+    Owner: =>SilverStripe\SiteConfig\SiteConfig.main
+    OwnerRelation: "SocialLinks"
+
+  socialLinkedIn:
+    Title: "LinkedIn"
+    SocialChannel: "linkedin"
+    ExternalUrl: "https://www.linkedin.com/company/precisionmfgco"
+    OpenInNew: true
+    Owner: =>SilverStripe\SiteConfig\SiteConfig.main
+    OwnerRelation: "SocialLinks"
+
+  socialYouTube:
+    Title: "YouTube"
+    SocialChannel: "youtube"
+    ExternalUrl: "https://www.youtube.com/@precisionmfgco"
+    OpenInNew: true
+    Owner: =>SilverStripe\SiteConfig\SiteConfig.main
+    OwnerRelation: "SocialLinks"
+
+# ============================================================================
+# ELEMENTAL AREAS - Container for each page's elements
+# ============================================================================
+DNADesign\Elemental\Models\ElementalArea:
+  homeArea:
+    OwnerClassName: "Dynamic\\Base\\Page\\BlockPage"
+  aboutArea:
+    OwnerClassName: "Dynamic\\Base\\Page\\BlockPage"
+  capabilitiesArea:
+    OwnerClassName: "Dynamic\\Base\\Page\\BlockPage"
+  industriesArea:
+    OwnerClassName: "Dynamic\\Base\\Page\\BlockPage"
+  qualityArea:
+    OwnerClassName: "Dynamic\\Base\\Page\\BlockPage"
+  contactArea:
+    OwnerClassName: "Dynamic\\Base\\Page\\BlockPage"
+  elementsArea:
+    OwnerClassName: "Dynamic\\Base\\Page\\BlockPage"
+
+# ============================================================================
+# PAGES - All BlockPage with elemental content
+# ============================================================================
+Dynamic\Base\Page\BlockPage:
+  home:
+    Title: "Home"
+    URLSegment: "home"
+    ParentID: 0
+    ShowInMenus: false
+    ShowInSearch: true
+    Sort: 1
+    ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.homeArea
+    PopulateMergeMatch:
+      - URLSegment
+
+  about:
+    Title: "About Us"
+    URLSegment: "about-us"
+    ParentID: 0
+    ShowInMenus: true
+    ShowInSearch: true
+    Sort: 2
+    ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.aboutArea
+    PopulateMergeMatch:
+      - URLSegment
+
+  capabilities:
+    Title: "Capabilities"
+    URLSegment: "capabilities"
+    ParentID: 0
+    ShowInMenus: true
+    ShowInSearch: true
+    Sort: 3
+    ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.capabilitiesArea
+    PopulateMergeMatch:
+      - URLSegment
+
+  industries:
+    Title: "Industries"
+    URLSegment: "industries"
+    ParentID: 0
+    ShowInMenus: true
+    ShowInSearch: true
+    Sort: 4
+    ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.industriesArea
+    PopulateMergeMatch:
+      - URLSegment
+
+  quality:
+    Title: "Quality"
+    URLSegment: "quality"
+    ParentID: 0
+    ShowInMenus: true
+    ShowInSearch: true
+    Sort: 5
+    ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.qualityArea
+    PopulateMergeMatch:
+      - URLSegment
+
+  contact:
+    Title: "Contact Us"
+    URLSegment: "contact"
+    ParentID: 0
+    ShowInMenus: false
+    ShowInSearch: true
+    Sort: 6
+    ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.contactArea
+    PopulateMergeMatch:
+      - URLSegment
+
+  elements:
+    Title: "Elements"
+    URLSegment: "elements"
+    ParentID: 0
+    ShowInMenus: true
+    ShowInSearch: true
+    Sort: 7
+    ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    PopulateMergeMatch:
+      - URLSegment
+
+# ============================================================================
+# BLOG PAGE AND BLOG POSTS
+# ============================================================================
+SilverStripe\Blog\Model\Blog:
+  BlogPage:
+    Title: "Blog"
+    URLSegment: "blog"
+    Parent: =>Dynamic\Base\Page\BlockPage.about
+    ShowInMenus: true
+    Sort: 1
+
+# ============================================================================
+# LINK FIELD - Links used by elements and navigation
+# ============================================================================
+SilverStripe\LinkField\Models\SiteTreeLink:
+  linksElementHome:
+    LinkText: "Home Page"
+    Page: =>Dynamic\Base\Page\BlockPage.home
+    Sort: 1
+    PopulateMergeMatch:
+      - LinkText
+
+  linksElementAbout:
+    LinkText: "About Our Company"
+    Page: =>Dynamic\Base\Page\BlockPage.about
+    Sort: 1
+    PopulateMergeMatch:
+      - LinkText
+
+  linksElementCapabilities:
+    LinkText: "Our Capabilities"
+    Page: =>Dynamic\Base\Page\BlockPage.capabilities
+    Sort: 1
+    PopulateMergeMatch:
+      - LinkText
+
+  # Footer Navigation Links
+  utilityRequestQuote:
+    LinkText: "Request a Quote"
+    Page: =>Dynamic\Base\Page\BlockPage.contact
+    Owner: =>SilverStripe\SiteConfig\SiteConfig.main
+    OwnerRelation: "UtilityLinks"
+    Sort: 1
+    PopulateMergeMatch:
+      - LinkText
+
+  navLinkAbout:
+    LinkText: "About Us"
+    Page: =>Dynamic\Base\Page\BlockPage.about
+    Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupCompany
+    Sort: 1
+    PopulateMergeMatch:
+      - LinkText
+
+  navLinkQuality:
+    LinkText: "Quality"
+    Page: =>Dynamic\Base\Page\BlockPage.quality
+    Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupCompany
+    Sort: 2
+    PopulateMergeMatch:
+      - LinkText
+
+  navLinkContact:
+    LinkText: "Contact"
+    Page: =>Dynamic\Base\Page\BlockPage.contact
+    Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupCompany
+    Sort: 3
+    PopulateMergeMatch:
+      - LinkText
+
+  navLinkCapabilities:
+    LinkText: "Capabilities"
+    Page: =>Dynamic\Base\Page\BlockPage.capabilities
+    Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupServices
+    Sort: 1
+    PopulateMergeMatch:
+      - LinkText
+
+  navLinkIndustries:
+    LinkText: "Industries"
+    Page: =>Dynamic\Base\Page\BlockPage.industries
+    Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupServices
+    Sort: 2
+    PopulateMergeMatch:
+      - LinkText
+
+  navLinkBlog:
+    LinkText: "Blog"
+    Page: =>SilverStripe\Blog\Model\Blog.BlogPage
+    Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupResources
+    Sort: 1
+    PopulateMergeMatch:
+      - LinkText
+
+  navLinkElements:
+    LinkText: "Elements"
+    Page: =>Dynamic\Base\Page\BlockPage.elements
+    Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupResources
+    Sort: 2
+    PopulateMergeMatch:
+      - LinkText
+
+SilverStripe\LinkField\Models\EmailLink:
+  staffJohnEmail:
+    Email: 'john.peterson@precisionmfgco.com'
+    PopulateMergeMatch:
+      - Email
+  staffSarahEmail:
+    Email: 'sarah.thompson@precisionmfgco.com'
+    PopulateMergeMatch:
+      - Email
+  staffMikeEmail:
+    Email: 'mike.anderson@precisionmfgco.com'
+    PopulateMergeMatch:
+      - Email
+
+SilverStripe\LinkField\Models\PhoneLink:
+  staffJohnPhone:
+    Phone: '(920) 555-0101'
+    PopulateMergeMatch:
+      - Phone
+  staffSarahPhone:
+    Phone: '(920) 555-0102'
+    PopulateMergeMatch:
+      - Phone
+  staffMikePhone:
+    Phone: '(920) 555-0103'
+    PopulateMergeMatch:
+      - Phone
+
+SilverStripe\LinkField\Models\ExternalLink:
+  accordionLink:
+    LinkText: "Learn More"
+    ExternalUrl: "https://google.com"
+    OpenInNew: true
+    PopulateMergeMatch:
+      - ExternalUrl
+
+  accordionLink2:
+    LinkText: "Contact Us"
+    ExternalUrl: "/contact"
+    OpenInNew: false
+    PopulateMergeMatch:
+      - ExternalUrl
+
+  # Social links for staff members
+  staffJohnLinkedIn:
+    LinkText: "LinkedIn"
+    ExternalUrl: "https://www.linkedin.com/in/johnpeterson"
+    OpenInNew: true
+    PopulateMergeMatch:
+      - ExternalUrl
+
+  staffSarahLinkedIn:
+    LinkText: "LinkedIn"
+    ExternalUrl: "https://www.linkedin.com/in/sarahthompson"
+    OpenInNew: true
+    PopulateMergeMatch:
+      - ExternalUrl
+
+  staffMikeLinkedIn:
+    LinkText: "LinkedIn"
+    ExternalUrl: "https://www.linkedin.com/in/mikeanderson"
+    OpenInNew: true
+    PopulateMergeMatch:
+      - ExternalUrl
+
+# ============================================================================
+# ELEMENT ROWS - Layout containers (2 per page: fluid for hero, container for content)
+# ============================================================================
+WeDevelop\ElementalGrid\Models\ElementRow:
+  # Home page rows
+  HomeRowFluid:
+    Title: "Hero Row"
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.homeArea
+    Sort: 1
+  HomeRowContainer:
+    Title: "Content Row"
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.homeArea
+    Sort: 3
+
+  # About page rows
+  AboutRowFluid:
+    Title: "Hero Row"
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.aboutArea
+    Sort: 1
+  AboutRowContainer:
+    Title: "Content Row"
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.aboutArea
+    Sort: 3
+
+  # Capabilities page rows
+  CapabilitiesRowFluid:
+    Title: "Hero Row"
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.capabilitiesArea
+    Sort: 1
+  CapabilitiesRowContainer:
+    Title: "Content Row"
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.capabilitiesArea
+    Sort: 3
+
+  # Industries page rows
+  IndustriesRowFluid:
+    Title: "Hero Row"
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.industriesArea
+    Sort: 1
+  IndustriesRowContainer:
+    Title: "Content Row"
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.industriesArea
+    Sort: 3
+
+  # Quality page rows
+  QualityRowFluid:
+    Title: "Hero Row"
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.qualityArea
+    Sort: 1
+  QualityRowContainer:
+    Title: "Content Row"
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.qualityArea
+    Sort: 3
+
+  # Contact page rows
+  ContactRowFluid:
+    Title: "Hero Row"
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.contactArea
+    Sort: 1
+  ContactRowContainer:
+    Title: "Content Row"
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.contactArea
+    Sort: 3
+
+  # Elements page rows
+  ElementsRowFluid:
+    Title: "Hero Row"
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 1
+  ElementsRowContainer:
+    Title: "Content Row"
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 3
+
+# ============================================================================
+# HERO MEDIA ELEMENTS - All heroes grouped together (Sort: 2, after fluid row)
+# ============================================================================
+Dynamic\Essentials\Element\HeroMedia:
+  HomeHero:
+    Title: "Precision Manufacturing Excellence"
+    ShowTitle: true
+    AvailableGlobally: false
+    MediaType: "Image"
+    Content: "<p>Serving the Upper Midwest with precision-machined components for over 40 years. ISO 9001:2015 certified quality you can trust.</p>"
+    TitleTag: "h1"
+    Image: =>SilverStripe\Assets\Image.heroHome
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.homeArea
+    Sort: 2
+
+  AboutHero:
+    Title: "Our Story"
+    ShowTitle: true
+    AvailableGlobally: false
+    MediaType: "Image"
+    Content: "<p>Family-owned and operated since 1985, we've built our reputation on quality, reliability, and Midwestern values.</p>"
+    TopTitle: "About Us"
+    TitleTag: "h1"
+    Image: =>SilverStripe\Assets\Image.heroAbout
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.aboutArea
+    Sort: 2
+
+  CapabilitiesHero:
+    Title: "Our Capabilities"
+    ShowTitle: true
+    AvailableGlobally: false
+    MediaType: "Image"
+    Content: "<p>State-of-the-art CNC machining, fabrication, and assembly services tailored to your specifications.</p>"
+    TopTitle: "Services"
+    TitleTag: "h1"
+    Image: =>SilverStripe\Assets\Image.heroCapabilities
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.capabilitiesArea
+    Sort: 2
+
+  IndustriesHero:
+    Title: "Industries We Serve"
+    ShowTitle: true
+    AvailableGlobally: false
+    MediaType: "Image"
+    Content: "<p>From agricultural equipment to aerospace components, we deliver precision parts across diverse industries.</p>"
+    TopTitle: "Sectors"
+    TitleTag: "h1"
+    Image: =>SilverStripe\Assets\Image.heroIndustries
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.industriesArea
+    Sort: 2
+
+  QualityHero:
+    Title: "Quality Assurance"
+    ShowTitle: true
+    AvailableGlobally: false
+    MediaType: "Image"
+    Content: "<p>ISO 9001:2015 certified with rigorous inspection processes ensuring every part meets your exact specifications.</p>"
+    TopTitle: "Standards"
+    TitleTag: "h1"
+    Image: =>SilverStripe\Assets\Image.heroQuality
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.qualityArea
+    Sort: 2
+
+  ContactHero:
+    Title: "Contact Us"
+    ShowTitle: true
+    AvailableGlobally: false
+    MediaType: "Image"
+    Content: "<p>Ready to discuss your next project? Our team is here to help with quotes, technical questions, and more.</p>"
+    TopTitle: "Get in Touch"
+    TitleTag: "h1"
+    Image: =>SilverStripe\Assets\Image.heroContact
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.contactArea
+    Sort: 2
+
+  ElementsHero:
+    Title: "Element Showcase"
+    ShowTitle: true
+    AvailableGlobally: false
+    MediaType: "Image"
+    Content: "<p>A comprehensive showcase of all available elements in alphabetical order.</p>"
+    TopTitle: "Showcase"
+    TitleTag: "h1"
+    Image: =>SilverStripe\Assets\Image.heroElements
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 2
+
+# ============================================================================
+# CONTENT ELEMENTS - All content blocks grouped together
+# ContentAlign: "Left" is required to avoid PHP 8 deprecation warnings
+# ============================================================================
+DNADesign\Elemental\Models\ElementContent:
+  # Home page content
+  HomeIntro:
+    Title: "Your Partner in Precision Manufacturing"
+    ShowTitle: true
+    AvailableGlobally: false
+    ContentAlign: "Left"
+    HTML: "<p>At Precision MFG Co., we combine decades of expertise with cutting-edge technology to deliver components that meet the most demanding specifications. Located in Green Bay, Wisconsin, we serve manufacturers throughout the Upper Midwest and beyond.</p><p>Whether you need prototype development, small-batch production, or high-volume manufacturing, our experienced team is ready to bring your designs to life with uncompromising quality and on-time delivery.</p>"
+    TopTitle: "Welcome"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.homeArea
+    Sort: 3
+
+  HomeVideo:
+    Title: "See Our Facility in Action"
+    ShowTitle: true
+    AvailableGlobally: false
+    ContentAlign: "Left"
+    HTML: '<p>Take a virtual tour of our 50,000 sq ft manufacturing facility.</p><div class="ratio ratio-16x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/9No-FiEInLA" title="Manufacturing Process" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+    TopTitle: "Video Tour"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.homeArea
+    Sort: 9
+
+  # About page content
+  AboutHistory:
+    Title: "40 Years of Excellence"
+    ShowTitle: true
+    AvailableGlobally: false
+    ContentAlign: "Left"
+    HTML: "<p>Founded in 1985 by John and Mary Peterson, Precision MFG Co. started as a small job shop with just three employees and a dream. Today, we employ over 75 skilled workers and operate 24 CNC machines in our climate-controlled facility.</p><p>Our growth has been built on a simple philosophy: deliver quality parts on time, every time. This commitment has earned us long-term partnerships with leading manufacturers in agriculture, construction, and industrial equipment.</p>"
+    TopTitle: "Our History"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.aboutArea
+    Sort: 4
+
+  AboutValues:
+    Title: "Our Core Values"
+    ShowTitle: true
+    AvailableGlobally: false
+    ContentAlign: "Left"
+    HTML: "<h3>Quality First</h3><p>Every part we produce undergoes rigorous inspection. Our ISO 9001:2015 certification reflects our commitment to consistent, documented quality processes.</p><h3>Customer Partnership</h3><p>We work closely with our customers from design through delivery, offering DFM feedback and flexible scheduling to meet your production needs.</p><h3>Continuous Improvement</h3><p>We invest in the latest technology and ongoing training to ensure we're always improving our capabilities and efficiency.</p>"
+    MediaType: "image"
+    MediaImage: =>SilverStripe\Assets\Image.contentValues
+    MediaPosition: "order-2"
+    ContentColumns: "6"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.aboutArea
+    Sort: 5
+
+  # Capabilities page content
+  CapabilitiesIntro:
+    Title: "Manufacturing Services"
+    ShowTitle: true
+    AvailableGlobally: false
+    ContentAlign: "Left"
+    HTML: "<p>Our CNC department features 24 machines including 5-axis milling centers, Swiss-type lathes, and multi-spindle turning centers. We machine aluminum, steel, stainless, brass, and engineered plastics.</p><p>Our fabrication shop complements our machining capabilities with laser cutting, press brake forming, and certified welding services.</p>"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.capabilitiesArea
+    Sort: 4
+
+  CapabilitiesVideo:
+    Title: "CNC Machining in Action"
+    ShowTitle: true
+    AvailableGlobally: false
+    ContentAlign: "Left"
+    HTML: '<p>Watch our CNC machines produce precision parts with remarkable speed and accuracy.</p><div class="ratio ratio-16x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/RnIvhlKT7SY" title="CNC Machining Process" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.capabilitiesArea
+    Sort: 6
+
+  # Industries page content
+  IndustriesIntro:
+    Title: "Serving Diverse Industries"
+    ShowTitle: true
+    AvailableGlobally: false
+    ContentAlign: "Left"
+    HTML: "<p>For over 40 years, Precision MFG Co. has partnered with leading manufacturers across multiple industries. Our diverse experience means we understand the unique requirements, materials, and quality standards for each sector we serve.</p>"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.industriesArea
+    Sort: 4
+
+  # Quality page content
+  QualityProcess:
+    Title: "Our Quality Process"
+    ShowTitle: true
+    AvailableGlobally: false
+    ContentAlign: "Left"
+    HTML: "<p>Quality is built into every step of our process. From incoming material inspection to final dimensional verification, we ensure your parts meet specifications.</p><h3>Inspection Equipment</h3><ul><li>Zeiss CMM with PC-DMIS software</li><li>Optical comparators and vision systems</li><li>Surface finish testers</li><li>Full complement of calibrated hand tools</li></ul><h3>Documentation</h3><p>We provide full material certifications, first article inspection reports (FAIR), and Certificates of Conformance with every order.</p>"
+    TopTitle: "Our Process"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.qualityArea
+    Sort: 4
+
+  # Contact page content
+  ContactForm:
+    Title: "Request a Quote"
+    ShowTitle: true
+    AvailableGlobally: false
+    ContentAlign: "Left"
+    HTML: "<p>Ready to discuss your next project? Fill out the form below or contact us directly. We typically respond to quote requests within 24 hours.</p><p><strong>For immediate assistance:</strong><br>Phone: (920) 555-1234<br>Email: sales@precisionmfgco.com</p>"
+    TopTitle: "Send a Message"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.contactArea
+    Sort: 5
+
+  # Elements page - Content element showcase
+  ElementsContent:
+    Title: "Content Element"
+    ShowTitle: true
+    AvailableGlobally: false
+    ContentAlign: "Left"
+    HTML: "<p>The Content element is the most versatile block, supporting rich HTML content including paragraphs, lists, headings, images, and embedded media.</p><ul><li>Supports all HTML formatting</li><li>Can include images and videos</li><li>Perfect for general page content</li></ul>"
+    TopTitle: "Versatile Content"
+    MediaType: "image"
+    MediaImage: =>SilverStripe\Assets\Image.contentImage
+    MediaPosition: "order-1"
+    ContentColumns: "6"
+    ElementLink: =>SilverStripe\LinkField\Models\SiteTreeLink.linksElementHome
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 13
+
+# ============================================================================
+# STAT COUNTERS - Home page + Elements page
+# ============================================================================
+Dynamic\Elements\StatCounters\Elements\ElementStatCounters:
+  HomeStats:
+    Title: "By the Numbers"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Four decades of precision manufacturing excellence.</p>"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.homeArea
+    Sort: 7
+
+  IndustriesStats:
+    Title: "Sector Expertise"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Decades of experience delivering precision across demanding sectors.</p>"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.industriesArea
+    Sort: 8
+
+  ElementsStats:
+    Title: "Stat Counters Element"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Animated counters for showcasing statistics and achievements.</p>"
+    TopTitle: "Key Statistics"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 23
+
+Dynamic\Elements\StatCounters\Model\StatCounter:
+  StatYears:
+    Title: "40+"
+    Label: "Years in Business"
+    Statistic: "40"
+    StatType: "Int"
+    SortOrder: 1
+    ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.HomeStats
+
+  StatEmployees:
+    Title: "75+"
+    Label: "Skilled Employees"
+    Statistic: "75"
+    StatType: "Int"
+    SortOrder: 2
+    ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.HomeStats
+
+  StatMachines:
+    Title: "24"
+    Label: "CNC Machines"
+    Statistic: "24"
+    StatType: "Int"
+    SortOrder: 3
+    ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.HomeStats
+
+  StatDelivery:
+    Title: "99.7%"
+    Label: "On-Time Delivery"
+    Statistic: "99.7"
+    StatType: "Percentage"
+    SortOrder: 4
+    ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.HomeStats
+
+  StatAg:
+    Title: "30+"
+    Label: "Years in Agriculture"
+    Statistic: "30"
+    StatType: "Int"
+    SortOrder: 1
+    ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.IndustriesStats
+
+  StatParts:
+    Title: "1M+"
+    Label: "Parts Delivered"
+    Statistic: "1000000"
+    StatType: "Int"
+    SortOrder: 2
+    ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.IndustriesStats
+
+  StatPartners:
+    Title: "50+"
+    Label: "Industry Partners"
+    Statistic: "50"
+    StatType: "Int"
+    SortOrder: 3
+    ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.IndustriesStats
+
+  StatCert:
+    Title: "100%"
+    Label: "Quality Certified"
+    Statistic: "100"
+    StatType: "Percentage"
+    SortOrder: 4
+    ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.IndustriesStats
+
+  ElementsStat1:
+    Title: "100"
+    Label: "Demo Stat"
+    Statistic: "100"
+    StatType: "Int"
+    SortOrder: 1
+    ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.ElementsStats
+
+  ElementsStat2:
+    Title: "50%"
+    Label: "Percentage"
+    Statistic: "50"
+    StatType: "Percentage"
+    SortOrder: 2
+    ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.ElementsStats
+
+  ElementsStat3:
+    Title: "200"
+    Label: "Demo Stat 3"
+    Statistic: "200"
+    StatType: "Int"
+    SortOrder: 3
+    ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.ElementsStats
+
+  ElementsStat4:
+    Title: "75%"
+    Label: "Demo Percentage"
+    Statistic: "75"
+    StatType: "Percentage"
+    SortOrder: 4
+    ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.ElementsStats
+
+# ============================================================================
+# CARDS - Industries page + Elements page
+# ============================================================================
+Dynamic\Elements\Card\Elements\ElementCard:
+  HomeCardCapabilities:
+    Title: "Our Capabilities"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>State-of-the-art CNC machining, fabrication, and assembly services tailored to your specifications.</p>"
+    BackgroundColor: '#CCBEF5'
+    ButtonColor: 'Purple'
+    Position: "Top"
+    SizeMD: "4"
+    Image: =>SilverStripe\Assets\Image.gallery1
+    ElementLink: =>SilverStripe\LinkField\Models\SiteTreeLink.linksElementCapabilities
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.homeArea
+    Sort: 4
+
+  HomeCardIndustries:
+    Title: "Industries Served"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>From agricultural equipment to aerospace components, we deliver precision parts across diverse industries.</p>"
+    Position: "Top"
+    SizeMD: "4"
+    Image: =>SilverStripe\Assets\Image.cardAgriculture
+    ElementLink: =>SilverStripe\LinkField\Models\SiteTreeLink.navLinkIndustries
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.homeArea
+    Sort: 5
+
+  HomeCardQuality:
+    Title: "Quality Assurance"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>ISO 9001:2015 certified with rigorous inspection processes ensuring every part meets your exact specifications.</p>"
+    Position: "Top"
+    SizeMD: "4"
+    Image: =>SilverStripe\Assets\Image.gallery2
+    ElementLink: =>SilverStripe\LinkField\Models\SiteTreeLink.navLinkQuality
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.homeArea
+    Sort: 6
+
+  CardAgriculture:
+    Title: "Agricultural Equipment"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Precision components for tractors, combines, planters, and tillage equipment. We understand the demanding conditions farm equipment faces.</p>"
+    BackgroundColor: '#F2E8E3'
+    ButtonColor: 'Yellow'
+    Position: "Top"
+    SizeMD: "4"
+    TitleTag: "h3"
+    Image: =>SilverStripe\Assets\Image.cardAgriculture
+    ElementLink: =>SilverStripe\LinkField\Models\SiteTreeLink.utilityRequestQuote
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.industriesArea
+    Sort: 5
+
+  CardConstruction:
+    Title: "Construction Equipment"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Heavy-duty components for excavators, loaders, and material handling equipment built to withstand tough jobsite conditions.</p>"
+    Position: "Top"
+    SizeMD: "4"
+    TitleTag: "h3"
+    Image: =>SilverStripe\Assets\Image.cardConstruction
+    ElementLink: =>SilverStripe\LinkField\Models\SiteTreeLink.utilityRequestQuote
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.industriesArea
+    Sort: 6
+
+  CardIndustrial:
+    Title: "Industrial Machinery"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Custom machined parts for packaging, food processing, and general industrial automation applications.</p>"
+    Position: "Top"
+    SizeMD: "4"
+    TitleTag: "h3"
+    Image: =>SilverStripe\Assets\Image.cardIndustrial
+    ElementLink: =>SilverStripe\LinkField\Models\SiteTreeLink.utilityRequestQuote
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.industriesArea
+    Sort: 7
+
+  ElementsCard:
+    Title: "CNC Machining Services"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Precision CNC machining with 5-axis capabilities for complex geometries and tight tolerances.</p>"
+    TopTitle: "Card Feature"
+    TitleTag: "h4"
+    Position: "Top"
+    SizeMD: "4"
+    Image: =>SilverStripe\Assets\Image.gallery1
+    ElementLink: =>SilverStripe\LinkField\Models\SiteTreeLink.linksElementCapabilities
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 7
+
+  ElementsCard2:
+    Title: "Quality Inspection"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>State-of-the-art CMM inspection and quality documentation for every order.</p>"
+    BackgroundColor: '#FFFFFF'
+    ButtonColor: 'Purple'
+    TopTitle: "Card Feature"
+    TitleTag: "h4"
+    Position: "Top"
+    SizeMD: "4"
+    Image: =>SilverStripe\Assets\Image.gallery2
+    ElementLink: =>SilverStripe\LinkField\Models\SiteTreeLink.navLinkQuality
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 8
+
+  ElementsCard3:
+    Title: "Assembly Services"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Complete assembly and kitting services to deliver ready-to-install products.</p>"
+    TopTitle: "Card Feature"
+    TitleTag: "h4"
+    Position: "Top"
+    SizeMD: "4"
+    Image: =>SilverStripe\Assets\Image.gallery3
+    ElementLink: =>SilverStripe\LinkField\Models\SiteTreeLink.utilityRequestQuote
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 9
+
+# ============================================================================
+# CTA ELEMENTS - Home, Quality + Elements page
+# ContentAlign: "Left" is required to avoid PHP 8 deprecation warnings
+# ============================================================================
+Dynamic\Elements\CTA\Elements\ElementCallToAction:
+  HomeCTA:
+    Title: "Ready to Start Your Project?"
+    ShowTitle: true
+    AvailableGlobally: false
+    ContentAlign: "Left"
+    HTML: '<p>Send us your drawings or 3D models for a fast, competitive quote. Our engineering team will review your project and provide DFM feedback at no charge.</p><p><a href="/contact" class="btn btn-primary btn-lg">Request a Quote</a></p>'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.homeArea
+    Sort: 10
+
+  QualityCTA:
+    Title: "Quality Documentation Available"
+    ShowTitle: true
+    AvailableGlobally: false
+    ContentAlign: "Left"
+    HTML: '<p>Need our ISO 9001:2015 certificate, ITAR registration, or other quality documentation? Contact us for copies.</p><p><a href="/contact" class="btn btn-primary">Request Documentation</a></p>'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.qualityArea
+    Sort: 5
+
+  CapabilitiesCTA:
+    Title: "Have a Project in Mind?"
+    ShowTitle: true
+    AvailableGlobally: false
+    ContentAlign: "Left"
+    HTML: '<p>Contact us today to discuss your machining and fabrication needs. We offer competitive pricing and fast turnaround times.</p><p><a href="/contact" class="btn btn-primary">Get a Quote</a></p>'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.capabilitiesArea
+    Sort: 8
+
+  IndustriesCTA:
+    Title: "Partner with Precision"
+    ShowTitle: true
+    AvailableGlobally: false
+    ContentAlign: "Left"
+    HTML: '<p>Experience the difference of working with a manufacturer that understands your industry. Let us help you solve your toughest challenges.</p><p><a href="/contact" class="btn btn-primary">Contact Us</a></p>'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.industriesArea
+    Sort: 9
+
+  ElementsCTA:
+    Title: "Call To Action Element"
+    ShowTitle: true
+    AvailableGlobally: false
+    ContentAlign: "Left"
+    HTML: '<p>A prominent call-to-action block designed to drive user engagement with buttons and compelling content.</p><p><a href="/contact" class="btn btn-primary">Learn More</a></p>'
+    TopTitle: "Action Required"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 6
+
+# ============================================================================
+# CUSTOMER SERVICE - Contact page + Elements page
+# ============================================================================
+Dynamic\Elements\CustomerService\Elements\ElementCustomerService:
+  ContactInfo:
+    Title: "Get in Touch"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Our team is ready to discuss your next project. Reach out for quotes, technical questions, or facility tours.</p>"
+    TopTitle: "Contact Information"
+    LocationName: "Precision MFG Co."
+    Website: "https://www.precisionmfgco.com"
+    Phone: "(920) 555-1234"
+    Fax: "(920) 555-1235"
+    Email: "sales@precisionmfgco.com"
+    Address: "1234 Industrial Parkway"
+    Address2: ""
+    City: "Green Bay"
+    State: "WI"
+    PostalCode: "54304"
+    Country: "us"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.contactArea
+    Sort: 4
+
+  ElementsCustomerService:
+    Title: "Customer Service Element"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Displays contact information including address, phone, email, and hours in a formatted layout.</p>"
+    TopTitle: "Contact Info"
+    LocationName: "Element Demo Location"
+    Website: "https://www.example.com"
+    Phone: "(555) 123-4567"
+    Fax: "(555) 987-6543"
+    Email: "demo@example.com"
+    Address: "1234 Industrial Parkway"
+    City: "Green Bay"
+    State: "WI"
+    PostalCode: "54304"
+    Country: "US"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 14
+
+# ============================================================================
+# EMBEDDED CODE ELEMENT - Elements page
+# ============================================================================
+Dynamic\Elements\Embedded\Elements\ElementEmbeddedCode:
+  ElementsEmbeddedCode:
+    Title: "Embedded Code Element"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Embed custom HTML, JavaScript, or iframe content such as maps, videos, or third-party widgets.</p>"
+    TopTitle: "Embedded Media"
+    Code: '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 15
+
+# ============================================================================
+# ACCORDION ELEMENT - Elements page
+# ============================================================================
+Dynamic\Elements\Accordion\Elements\ElementAccordion:
+  QualityAccordion:
+    Title: "Quality FAQs"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Common questions about our quality processes and certifications.</p>"
+    TopTitle: "Frequently Asked Questions"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.qualityArea
+    Sort: 6
+
+  CapabilitiesAccordion:
+    Title: "Machine Specifications"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Detailed specifications of our manufacturing equipment and capabilities.</p>"
+    TopTitle: "Specs"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.capabilitiesArea
+    Sort: 5
+
+  ElementsAccordion:
+    Title: "Accordion Element"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Expandable accordion panels for FAQs and organized content.</p>"
+    TopTitle: "Collapsible Content"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 4
+
+Dynamic\Elements\Accordion\Model\AccordionPanel:
+  QualityPanel1:
+    Title: "Are you ISO certified?"
+    ShowTitle: true
+    Content: "<p>Yes, we are ISO 9001:2015 certified. Our quality management system is audited annually to ensure compliance and continuous improvement.</p>"
+    SortOrder: 1
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.QualityAccordion
+
+  QualityPanel2:
+    Title: "Do you provide material certifications?"
+    ShowTitle: true
+    Content: "<p>Yes, we provide full material certifications (MTRs) and Certificates of Conformance (C of C) with every shipment upon request.</p>"
+    SortOrder: 2
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.QualityAccordion
+
+  QualityPanel3:
+    Title: "What inspection equipment do you use?"
+    ShowTitle: true
+    Content: "<p>Our quality lab is equipped with a Zeiss CMM, optical comparators, vision systems, and a full range of calibrated hand tools.</p>"
+    SortOrder: 3
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.QualityAccordion
+
+  CapabilitiesPanelCNC:
+    Title: "CNC Machining Specs"
+    ShowTitle: true
+    Content: "<ul><li>Turning up to 24 inch diameter</li><li>Milling capacity up to 40 x 20 x 25 inches</li><li>Live tooling and sub-spindle capabilities</li><li>Lights-out manufacturing for high-volume runs</li><li>Tolerances as tight as 0.0005 inches</li></ul>"
+    SortOrder: 1
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.CapabilitiesAccordion
+
+  CapabilitiesPanelFab:
+    Title: "Fabrication Specs"
+    ShowTitle: true
+    Content: "<ul><li>Fiber laser cutting up to 1 inch steel</li><li>CNC press brakes with 320-ton capacity</li><li>MIG, TIG, and robotic welding</li><li>AWS D1.1 certified welders on staff</li></ul>"
+    SortOrder: 2
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.CapabilitiesAccordion
+
+  AccordionPanel1:
+    Title: "What materials do you work with?"
+    ShowTitle: true
+    Content: "<p>We machine a wide variety of materials including aluminum, steel, stainless steel, brass, bronze, copper, and engineered plastics like Delrin, UHMW, and Nylon.</p>"
+    Image: =>SilverStripe\Assets\Image.contentImage
+    ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.accordionLink
+    SortOrder: 1
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.ElementsAccordion
+
+  AccordionPanel2:
+    Title: "What is your typical lead time?"
+    ShowTitle: true
+    Content: "<p>Standard lead times range from 2-4 weeks depending on complexity and quantity. We also offer expedited services for rush orders.</p>"
+    ElementLink: =>SilverStripe\LinkField\Models\SiteTreeLink.utilityRequestQuote
+    SortOrder: 2
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.ElementsAccordion
+
+  AccordionPanel3:
+    Title: "Do you offer design assistance?"
+    ShowTitle: true
+    Content: "<p>Yes! Our engineering team provides Design for Manufacturing (DFM) feedback at no charge to help optimize your designs for production.</p>"
+    SortOrder: 3
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.ElementsAccordion
+
+  AccordionPanel4:
+    Title: "What quality certifications do you hold?"
+    ShowTitle: true
+    Content: "<p>We maintain ISO 9001:2015 certification and provide full material certifications, FAIR reports, and Certificates of Conformance with every order.</p>"
+    SortOrder: 4
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.ElementsAccordion
+
+# ============================================================================
+# CAROUSEL ELEMENT - About page + Elements page
+# ============================================================================
+# ImageSlides must be created first, then referenced by ElementCarousel.Slides
+Dynamic\Carousel\Model\ImageSlide:
+  Slide1:
+    Title: "Manufacturing Floor"
+    TopTitle: "Facility Tour"
+    Content: "<p>Our 50,000 sq ft climate-controlled manufacturing space</p>"
+    Image: =>SilverStripe\Assets\Image.carousel1
+
+  Slide2:
+    Title: "CNC Department"
+    TopTitle: "Precision Machining"
+    Content: "<p>24 CNC machines including 5-axis milling centers</p>"
+    Image: =>SilverStripe\Assets\Image.carousel2
+
+  Slide3:
+    Title: "Elements Carousel Slide 1"
+    TopTitle: "Top Title 1"
+    ShowTitle: true
+    Content: "<p>First slide in the carousel showcase with content.</p>"
+    Image: =>SilverStripe\Assets\Image.carousel1
+
+  Slide4:
+    Title: "Elements Carousel Slide 2"
+    TopTitle: "Top Title 2"
+    ShowTitle: true
+    Content: "<p>Second slide in the carousel showcase with content.</p>"
+    Image: =>SilverStripe\Assets\Image.carousel2
+
+  Slide5:
+    Title: "Fade Carousel Slide 1"
+    TopTitle: "Fade Effect"
+    Content: "<p>First slide showing fade transition effect</p>"
+    Image: =>SilverStripe\Assets\Image.gallery1
+
+  Slide6:
+    Title: "Fade Carousel Slide 2"
+    TopTitle: "Fade Effect"
+    Content: "<p>Second slide showing fade transition effect</p>"
+    Image: =>SilverStripe\Assets\Image.gallery2
+
+  Slide7:
+    Title: "Autoplay Carousel Slide 1"
+    TopTitle: "Autoplay"
+    Content: "<p>First slide with autoplay enabled</p>"
+    Image: =>SilverStripe\Assets\Image.gallery3
+
+  Slide8:
+    Title: "Autoplay Carousel Slide 2"
+    TopTitle: "Autoplay"
+    Content: "<p>Second slide with autoplay enabled</p>"
+    Image: =>SilverStripe\Assets\Image.gallery4
+
+  SlideNew1:
+    Title: "Manufacturing Floor"
+    TopTitle: "Facility Tour"
+    Content: "<p>Our 50,000 sq ft climate-controlled manufacturing space</p>"
+    Image: =>SilverStripe\Assets\Image.carousel3
+    ElementLink: =>SilverStripe\LinkField\Models\SiteTreeLink.navLinkAbout
+
+  SlideNew2:
+    Title: "CNC Department"
+    TopTitle: "Precision Machining"
+    Content: "<p>24 CNC machines including 5-axis milling centers</p>"
+    Image: =>SilverStripe\Assets\Image.carousel4
+    ElementLink: =>SilverStripe\LinkField\Models\SiteTreeLink.navLinkCapabilities
+
+nathancox\EmbedField\Model\EmbedObject:
+  oembedVideo:
+    SourceURL: 'https://www.youtube.com/watch?v=9No-FiEInLA'
+    Title: 'Manufacturing Process'
+    Width: 560
+    Height: 315
+    ThumbnailURL: 'https://i.ytimg.com/vi/9No-FiEInLA/hqdefault.jpg'
+    Type: 'video'
+    ProviderName: 'YouTube'
+    EmbedHTML: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9No-FiEInLA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+Dynamic\Carousel\Model\VideoSlide:
+  SlideVideo:
+    Title: "Video Slide"
+    TopTitle: "Video Content"
+    Content: "<p>A slide featuring an embedded video.</p>"
+    VideoType: "Embed"
+    EmbedVideo: =>nathancox\EmbedField\Model\EmbedObject.oembedVideo
+
+Dynamic\Elements\Carousel\Elements\ElementCarousel:
+  AboutCarousel:
+    Title: "Our Facility"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Take a visual tour of our state-of-the-art manufacturing facility.</p>"
+    TopTitle: "Virtual Tour"
+    Controls: "On"
+    Indicators: "On"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.aboutArea
+    Sort: 6
+    Slides: =>Dynamic\Carousel\Model\ImageSlide.SlideNew1, =>Dynamic\Carousel\Model\ImageSlide.SlideNew2
+
+  ElementsCarouselSlide:
+    Title: "Carousel Element (Default)"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>An image carousel for showcasing multiple images in a rotating slideshow with slide transition.</p>"
+    TopTitle: "Image Slider"
+    Controls: "On"
+    Indicators: "On"
+    Transitions: "Slide"
+    Autoplay: "Off"
+    Interval: 5
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 10
+    Slides: =>Dynamic\Carousel\Model\ImageSlide.Slide3, =>Dynamic\Carousel\Model\ImageSlide.Slide4, =>Dynamic\Carousel\Model\VideoSlide.SlideVideo
+
+  ElementsCarouselFade:
+    Title: "Carousel Element (Thumbs Style)"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>An image carousel with thumbnails navigation.</p>"
+    TopTitle: "Thumbnail Slider"
+    Controls: "On"
+    Indicators: "On"
+    Transitions: "Fade"
+    Autoplay: "Off"
+    Interval: 5
+    Style: "Thumbs"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 11
+    Slides: =>Dynamic\Carousel\Model\ImageSlide.Slide5, =>Dynamic\Carousel\Model\ImageSlide.Slide6
+
+  ElementsCarouselAutoplay:
+    Title: "Carousel Element (Slides Style)"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>An image carousel with no slide text.</p>"
+    TopTitle: "Autoplay Slider"
+    Controls: "On"
+    Indicators: "On"
+    Transitions: "Slide"
+    Autoplay: "On"
+    Interval: 3
+    Style: "Slides"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 12
+    Slides: =>Dynamic\Carousel\Model\ImageSlide.Slide7, =>Dynamic\Carousel\Model\ImageSlide.Slide8
+
+# ============================================================================
+# GALLERY ELEMENT - Capabilities page + Elements page
+# ============================================================================
+Dynamic\Elements\Gallery\Elements\ElementPhotoGallery:
+  CapabilitiesGallery:
+    Title: "Our Work"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Examples of precision parts we have manufactured for our customers.</p>"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.capabilitiesArea
+    Sort: 7
+
+  ElementsGallery:
+    Title: "Gallery Element"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>A photo gallery element for showcasing multiple images in a grid layout with lightbox functionality.</p>"
+    TopTitle: "Photo Gallery"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 17
+
+Dynamic\Elements\Gallery\Model\GalleryImage:
+  GalleryImage1:
+    Title: "Precision Machined Parts"
+    Caption: "CNC turned components"
+    SortOrder: 1
+    Image: =>SilverStripe\Assets\Image.gallery1
+    PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.CapabilitiesGallery
+
+  GalleryImage2:
+    Title: "Quality Inspection"
+    Caption: "CMM measurement in progress"
+    SortOrder: 2
+    Image: =>SilverStripe\Assets\Image.gallery2
+    PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.CapabilitiesGallery
+
+  GalleryImage3:
+    Title: "CNC Milling"
+    Caption: "5-axis milling operation"
+    SortOrder: 3
+    Image: =>SilverStripe\Assets\Image.gallery3
+    PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.CapabilitiesGallery
+
+  GalleryImage4:
+    Title: "Finished Assembly"
+    Caption: "Ready for shipment"
+    SortOrder: 4
+    Image: =>SilverStripe\Assets\Image.gallery4
+    PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.CapabilitiesGallery
+
+  ElementsGalleryImage1:
+    Title: "Gallery Demo 1"
+    Caption: "First gallery image"
+    SortOrder: 1
+    Image: =>SilverStripe\Assets\Image.gallery1
+    PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.ElementsGallery
+
+  ElementsGalleryImage2:
+    Title: "Gallery Demo 2"
+    Caption: "Second gallery image"
+    SortOrder: 2
+    Image: =>SilverStripe\Assets\Image.gallery2
+    PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.ElementsGallery
+
+  ElementsGalleryImage3:
+    Title: "Gallery Demo 3"
+    Caption: "Third gallery image"
+    SortOrder: 3
+    Image: =>SilverStripe\Assets\Image.gallery3
+    PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.ElementsGallery
+
+  ElementsGalleryImage4:
+    Title: "Gallery Demo 4"
+    Caption: "Fourth gallery image"
+    SortOrder: 4
+    Image: =>SilverStripe\Assets\Image.gallery4
+    PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.ElementsGallery
+
+  ElementsGalleryImage5:
+    Title: "Gallery Demo 5"
+    Caption: "Fifth gallery image showing additional content"
+    SortOrder: 5
+    Image: =>SilverStripe\Assets\Image.carousel1
+    PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.ElementsGallery
+
+  ElementsGalleryImage6:
+    Title: "Gallery Demo 6"
+    Caption: "Sixth gallery image completing the showcase"
+    SortOrder: 6
+    Image: =>SilverStripe\Assets\Image.carousel2
+    PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.ElementsGallery
+
+# ============================================================================
+# IMAGE ELEMENT - Elements page
+# ============================================================================
+Dynamic\Elements\Image\Elements\ElementImage:
+  ElementsImage:
+    Title: "Image Element"
+    ShowTitle: true
+    AvailableGlobally: false
+    Caption: "A standalone image element with optional caption and link."
+    TopTitle: "Featured Image"
+    Content: "<p>This element displays a single image with an optional caption and link.</p>"
+    Image: =>SilverStripe\Assets\Image.contentImage
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 18
+
+Dynamic\Elements\Model\TestimonialCategory:
+  categoryManufacturing:
+    Title: "Manufacturing"
+
+  categoryService:
+    Title: "Service"
+
+# ============================================================================
+# TESTIMONIALS - About page + Elements page
+# ============================================================================
+Dynamic\Elements\Elements\ElementTestimonials:
+  HomeTestimonials:
+    Title: "What Our Customers Say"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Hear from manufacturers who trust us with their precision parts.</p>"
+    TopTitle: "Customer Success Stories"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.homeArea
+    Sort: 8
+
+  AboutTestimonials:
+    Title: "What Our Customers Say"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Hear from manufacturers who trust us with their precision parts.</p>"
+    TopTitle: "Testimonials"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.aboutArea
+    Sort: 7
+
+  ElementsTestimonials:
+    Title: "Testimonials Element"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Display customer testimonials with photos and quotes.</p>"
+    TopTitle: "Client Feedback"
+    TestimonialCategories: =>Dynamic\Elements\Model\TestimonialCategory.categoryManufacturing,=>Dynamic\Elements\Model\TestimonialCategory.categoryService
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 24
+
+Dynamic\Elements\Model\Testimonial:
+  Testimonial1:
+    Title: "Long-Term Partner"
+    Content: "Precision Manufacturing has been our go-to supplier for critical hydraulic components for over 15 years. Their quality is consistent and their team is responsive."
+    Name: "Mike Johnson"
+    Position: "Purchasing Manager"
+    Affiliation: "Midwest Ag Equipment"
+    SortOrder: 1
+    Image: =>SilverStripe\Assets\Image.testimonial1
+
+  Testimonial2:
+    Title: "Cost Savings"
+    Content: "When we need tight tolerances and fast turnaround, Precision Manufacturing delivers. Their DFM feedback has helped us reduce costs on multiple projects."
+    Name: "Sarah Chen"
+    Position: "Engineering Director"
+    Affiliation: "Industrial Solutions Inc."
+    SortOrder: 2
+    Image: =>SilverStripe\Assets\Image.testimonial2
+
+  ElementsTestimonial1:
+    Title: "Excellent Service"
+    Content: "This is an example testimonial showing how the element displays customer feedback with a photo and attribution."
+    Name: "Demo Customer"
+    Position: "CEO"
+    Affiliation: "Demo Company"
+    SortOrder: 1
+    Image: =>SilverStripe\Assets\Image.testimonial1
+    TestimonialCategories: =>Dynamic\Elements\Model\TestimonialCategory.categoryManufacturing
+
+  ElementsTestimonial2:
+    Title: "Outstanding Quality"
+    Content: "The precision and quality of their work consistently exceeds our expectations. Their attention to detail is remarkable."
+    Name: "Jennifer Williams"
+    Position: "Operations Manager"
+    Affiliation: "Tech Manufacturing Inc."
+    SortOrder: 2
+    Image: =>SilverStripe\Assets\Image.testimonial2
+    TestimonialCategories: =>Dynamic\Elements\Model\TestimonialCategory.categoryManufacturing
+
+  ElementsTestimonial3:
+    Title: "Reliable Partner"
+    Content: "We've worked with them for years and they never disappoint. On-time delivery and responsive communication."
+    Name: "David Martinez"
+    Position: "Procurement Director"
+    Affiliation: "Industrial Solutions LLC"
+    SortOrder: 3
+    Image: =>SilverStripe\Assets\Image.gallery4
+    TestimonialCategories: =>Dynamic\Elements\Model\TestimonialCategory.categoryService
+
+# ============================================================================
+# BLOG POSTS
+# ============================================================================
+SilverStripe\Blog\Model\BlogPost:
+  BlogPost1:
+    Title: "Advanced CNC Techniques"
+    URLSegment: "advanced-cnc-techniques"
+    Content: "<p>Explore our latest advancements in CNC technology and how they enable tighter tolerances and faster production times. Our investment in 5-axis milling centers allows us to machine complex geometries in a single setup.</p><p>Learn more about our capabilities and how we can help with your next project.</p>"
+    Summary: "Discover how advanced CNC techniques improve manufacturing precision and efficiency."
+    SortOrder: 1
+    FeaturedImage: =>SilverStripe\Assets\Image.gallery1
+    Parent: =>SilverStripe\Blog\Model\Blog.BlogPage
+
+  BlogPost2:
+    Title: "Quality Assurance Process"
+    URLSegment: "quality-assurance-process"
+    Content: "<p>Our comprehensive quality assurance process ensures every part meets your specifications. From incoming material inspection to final dimensional verification, we employ multiple quality checkpoints throughout production.</p><p>We maintain ISO 9001:2015 certification and provide full documentation for every order.</p>"
+    Summary: "Understand our rigorous quality control procedures and documentation standards."
+    SortOrder: 2
+    FeaturedImage: =>SilverStripe\Assets\Image.gallery2
+    Parent: =>SilverStripe\Blog\Model\Blog.BlogPage
+
+  BlogPost3:
+    Title: "Materials We Machine"
+    URLSegment: "materials-we-machine"
+    Content: "<p>We have extensive experience machining a wide variety of materials including aluminum, steel, stainless steel, brass, and engineered plastics. Each material presents unique challenges that our experienced team has mastered.</p><p>Contact us to discuss your specific material requirements and how we can optimize your designs for manufacturability.</p>"
+    Summary: "Learn about the diverse range of materials we can machine for your projects."
+    SortOrder: 3
+    FeaturedImage: =>SilverStripe\Assets\Image.gallery3
+    Parent: =>SilverStripe\Blog\Model\Blog.BlogPage
+
+# ============================================================================
+# BLOG POSTS ELEMENT - Elements page
+# ============================================================================
+Dynamic\Elements\Blog\Elements\ElementBlogPosts:
+  ElementsBlogPosts:
+    Title: "Blog Posts Element"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Display recent blog posts in a grid or list format.</p>"
+    TopTitle: "Latest News"
+    Blog: =>SilverStripe\Blog\Model\Blog.BlogPage
+    Limit: 3
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 5
+
+# ============================================================================
+# FORM ELEMENT - Contact page + Elements page
+# ============================================================================
+DNADesign\ElementalUserForms\Model\ElementForm:
+  ContactForm:
+    Title: "Contact Form"
+    ShowTitle: false
+    AvailableGlobally: false
+    Content: ""
+    SubmitButtonText: "Send Message"
+    OnCompleteMessage: "<p>Thank you for your message! We will respond within 24 hours.</p>"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.contactArea
+    Sort: 6
+
+  ElementsForm:
+    Title: "Form Element"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>A customizable contact form with fields for user input and submission handling.</p>"
+    TopTitle: "Get in Touch"
+    SubmitButtonText: "Submit"
+    OnCompleteMessage: "<p>Thank you for your submission!</p>"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 16
+
+# Contact Form Fields
+SilverStripe\UserForms\Model\EditableFormField\EditableTextField:
+  contactName:
+    Name: "Name"
+    Title: "Your Name"
+    Placeholder: "John Smith"
+    Required: true
+    Sort: 1
+    Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.ContactForm
+
+  contactCompany:
+    Name: "Company"
+    Title: "Company Name"
+    Placeholder: "Your Company"
+    Required: false
+    Sort: 2
+    Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.ContactForm
+
+  contactPhone:
+    Name: "Phone"
+    Title: "Phone Number"
+    Placeholder: "(920) 555-1234"
+    Required: false
+    Sort: 4
+    Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.ContactForm
+
+  # Demo form fields for Elements page
+  demoName:
+    Name: "Name"
+    Title: "Name"
+    Placeholder: "Your name"
+    Required: true
+    Sort: 1
+    Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.ElementsForm
+
+  contactMessage:
+    Name: "Message"
+    Title: "Message"
+    Placeholder: "Tell us about your project requirements..."
+    Required: true
+    Rows: 5
+    Sort: 6
+    Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.ContactForm
+
+  demoMessage:
+    Name: "Message"
+    Title: "Message"
+    Placeholder: "Your message"
+    Required: false
+    Rows: 5
+    Sort: 3
+    Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.ElementsForm
+
+SilverStripe\UserForms\Model\EditableFormField\EditableEmailField:
+  contactEmail:
+    Name: "Email"
+    Title: "Email Address"
+    Placeholder: "your.email@example.com"
+    Required: true
+    Sort: 3
+    Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.ContactForm
+
+  demoEmail:
+    Name: "Email"
+    Title: "Email"
+    Placeholder: "your@email.com"
+    Required: true
+    Sort: 2
+    Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.ElementsForm
+
+SilverStripe\UserForms\Model\EditableFormField\EditableDropdown:
+  contactInquiry:
+    Name: "InquiryType"
+    Title: "Type of Inquiry"
+    Required: true
+    Sort: 5
+    Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.ContactForm
+
+SilverStripe\UserForms\Model\EditableFormField\EditableOption:
+  inquiryQuote:
+    Name: "Quote Request"
+    Title: "Quote Request"
+    Sort: 1
+    Parent: =>SilverStripe\UserForms\Model\EditableFormField\EditableDropdown.contactInquiry
+
+  inquiryGeneral:
+    Name: "General Inquiry"
+    Title: "General Inquiry"
+    Sort: 2
+    Parent: =>SilverStripe\UserForms\Model\EditableFormField\EditableDropdown.contactInquiry
+
+  inquiryTechnical:
+    Name: "Technical Question"
+    Title: "Technical Question"
+    Sort: 3
+    Parent: =>SilverStripe\UserForms\Model\EditableFormField\EditableDropdown.contactInquiry
+
+  inquiryTour:
+    Name: "Facility Tour"
+    Title: "Facility Tour Request"
+    Sort: 4
+    Parent: =>SilverStripe\UserForms\Model\EditableFormField\EditableDropdown.contactInquiry
+
+
+
+# ============================================================================
+# LINKS ELEMENT - Elements page
+# ============================================================================
+Dynamic\Elements\Links\Elements\LinksElement:
+  ElementsLinks:
+    Title: "Links Element"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>A collection of related links for navigation and additional resources.</p>"
+    TopTitle: "Quick Links"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 19
+
+Dynamic\Elements\Oembed\Elements\ElementOembed:
+  ElementsOembed:
+    Title: "Media Element"
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: "Featured Video"
+    EmbedVideo: =>nathancox\EmbedField\Model\EmbedObject.oembedVideo
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 20
+
+# Link objects for LinksElement (demonstrating has_many Link relation)
+Dynamic\Elements\Links\Model\LinkListObject:
+  linkListHome:
+    Title: "Home Page"
+    ShowTitle: true
+    Content: "<p>Return to our homepage to explore all our services and capabilities.</p>"
+    SortOrder: 1
+    LinkList: =>Dynamic\Elements\Links\Elements\LinksElement.ElementsLinks
+    Link: =>SilverStripe\LinkField\Models\SiteTreeLink.linksElementHome
+
+  linkListAbout:
+    Title: "About Our Company"
+    ShowTitle: true
+    Content: "<p>Learn about our history, team, and commitment to manufacturing excellence.</p>"
+    SortOrder: 2
+    LinkList: =>Dynamic\Elements\Links\Elements\LinksElement.ElementsLinks
+    Link: =>SilverStripe\LinkField\Models\SiteTreeLink.linksElementAbout
+
+  linkListCapabilities:
+    Title: "Our Capabilities"
+    ShowTitle: true
+    Content: "<p>Explore our CNC machining, fabrication, and quality assurance capabilities.</p>"
+    SortOrder: 3
+    LinkList: =>Dynamic\Elements\Links\Elements\LinksElement.ElementsLinks
+    Link: =>SilverStripe\LinkField\Models\SiteTreeLink.linksElementCapabilities
+
+  linkListContact:
+    Title: "Contact Us"
+    ShowTitle: true
+    Content: "<p>Get in touch with our team for quotes, questions, or facility tours.</p>"
+    SortOrder: 4
+    LinkList: =>Dynamic\Elements\Links\Elements\LinksElement.ElementsLinks
+    Link: =>SilverStripe\LinkField\Models\SiteTreeLink.utilityRequestQuote
+
+
+
+Dynamic\Elements\Sponsors\Model\Sponsor:
+  sponsorAcme:
+    Title: "Acme Industrial Supply"
+    URL: "https://www.acme-industrial.example.com"
+    Image: =>SilverStripe\Assets\Image.sponsorImage1
+    SortOrder: 1
+
+  sponsorMidwest:
+    Title: "Midwest Materials"
+    URL: "https://www.midwest-materials.example.com"
+    Image: =>SilverStripe\Assets\Image.sponsorImage2
+    SortOrder: 2
+
+  sponsorPrecision:
+    Title: "Precision Tools Inc."
+    URL: "https://www.precision-tools.example.com"
+    Image: =>SilverStripe\Assets\Image.sponsorImage3
+    SortOrder: 3
+
+  sponsorDemo1:
+    Title: "Demo Sponsor 1"
+    URL: "https://www.example.com"
+    Image: =>SilverStripe\Assets\Image.sponsorImage1
+    SortOrder: 1
+
+  sponsorDemo2:
+    Title: "Demo Sponsor 2"
+    URL: "https://www.example.com"
+    Image: =>SilverStripe\Assets\Image.sponsorImage2
+    SortOrder: 2
+
+  sponsorDemo3:
+    Title: "Demo Sponsor 3"
+    URL: "https://www.example.com"
+    Image: =>SilverStripe\Assets\Image.sponsorImage3
+    SortOrder: 3
+
+  sponsorDemo4:
+    Title: "Demo Sponsor 4"
+    URL: "https://www.example.com"
+    Image: =>SilverStripe\Assets\Image.sponsorImage4
+    SortOrder: 4
+
+  sponsorDemo5:
+    Title: "Demo Sponsor 5"
+    URL: "https://www.example.com"
+    Image: =>SilverStripe\Assets\Image.sponsorImage5
+    SortOrder: 5
+
+  sponsorDemo6:
+    Title: "Demo Sponsor 6"
+    URL: "https://www.example.com"
+    Image: =>SilverStripe\Assets\Image.sponsorImage6
+    SortOrder: 6
+
+  sponsorDemo7:
+    Title: "Demo Sponsor 7"
+    URL: "https://www.example.com"
+    Image: =>SilverStripe\Assets\Image.sponsorImage7
+    SortOrder: 7
+
+  sponsorDemo8:
+    Title: "Demo Sponsor 8"
+    URL: "https://www.example.com"
+    Image: =>SilverStripe\Assets\Image.sponsorImage8
+    SortOrder: 8
+
+# ============================================================================
+# SPONSORS ELEMENT - Elements page + About page
+# ============================================================================
+Dynamic\Elements\Sponsors\Elements\ElementSponsor:
+  AboutSponsors:
+    Title: "Our Partners"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>We partner with leading manufacturers and industry organizations.</p>"
+    TopTitle: "Trusted By"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.aboutArea
+    Sort: 8
+    Sponsors:
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.sponsorAcme
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.sponsorMidwest
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.sponsorPrecision
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.sponsorDemo4
+
+  ElementsSponsors:
+    Title: "Sponsors Element"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Display sponsor or partner logos and information.</p>"
+    TopTitle: "Our Partners"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 21
+    Sponsors:
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.sponsorDemo1
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.sponsorDemo2
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.sponsorDemo3
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.sponsorDemo4
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.sponsorDemo5
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.sponsorDemo6
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.sponsorDemo7
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.sponsorDemo8
+
+Dynamic\Essentials\Model\StaffMember:
+  staffJohn:
+    Name: "John Peterson"
+    Position: "President & CEO"
+    Content: "<p>John co-founded Precision MFG Co. in 1985. He holds a degree in Mechanical Engineering from UW-Madison and has over 40 years of experience in the manufacturing industry.</p>"
+    Image: =>SilverStripe\Assets\Image.staff1
+    SortOrder: 1
+    EmailLink: =>SilverStripe\LinkField\Models\EmailLink.staffJohnEmail
+    PhoneLink: =>SilverStripe\LinkField\Models\PhoneLink.staffJohnPhone
+    LinkedInLink: =>SilverStripe\LinkField\Models\ExternalLink.staffJohnLinkedIn
+
+  staffSarah:
+    Name: "Sarah Thompson"
+    Position: "VP of Operations"
+    Content: "<p>Sarah joined Precision MFG Co. in 2005. She earned her Industrial Engineering degree from Michigan Tech and holds a Six Sigma Black Belt certification.</p>"
+    Image: =>SilverStripe\Assets\Image.staff2
+    SortOrder: 2
+    EmailLink: =>SilverStripe\LinkField\Models\EmailLink.staffSarahEmail
+    PhoneLink: =>SilverStripe\LinkField\Models\PhoneLink.staffSarahPhone
+    LinkedInLink: =>SilverStripe\LinkField\Models\ExternalLink.staffSarahLinkedIn
+
+  staffMike:
+    Name: "Mike Anderson"
+    Position: "Chief Technology Officer"
+    Content: "<p>Mike oversees our CNC programming, CAD/CAM operations, and technology investments. He has been with the company for 15 years.</p>"
+    Image: =>SilverStripe\Assets\Image.staffMike
+    SortOrder: 3
+    EmailLink: =>SilverStripe\LinkField\Models\EmailLink.staffMikeEmail
+    PhoneLink: =>SilverStripe\LinkField\Models\PhoneLink.staffMikePhone
+    LinkedInLink: =>SilverStripe\LinkField\Models\ExternalLink.staffMikeLinkedIn
+
+# ============================================================================
+# STAFF ELEMENT - Elements page + About page
+# ============================================================================
+Dynamic\Essentials\Element\ElementStaff:
+  AboutStaff:
+    Title: "Our Leadership Team"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Meet the experienced leaders behind Precision MFG Co.</p>"
+    TopTitle: "Meet the Team"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.aboutArea
+    Sort: 9
+    Staff:
+      - =>Dynamic\Essentials\Model\StaffMember.staffJohn
+      - =>Dynamic\Essentials\Model\StaffMember.staffSarah
+      - =>Dynamic\Essentials\Model\StaffMember.staffMike
+
+  ElementsStaff:
+    Title: "Staff Element"
+    ShowTitle: true
+    AvailableGlobally: false
+    Content: "<p>Showcase team members with photos, names, titles, and bios.</p>"
+    TopTitle: "Our Team"
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 22
+    Staff:
+      - =>Dynamic\Essentials\Model\StaffMember.staffJohn
+      - =>Dynamic\Essentials\Model\StaffMember.staffSarah
+      - =>Dynamic\Essentials\Model\StaffMember.staffMike
+

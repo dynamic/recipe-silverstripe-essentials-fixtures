@@ -1,0 +1,1155 @@
+# Element Template Library - Kitchen Sink Edition
+# Comprehensive examples showing all available fields for each element type
+# These are reusable Element Template records that appear in the CMS
+# for content editors to quickly add pre-configured layouts to pages.
+#
+# Structure: Images → ElementalAreas → Elements → Templates
+# Reference: app/fixtures/site-demo-content.yml for field examples
+
+# ============================================================================
+# TEMPLATE IMAGES - Real images for template layouts
+# ============================================================================
+SilverStripe\Assets\Image:
+  # Card images
+  templateCardInnovation:
+    PopulateFileFrom: 'app/fixtures/images/templates/template-card-innovation.jpg'
+    Filename: 'assets/Templates/Cards/innovation.jpg'
+    Title: 'Innovation Card Image'
+    PopulateMergeAny: true
+
+  templateCardSupport:
+    PopulateFileFrom: 'app/fixtures/images/templates/template-card-support.jpg'
+    Filename: 'assets/Templates/Cards/support.jpg'
+    Title: 'Support Card Image'
+    PopulateMergeAny: true
+
+  templateCardExpertise:
+    PopulateFileFrom: 'app/fixtures/images/templates/template-card-expertise.jpg'
+    Filename: 'assets/Templates/Cards/expertise.jpg'
+    Title: 'Expertise Card Image'
+    PopulateMergeAny: true
+
+  # Hero image
+  templateHeroCTA:
+    PopulateFileFrom: 'app/fixtures/images/templates/template-hero-cta.jpg'
+    Filename: 'assets/Templates/Heroes/hero-cta.jpg'
+    Title: 'Hero CTA Background'
+    PopulateMergeAny: true
+
+  # Content image
+  templateContentAbout:
+    PopulateFileFrom: 'app/fixtures/images/templates/template-content-about.jpg'
+    Filename: 'assets/Templates/Content/about.jpg'
+    Title: 'About Content Image'
+    PopulateMergeAny: true
+
+  # Testimonial images
+  templateTestimonial1:
+    PopulateFileFrom: 'app/fixtures/images/templates/template-testimonial-1.jpg'
+    Filename: 'assets/Templates/Testimonials/client-1.jpg'
+    Title: 'Sarah Johnson Photo'
+    PopulateMergeAny: true
+
+  templateTestimonial2:
+    PopulateFileFrom: 'app/fixtures/images/templates/template-testimonial-2.jpg'
+    Filename: 'assets/Templates/Testimonials/client-2.jpg'
+    Title: 'Michael Chen Photo'
+    PopulateMergeAny: true
+
+  # Product detail images
+  templateProductMain:
+    PopulateFileFrom: 'app/fixtures/images/templates/template-product-main.jpg'
+    Filename: 'assets/Templates/Products/product-main.jpg'
+    Title: 'Product Main Image'
+    PopulateMergeAny: true
+
+  templateProductDetail1:
+    PopulateFileFrom: 'app/fixtures/images/templates/template-product-detail-1.jpg'
+    Filename: 'assets/Templates/Products/detail-1.jpg'
+    Title: 'Product Detail 1'
+    PopulateMergeAny: true
+
+  templateProductDetail2:
+    PopulateFileFrom: 'app/fixtures/images/templates/template-product-detail-2.jpg'
+    Filename: 'assets/Templates/Products/detail-2.jpg'
+    Title: 'Product Detail 2'
+    PopulateMergeAny: true
+
+  # Carousel images
+  templateCarousel1:
+    PopulateFileFrom: 'app/fixtures/images/templates/template-carousel-1.jpg'
+    Filename: 'assets/Templates/Carousel/slide-1.jpg'
+    Title: 'Product Gallery Image 1'
+    PopulateMergeAny: true
+
+  templateCarousel2:
+    PopulateFileFrom: 'app/fixtures/images/templates/template-carousel-2.jpg'
+    Filename: 'assets/Templates/Carousel/slide-2.jpg'
+    Title: 'Product Gallery Image 2'
+    PopulateMergeAny: true
+
+  templateCarousel3:
+    PopulateFileFrom: 'app/fixtures/images/templates/template-carousel-3.jpg'
+    Filename: 'assets/Templates/Carousel/slide-3.jpg'
+    Title: 'Product Gallery Image 3'
+    PopulateMergeAny: true
+
+  # FAQ Panel image
+  templateFaqImage:
+    PopulateFileFrom: 'app/fixtures/images/templates/template-content-about.jpg'
+    Filename: 'assets/Templates/FAQ/faq-visual.jpg'
+    Title: 'FAQ Visual Guide'
+    PopulateMergeAny: true
+
+  # Template preview screenshots
+  template_preview_1:
+    PopulateFileFrom: 'app/fixtures/images/template-preview-1-three-column-cards.png'
+    Filename: 'assets/Templates/Previews/three-column-cards.png'
+    Title: '3-Column Feature Cards Preview'
+    PopulateMergeMatch:
+      - Title
+
+  template_preview_2:
+    PopulateFileFrom: 'app/fixtures/images/template-preview-2-hero-cta.png'
+    Filename: 'assets/Templates/Previews/hero-cta.png'
+    Title: 'Hero Section with CTA Preview'
+    PopulateMergeMatch:
+      - Title
+
+  template_preview_3:
+    PopulateFileFrom: 'app/fixtures/images/template-preview-3-faq-accordion.png'
+    Filename: 'assets/Templates/Previews/faq-accordion.png'
+    Title: 'FAQ Accordion Preview'
+    PopulateMergeMatch:
+      - Title
+
+  template_preview_4:
+    PopulateFileFrom: 'app/fixtures/images/template-preview-4-two-column-content.png'
+    Filename: 'assets/Templates/Previews/two-column-content.png'
+    Title: 'Two-Column Content Preview'
+    PopulateMergeMatch:
+      - Title
+
+  template_preview_5:
+    PopulateFileFrom: 'app/fixtures/images/template-preview-5-product-detail.png'
+    Filename: 'assets/Templates/Previews/product-detail.png'
+    Title: 'Product Detail Page Preview'
+    PopulateMergeMatch:
+      - Title
+
+  template_preview_6:
+    PopulateFileFrom: 'app/fixtures/images/template_preview_6.png'
+    Filename: 'assets/Templates/Previews/service-landing.png'
+    Title: 'Service Landing Page Preview'
+    PopulateMergeMatch:
+      - Title
+
+  template_preview_7:
+    PopulateFileFrom: 'app/fixtures/images/template_preview_7.png'
+    Filename: 'assets/Templates/Previews/contact-page.png'
+    Title: 'Contact Page Preview'
+    PopulateMergeMatch:
+      - Title
+
+  template_preview_8:
+    PopulateFileFrom: 'app/fixtures/images/template-preview-8-company-leadership.png'
+    Filename: 'assets/Templates/Previews/company-leadership.png'
+    Title: 'Company Leadership & Governance Preview'
+    PopulateMergeMatch:
+      - Title
+
+  # Content element images for left/right positioning
+  templateContentLeft:
+    PopulateFileFrom: 'app/fixtures/images/templates/template-product-main.jpg'
+    Filename: 'assets/Templates/Content/content-left.jpg'
+    Title: 'Content Image Left'
+    PopulateMergeAny: true
+
+  templateContentRight:
+    PopulateFileFrom: 'app/fixtures/images/templates/template-product-detail-1.jpg'
+    Filename: 'assets/Templates/Content/content-right.jpg'
+    Title: 'Content Image Right'
+    PopulateMergeAny: true
+
+  # Staff member images
+  templateStaffJohnDoe:
+    PopulateFileFrom: 'app/fixtures/images/john-doe.jpg'
+    Filename: 'assets/Templates/Staff/john-doe.jpg'
+    Title: 'John Doe Photo'
+    PopulateMergeAny: true
+
+  templateStaffJaneSmith:
+    PopulateFileFrom: 'app/fixtures/images/jane-smith.jpg'
+    Filename: 'assets/Templates/Staff/jane-smith.jpg'
+    Title: 'Jane Smith Photo'
+    PopulateMergeAny: true
+
+  templateStaffMikeBrown:
+    PopulateFileFrom: 'app/fixtures/images/mike-brown.jpg'
+    Filename: 'assets/Templates/Staff/mike-brown.jpg'
+    Title: 'Mike Brown Photo'
+    PopulateMergeAny: true
+
+  templateStaffSarahChen:
+    PopulateFileFrom: 'app/fixtures/images/sarah-chen.jpg'
+    Filename: 'assets/Templates/Staff/sarah-chen.jpg'
+    Title: 'Sarah Chen Photo'
+    PopulateMergeAny: true
+
+  templateStaffRobertMartinez:
+    PopulateFileFrom: 'app/fixtures/images/robert-martinez.jpg'
+    Filename: 'assets/Templates/Staff/robert-martinez.jpg'
+    Title: 'Robert Martinez Photo'
+    PopulateMergeAny: true
+
+  templateStaffEmilyWilliams:
+    PopulateFileFrom: 'app/fixtures/images/emily-williams.jpg'
+    Filename: 'assets/Templates/Staff/emily-williams.jpg'
+    Title: 'Emily Williams Photo'
+    PopulateMergeAny: true
+
+
+
+# ============================================================================
+# LINK FIELDS - Links for card CTAs and elements
+# ============================================================================
+SilverStripe\LinkField\Models\ExternalLink:
+  templateLinkLearnMore:
+    LinkText: 'Learn More'
+    OpenInNew: true
+    ExternalUrl: 'https://example.com/services'
+
+  templateLinkContact:
+    LinkText: 'Contact Us'
+    OpenInNew: false
+    ExternalUrl: 'https://example.com/contact'
+
+  templateLinkPricing:
+    LinkText: 'View Pricing'
+    OpenInNew: false
+    ExternalUrl: 'https://example.com/pricing'
+
+  templateLinkGetStarted:
+    LinkText: 'Get Started Today'
+    OpenInNew: false
+    ExternalUrl: 'https://example.com/signup'
+
+  templateLinkHeroAction:
+    LinkText: 'Get Started'
+    OpenInNew: false
+    ExternalUrl: 'https://example.com/get-started'
+
+  templateLinkFaqMore:
+    LinkText: 'Learn More About Services'
+    OpenInNew: true
+    ExternalUrl: 'https://example.com/services'
+
+  templateLinkFaqContact:
+    LinkText: 'Contact Our Team'
+    OpenInNew: false
+    ExternalUrl: 'https://example.com/contact'
+
+  templateLinkContentDetail:
+    LinkText: 'View Full Details'
+    OpenInNew: false
+    ExternalUrl: 'https://example.com/product-details'
+
+  templateStaffJohnLinkedIn:
+    Title: 'LinkedIn'
+    ExternalURL: 'https://www.linkedin.com/in/johndoe'
+  templateStaffJaneLinkedIn:
+    Title: 'LinkedIn'
+    ExternalURL: 'https://www.linkedin.com/in/janesmith'
+  templateStaffMikeLinkedIn:
+    Title: 'LinkedIn'
+    ExternalURL: 'https://www.linkedin.com/in/mikebrown'
+  templateStaffSarahLinkedIn:
+    Title: 'LinkedIn'
+    ExternalURL: 'https://www.linkedin.com/in/sarahchen'
+  templateStaffRobertLinkedIn:
+    Title: 'LinkedIn'
+    ExternalURL: 'https://www.linkedin.com/in/robertmartinez'
+  templateStaffEmilyLinkedIn:
+    Title: 'LinkedIn'
+    ExternalURL: 'https://www.linkedin.com/in/emilywilliams'
+
+SilverStripe\LinkField\Models\EmailLink:
+  templateStaffJohnEmail:
+    Title: 'Email John'
+    Email: 'john.doe@example.com'
+  templateStaffJaneEmail:
+    Title: 'Email Jane'
+    Email: 'jane.smith@example.com'
+  templateStaffMikeEmail:
+    Title: 'Email Mike'
+    Email: 'mike.brown@example.com'
+  templateStaffSarahEmail:
+    Title: 'Email Sarah'
+    Email: 'sarah.chen@example.com'
+  templateStaffRobertEmail:
+    Title: 'Email Robert'
+    Email: 'robert.martinez@example.com'
+  templateStaffEmilyEmail:
+    Title: 'Email Emily'
+    Email: 'emily.williams@example.com'
+
+SilverStripe\LinkField\Models\PhoneLink:
+  templateStaffJohnPhone:
+    Title: 'Phone John'
+    Phone: '(920) 555-0101'
+  templateStaffJanePhone:
+    Title: 'Phone Jane'
+    Phone: '(920) 555-0102'
+  templateStaffMikePhone:
+    Title: 'Phone Mike'
+    Phone: '(920) 555-0103'
+  templateStaffSarahPhone:
+    Title: 'Phone Sarah'
+    Phone: '(920) 555-0104'
+  templateStaffRobertPhone:
+    Title: 'Phone Robert'
+    Phone: '(920) 555-0105'
+  templateStaffEmilyPhone:
+    Title: 'Phone Emily'
+    Phone: '(920) 555-0106'
+
+# ============================================================================
+# TESTIMONIALS - Client testimonials for template
+# ============================================================================
+Dynamic\Elements\Model\Testimonial:
+  templateTestimonial1:
+    Name: 'Sarah Johnson'
+    Company: 'Tech Innovations Inc.'
+    Content: 'Working with this team has transformed our business. Their expertise and dedication to our success made all the difference. We saw a 40% increase in efficiency within the first quarter!'
+    Image: =>SilverStripe\Assets\Image.templateTestimonial1
+    Sort: 1
+
+  templateTestimonial2:
+    Name: 'Michael Chen'
+    Company: 'Global Solutions LLC'
+    Content: 'The level of professionalism and attention to detail exceeded our expectations. They delivered on time and within budget while maintaining exceptional quality throughout the project.'
+    Image: =>SilverStripe\Assets\Image.templateTestimonial2
+    Sort: 2
+
+# ============================================================================
+# CAROUSEL SLIDES - Image slides for product gallery
+# ============================================================================
+Dynamic\Carousel\Model\ImageSlide:
+  templateSlide1:
+    Title: 'Premium Materials'
+    Image: =>SilverStripe\Assets\Image.templateCarousel1
+    Content: '<h4>High-Quality Construction</h4><p>Built with premium materials for lasting durability.</p>'
+    Sort: 1
+
+  templateSlide2:
+    Title: 'Precision Engineering'
+    Image: =>SilverStripe\Assets\Image.templateCarousel2
+    Content: '<h4>Engineered to Perfection</h4><p>Every detail designed for optimal performance.</p>'
+    Sort: 2
+
+  templateSlide3:
+    Title: 'Modern Design'
+    Image: =>SilverStripe\Assets\Image.templateCarousel3
+    Content: '<h4>Contemporary Aesthetics</h4><p>Sleek design that complements any environment.</p>'
+    Sort: 3
+
+# ============================================================================
+# ELEMENTAL AREAS - Define areas that will hold elements
+# ============================================================================
+DNADesign\Elemental\Models\ElementalArea:
+  area_three_column_cards:
+    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+
+  area_hero_cta:
+    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+
+  area_faq_accordion:
+    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+
+  area_two_column_content:
+    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+
+  area_product_detail:
+    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+
+  area_service_landing:
+    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+
+  area_contact_page:
+    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+
+  area_company_leadership:
+    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+
+# ============================================================================
+# ROWS - Container elements with comprehensive field examples
+# ============================================================================
+WeDevelop\ElementalGrid\Models\ElementRow:
+  row_three_column_cards:
+    Title: 'Feature Cards Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    BackgroundStyle: 'bg-light'
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_three_column_cards
+    Sort: 1
+
+  row_hero_cta_fluid:
+    Title: 'Hero Banner'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    BackgroundStyle: 'bg-dark text-white'
+    VerticalPadding: 'py-6'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_hero_cta
+    Sort: 1
+
+  row_hero_cta_container:
+    Title: 'CTA Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    BackgroundStyle: 'bg-white'
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_hero_cta
+    Sort: 3
+
+  row_two_column_content:
+    Title: 'Content Section'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    BackgroundStyle: 'bg-white'
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_two_column_content
+    Sort: 1
+
+  row_faq_accordion:
+    Title: 'FAQ Section'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    BackgroundStyle: 'bg-white'
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_faq_accordion
+    Sort: 1
+  row_styled_example:
+    Title: 'Featured Section'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    BackgroundColor: '#F2E8E3'
+    BackgroundStyle: ''
+    ContainerStyle: 'container'
+    TopPadding: '3rem'
+    BottomPadding: '3rem'
+    RoundedTop: '1rem'
+    RoundedRight: '1rem'
+    RoundedBottom: '1rem'
+    RoundedLeft: '1rem'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_three_column_cards
+    Sort: 10
+
+  row_contact_page_top:
+    Title: 'Contact Header Row'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    BackgroundStyle: 'bg-primary text-white'
+    ContainerStyle: ''
+    VerticalPadding: 'py-4'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_contact_page
+    Sort: 1
+
+  row_contact_page_bottom:
+    Title: 'Contact Footer Row'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    BackgroundStyle: 'bg-light'
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_contact_page
+    Sort: 3
+
+  row_service_landing_top:
+    Title: 'Service Landing Hero Row'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    BackgroundStyle: 'bg-primary text-white'
+    ContainerStyle: ''
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_service_landing
+    Sort: 1
+
+  row_service_landing_content:
+    Title: 'Service Landing Content Row'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    BackgroundStyle: 'bg-white'
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_service_landing
+    Sort: 3
+
+# ============================================================================
+# CARDS - Kitchen sink with all available fields
+# ============================================================================
+Dynamic\Elements\Card\Elements\ElementCard:
+  card_innovation:
+    Title: 'Innovative Solutions'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'What We Offer'
+    TitleTag: 'h3'
+    Content: '<p>We leverage cutting-edge technology and innovative approaches to deliver solutions that drive real business results and competitive advantages.</p>'
+    BackgroundColor: '#CCBEF5'
+    ButtonColor: 'Purple'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Left'
+    Image: =>SilverStripe\Assets\Image.templateCardInnovation
+    ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.templateLinkLearnMore
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_three_column_cards
+    Sort: 2
+
+  card_support:
+    Title: '24/7 Expert Support'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'What We Offer'
+    TitleTag: 'h3'
+    Content: '<p>Our dedicated support team is available around the clock to ensure your success and address any challenges promptly and professionally.</p>'
+    BackgroundColor: '#FFFFFF'
+    ButtonColor: 'Yellow'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Left'
+    Image: =>SilverStripe\Assets\Image.templateCardSupport
+    ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.templateLinkContact
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_three_column_cards
+    Sort: 3
+
+  card_expertise:
+    Title: 'Industry Expertise'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'What We Offer'
+    TitleTag: 'h3'
+    Content: '<p>With decades of combined experience, our team brings deep industry knowledge and proven strategies to every engagement.</p>'
+    BackgroundColor: '#F2E8E3'
+    ButtonColor: 'Yellow'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Left'
+    Image: =>SilverStripe\Assets\Image.templateCardExpertise
+    ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.templateLinkPricing
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_three_column_cards
+    Sort: 4
+
+  service_card_consulting:
+    Title: 'Strategic Consulting'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Services'
+    TitleTag: 'h3'
+    Content: '<p>Expert guidance to align your technology investments with business objectives. We help you make informed decisions and develop roadmaps for success.</p>'
+    BackgroundColor: '#CCBEF5'
+    ButtonColor: 'Purple'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Left'
+    Image: =>SilverStripe\Assets\Image.templateCardInnovation
+    ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.templateLinkLearnMore
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_service_landing
+    Sort: 4
+
+  service_card_implementation:
+    Title: 'Implementation & Integration'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Services'
+    TitleTag: 'h3'
+    Content: '<p>Seamless deployment and integration services that minimize disruption and maximize adoption. Our proven methodologies ensure successful outcomes.</p>'
+    BackgroundColor: '#FFFFFF'
+    ButtonColor: 'Yellow'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Left'
+    Image: =>SilverStripe\Assets\Image.templateCardSupport
+    ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.templateLinkContact
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_service_landing
+    Sort: 5
+
+  service_card_support:
+    Title: 'Ongoing Support'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Services'
+    TitleTag: 'h3'
+    Content: '<p>Comprehensive support services to keep your systems running smoothly. From troubleshooting to optimization, we are here to help.</p>'
+    BackgroundColor: '#F2E8E3'
+    ButtonColor: 'Yellow'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Left'
+    Image: =>SilverStripe\Assets\Image.templateCardExpertise
+    ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.templateLinkPricing
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_service_landing
+    Sort: 6
+
+# ============================================================================
+# HERO MEDIA - Kitchen sink with all available fields
+# ============================================================================
+Dynamic\Essentials\Element\HeroMedia:
+  hero_welcome:
+    Title: 'Ready to Transform Your Business?'
+    ShowTitle: true
+    TitleTag: 'h1'
+    AvailableGlobally: false
+    TopTitle: 'Welcome'
+    Content: '<p class="lead">Discover innovative solutions that drive measurable results and exceed expectations. Partner with industry leaders who understand your challenges.</p>'
+    MediaType: 'Image'
+    CallToActionStyle: 'primary'
+    PrimaryButtonLabel: 'Get Started'
+    ContentAlign: 'Center'
+    TextColor: 'white'
+    Image: =>SilverStripe\Assets\Image.templateHeroCTA
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_hero_cta
+    Sort: 2
+
+  service_landing_hero:
+    Title: 'Transform Your Business with Expert Solutions'
+    ShowTitle: true
+    TitleTag: 'h1'
+    AvailableGlobally: false
+    TopTitle: 'Our Services'
+    Content: '<p class="lead">Discover comprehensive solutions designed to elevate your business and drive measurable results. Our expert team delivers innovation, reliability, and excellence in every project.</p>'
+    MediaType: 'Image'
+    CallToActionStyle: 'primary'
+    ContentAlign: 'Center'
+    TextColor: 'white'
+    Image: =>SilverStripe\Assets\Image.templateHeroCTA
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_service_landing
+    Sort: 2
+
+# ============================================================================
+# CTA - Kitchen sink with all available fields
+# ============================================================================
+Dynamic\Elements\CTA\Elements\ElementCallToAction:
+  cta_get_started:
+    Title: 'Let''s Build Something Great Together'
+    ShowTitle: true
+    TitleTag: 'h2'
+    AvailableGlobally: false
+    TopTitle: 'Ready to Begin?'
+    HTML: '<p class="lead">Schedule a free consultation to discuss your goals and discover how we can help you achieve them. Our experts are ready to create a customized solution for your unique needs.</p>'
+    SizeMD: '8'
+    OffsetMD: '2'
+    ContentAlign: 'Center'
+    CtaLink: =>SilverStripe\LinkField\Models\ExternalLink.templateLinkHeroAction
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_hero_cta
+    Sort: 3
+
+  service_landing_cta:
+    Title: 'Ready to Get Started?'
+    ShowTitle: true
+    TitleTag: 'h2'
+    AvailableGlobally: false
+    TopTitle: 'Take Action Today'
+    HTML: '<p class="lead">Contact our team to discuss your needs and discover how we can help you achieve your goals. Let''s create something exceptional together.</p>'
+    SizeMD: '12'
+    ContentAlign: 'Center'
+    CtaLink: =>SilverStripe\LinkField\Models\ExternalLink.templateLinkHeroAction
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_service_landing
+    Sort: 8
+
+# ============================================================================
+# ACCORDION - Kitchen sink with all available fields
+# ============================================================================
+Dynamic\Elements\Accordion\Elements\ElementAccordion:
+  accordion_faq:
+    Title: 'Frequently Asked Questions'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'FAQ'
+    Content: '<p class="lead">Find answers to the most common questions about our services, pricing, and process. Can''t find what you''re looking for? Contact our team directly.</p>'
+    OpenFirstPanel: true
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_faq_accordion
+    Sort: 2
+
+# ============================================================================
+# ACCORDION PANELS - Kitchen sink with all available fields
+# ============================================================================
+Dynamic\Elements\Accordion\Model\AccordionPanel:
+  faq_panel_1:
+    Title: 'What services do you offer?'
+    ShowTitle: true
+    Content: '<p>We provide a comprehensive range of professional services including:</p><ul><li>Strategic consulting and business analysis</li><li>Custom software development and integration</li><li>Technical implementation and deployment</li><li>Training and knowledge transfer</li><li>Ongoing support and maintenance</li></ul><p>Our solutions are tailored to meet your specific business needs and industry requirements.</p>'
+    Image: =>SilverStripe\Assets\Image.templateFaqImage
+    SortOrder: 1
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.accordion_faq
+
+  faq_panel_2:
+    Title: 'How do I get started with your services?'
+    ShowTitle: true
+    Content: '<p>Getting started is easy! Simply contact our team for a free, no-obligation consultation where we will:</p><ol><li>Discuss your goals and current challenges</li><li>Review your existing systems and processes</li><li>Recommend the best approach for your situation</li><li>Provide a detailed proposal with timeline and pricing</li></ol><p>Most clients begin seeing results within the first 30 days of engagement.</p>'
+    ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.templateLinkFaqMore
+    SortOrder: 2
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.accordion_faq
+
+  faq_panel_3:
+    Title: 'What are your rates and pricing structure?'
+    ShowTitle: true
+    Content: '<p>Our rates vary based on project scope, complexity, and timeline. We offer several pricing models to fit different needs:</p><ul><li><strong>Fixed Price:</strong> Best for well-defined projects with clear deliverables</li><li><strong>Time & Materials:</strong> Flexible approach for evolving requirements</li><li><strong>Retainer:</strong> Ongoing support with predictable monthly costs</li></ul><p>We provide transparent, competitive pricing with no hidden fees. Contact us for a custom quote tailored to your specific requirements.</p>'
+    SortOrder: 3
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.accordion_faq
+
+  faq_panel_4:
+    Title: 'Do you offer ongoing support after project completion?'
+    ShowTitle: true
+    Content: '<p>Absolutely! We believe in long-term partnerships and offer comprehensive support packages including:</p><ul><li>24/7 technical support via phone, email, and chat</li><li>Regular system maintenance and updates</li><li>Performance monitoring and optimization</li><li>Priority bug fixes and issue resolution</li><li>Access to our knowledge base and training materials</li></ul><p>Our support team averages a 2-hour response time for urgent issues and maintains a 98% customer satisfaction rating.</p>'
+    ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.templateLinkFaqContact
+    SortOrder: 4
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.accordion_faq
+
+  faq_panel_5:
+    Title: 'What is your typical project timeline?'
+    ShowTitle: true
+    Content: '<p>Project timelines vary based on complexity and scope, but here are typical ranges:</p><ul><li><strong>Small Projects:</strong> 2-4 weeks</li><li><strong>Medium Projects:</strong> 1-3 months</li><li><strong>Large Projects:</strong> 3-6 months</li><li><strong>Enterprise Projects:</strong> 6-12 months</li></ul><p>We use agile methodologies to deliver working features incrementally, so you can start seeing value early in the process. All projects include detailed milestones and regular progress updates.</p>'
+    SortOrder: 5
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.accordion_faq
+
+# ============================================================================
+# CONTENT ELEMENT - Kitchen sink with all available fields
+# ============================================================================
+DNADesign\Elemental\Models\ElementContent:
+  content_about_left:
+    Title: 'Excellence in Every Detail'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Why Choose Us'
+    HTML: '<p class="lead">Dedicated to providing exceptional service and innovative solutions that transform businesses with unmatched quality.</p><h4>Our Approach</h4><ul><li>Collaborative partnership from discovery to delivery</li><li>Proven methodologies backed by best practices</li><li>Transparent communication at every stage</li><li>Focus on measurable outcomes</li></ul>'
+    ContentAlign: 'Left'
+    SizeMD: '12'
+    MediaType: 'image'
+    MediaImage: =>SilverStripe\Assets\Image.templateContentLeft
+    MediaPosition: 'order-1'
+    ContentColumns: '6'
+    ExtraColumnGap: 1.5
+    ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.templateLinkContentDetail
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_two_column_content
+    Sort: 2
+
+  content_about_right:
+    Title: 'Innovation That Matters'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'What Sets Us Apart'
+    HTML: '<p class="lead">Finding smarter ways to solve challenges and create lasting value through forward-thinking solutions and innovation.</p><h4>Key Differentiators</h4><ul><li>Proprietary tools for faster delivery</li><li>Award-winning design team</li><li>Strategic industry partnerships</li><li>Continuous innovation commitment</li></ul>'
+    ContentAlign: 'Left'
+    SizeMD: '12'
+    MediaType: 'image'
+    MediaImage: =>SilverStripe\Assets\Image.templateContentRight
+    MediaPosition: 'order-2'
+    ContentColumns: '6'
+    ExtraColumnGap: 1.5
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_two_column_content
+    Sort: 3
+
+  product_info:
+    Title: 'Premium Professional Series'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Featured Product'
+    HTML: '<p class="lead">Our flagship product combines cutting-edge technology with exceptional craftsmanship to deliver unmatched performance and reliability.</p><p>Engineered with precision and built to last, this premium series represents the pinnacle of our manufacturing excellence. Every component is carefully selected and rigorously tested to ensure it meets our exacting standards for quality and durability. From the advanced materials to the innovative design features, no detail has been overlooked in creating a product that exceeds expectations in every measurable way.</p>'
+    SizeMD: '6'
+    BottomPadding: '0'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_product_detail
+    Sort: 3
+
+  service_landing_details:
+    Title: 'Why Choose Our Services'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Our Difference'
+    HTML: '<p class="lead">We bring together deep industry expertise, proven methodologies, and a commitment to excellence that sets us apart.</p><h4>Our Approach</h4><ul><li><strong>Client-Focused:</strong> Your success is our priority. We tailor solutions to your unique needs and challenges.</li><li><strong>Proven Track Record:</strong> Hundreds of successful projects across diverse industries demonstrate our capability.</li><li><strong>Cutting-Edge Tools:</strong> We leverage the latest technologies and best practices to deliver superior results.</li><li><strong>Long-Term Partnership:</strong> We are not just vendors - we are partners invested in your ongoing success.</li></ul>'
+    ContentAlign: 'Left'
+    MediaType: 'image'
+    MediaImage: =>SilverStripe\Assets\Image.templateContentAbout
+    MediaPosition: 'order-2'
+    ContentColumns: '6'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_service_landing
+    Sort: 7
+
+# ============================================================================
+# SIMPLE CONTENT - Product details section header and content
+# ============================================================================
+Dynamic\Essentials\Element\SimpleContent:
+  product_section_header:
+    Title: 'Product Details'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Technical Overview'
+    HTML: '<p class="lead">Industry-leading performance meets exceptional craftsmanship in every aspect of our design.</p>'
+    ContentAlign: 'Center'
+    SizeMD: '12'
+    TopPadding: '1rem'
+    BottomPadding: '0'
+    BottomMargin: '0'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_product_detail
+    Sort: 4
+
+  product_features:
+    Title: 'Key Features'
+    ShowTitle: true
+    AvailableGlobally: false
+    HTML: '<ul><li><strong>Advanced Engineering:</strong> Precision-manufactured components for optimal performance</li><li><strong>Premium Materials:</strong> High-grade materials ensure lasting durability</li><li><strong>Smart Technology:</strong> Integrated sensors and monitoring systems</li><li><strong>Energy Efficient:</strong> Reduced power consumption without sacrificing performance</li></ul>'
+    ContentAlign: 'Left'
+    SizeMD: '6'
+    TopPadding: '0'
+    BottomPadding: null
+    TopMargin: null
+    BottomMargin: null
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_product_detail
+    Sort: 5
+
+  product_specifications:
+    Title: 'Specifications'
+    ShowTitle: true
+    AvailableGlobally: false
+    HTML: '<ul><li>Dimensions: 24" W x 36" D x 48" H</li><li>Weight: 150 lbs</li><li>Power: 120V / 60Hz</li><li>Warranty: 5 years comprehensive coverage</li><li>Certifications: UL, CE, ISO 9001</li><li>Operating Temperature: 32°F to 104°F</li></ul>'
+    ContentAlign: 'Left'
+    SizeMD: '6'
+    TopPadding: '0'
+    BottomPadding: null
+    TopMargin: null
+    BottomMargin: null
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_product_detail
+    Sort: 6
+
+# ============================================================================
+# CAROUSEL ELEMENT - Product gallery with thumbs style
+# ============================================================================
+Dynamic\Elements\Carousel\Elements\ElementCarousel:
+  product_gallery:
+    ShowTitle: false
+    AvailableGlobally: false
+    Controls: 'On'
+    Indicators: 'On'
+    Transitions: 'Fade'
+    Autoplay: 'Off'
+    Interval: 5
+    Style: 'Thumbs'
+    SizeMD: '6'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_product_detail
+    Sort: 2
+    Slides: =>Dynamic\Carousel\Model\ImageSlide.templateSlide1, =>Dynamic\Carousel\Model\ImageSlide.templateSlide2, =>Dynamic\Carousel\Model\ImageSlide.templateSlide3
+
+# ============================================================================
+# PRODUCT DETAIL SECTION - Additional images and information
+# ============================================================================
+Dynamic\Elements\Image\Elements\ElementImage:
+  product_detail_1:
+    Title: 'Precision Components'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Close-Up Details'
+    Content: '<h4>Engineered Excellence</h4><p>Every component is precision-engineered and rigorously tested to meet the highest industry standards. Our quality control process ensures consistent performance across every unit.</p><ul><li>CNC-machined aluminum housing</li><li>Stainless steel fasteners throughout</li><li>Industrial-grade bearings and seals</li><li>Powder-coated finish for durability</li></ul>'
+    SizeMD: '6'
+    ContentAlign: 'Left'
+    Image: =>SilverStripe\Assets\Image.templateProductDetail1
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_product_detail
+    Sort: 7
+
+  product_detail_2:
+    Title: 'Smart Integration'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Technology'
+    Content: '<h4>Connected Intelligence</h4><p>Built-in connectivity allows remote monitoring and control through our mobile app or web portal. Receive real-time alerts, track performance metrics, and schedule maintenance all from your device.</p><ul><li>WiFi and Bluetooth connectivity</li><li>Cloud-based monitoring and analytics</li><li>Predictive maintenance alerts</li><li>Remote diagnostics and troubleshooting</li></ul>'
+    SizeMD: '6'
+    ContentAlign: 'Left'
+    Image: =>SilverStripe\Assets\Image.templateProductDetail2
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_product_detail
+    Sort: 8
+
+# ============================================================================
+# SERVICE LANDING PAGE & CONTACT PAGE - Recipe Elements
+# ============================================================================
+DNADesign\ElementalUserForms\Model\ElementForm:
+  contact_form:
+    Title: 'Get in Touch'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Contact Us'
+    Content: '<p class="lead">Have questions? We''re here to help. Fill out the form below and our team will respond within 24 hours.</p>'
+    SubmitButtonText: 'Send Message'
+    OnCompleteMessage: '<p>Thank you for your message! We will respond within 24 hours.</p>'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_contact_page
+    Sort: 2
+
+# Contact Form Fields
+SilverStripe\UserForms\Model\EditableFormField\EditableTextField:
+  template_contact_name:
+    Name: 'Name'
+    Title: 'Your Name'
+    Placeholder: 'John Smith'
+    Required: true
+    Sort: 1
+    Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.contact_form
+
+  template_contact_company:
+    Name: 'Company'
+    Title: 'Company Name'
+    Placeholder: 'Your Company'
+    Required: false
+    Sort: 2
+    Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.contact_form
+
+  template_contact_phone:
+    Name: 'Phone'
+    Title: 'Phone Number'
+    Placeholder: '(920) 555-1234'
+    Required: false
+    Sort: 4
+    Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.contact_form
+
+  template_contact_message:
+    Name: 'Message'
+    Title: 'Message'
+    Placeholder: 'Tell us about your project requirements...'
+    Required: true
+    Rows: 5
+    Sort: 6
+    Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.contact_form
+
+SilverStripe\UserForms\Model\EditableFormField\EditableEmailField:
+  template_contact_email:
+    Name: 'Email'
+    Title: 'Email Address'
+    Placeholder: 'your.email@example.com'
+    Required: true
+    Sort: 3
+    Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.contact_form
+
+SilverStripe\UserForms\Model\EditableFormField\EditableDropdown:
+  template_contact_inquiry:
+    Name: 'InquiryType'
+    Title: 'Type of Inquiry'
+    Required: true
+    Sort: 5
+    Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.contact_form
+
+SilverStripe\UserForms\Model\EditableFormField\EditableOption:
+  template_inquiry_quote:
+    Name: 'Quote Request'
+    Title: 'Quote Request'
+    Sort: 1
+    Parent: =>SilverStripe\UserForms\Model\EditableFormField\EditableDropdown.template_contact_inquiry
+
+  template_inquiry_general:
+    Name: 'General Inquiry'
+    Title: 'General Inquiry'
+    Sort: 2
+    Parent: =>SilverStripe\UserForms\Model\EditableFormField\EditableDropdown.template_contact_inquiry
+
+  template_inquiry_technical:
+    Name: 'Technical Question'
+    Title: 'Technical Question'
+    Sort: 3
+    Parent: =>SilverStripe\UserForms\Model\EditableFormField\EditableDropdown.template_contact_inquiry
+
+  template_inquiry_tour:
+    Name: 'Facility Tour'
+    Title: 'Facility Tour'
+    Sort: 4
+    Parent: =>SilverStripe\UserForms\Model\EditableFormField\EditableDropdown.template_contact_inquiry
+
+Dynamic\Elements\CustomerService\Elements\ElementCustomerService:
+  contact_customer_service:
+    Title: 'Our Location & Hours'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Visit Us'
+    Content: '<p>Prefer to contact us directly? We''re available through multiple channels to serve you better.</p>'
+    LocationName: 'Sheboygan Manufacturing Facility'
+    Phone: '(920) 555-1234'
+    Email: 'contact@example.com'
+    Hours: '<p><strong>Monday - Friday:</strong> 8:00 AM - 5:00 PM<br><strong>Saturday:</strong> 9:00 AM - 2:00 PM<br><strong>Sunday:</strong> Closed</p>'
+    Address: '1526 S. 12th St'
+    City: 'Sheboygan'
+    State: 'WI'
+    PostalCode: '53081'
+    Country: 'US'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_contact_page
+    Sort: 4
+
+# ============================================================================
+# COMPANY LEADERSHIP & GOVERNANCE - Recipe 3 Elements (Staff-based)
+# ============================================================================
+# Staff Member definitions
+Dynamic\Essentials\Model\StaffMember:
+  templateStaffJohnDoe:
+    Name: 'John Doe'
+    Position: 'Chief Executive Officer'
+    Content: '<p>John brings over 20 years of executive leadership experience, driving innovation and growth across multiple industries.</p>'
+    Image: =>SilverStripe\Assets\Image.templateStaffJohnDoe
+    EmailLink: =>SilverStripe\LinkField\Models\EmailLink.templateStaffJohnEmail
+    PhoneLink: =>SilverStripe\LinkField\Models\PhoneLink.templateStaffJohnPhone
+    LinkedInLink: =>SilverStripe\LinkField\Models\ExternalLink.templateStaffJohnLinkedIn
+    SortOrder: 1
+
+  templateStaffJaneSmith:
+    Name: 'Jane Smith'
+    Position: 'Chief Technology Officer'
+    Content: '<p>Jane leads our technology strategy with deep expertise in enterprise architecture and digital transformation.</p>'
+    Image: =>SilverStripe\Assets\Image.templateStaffJaneSmith
+    EmailLink: =>SilverStripe\LinkField\Models\EmailLink.templateStaffJaneEmail
+    PhoneLink: =>SilverStripe\LinkField\Models\PhoneLink.templateStaffJanePhone
+    LinkedInLink: =>SilverStripe\LinkField\Models\ExternalLink.templateStaffJaneLinkedIn
+    SortOrder: 2
+
+  templateStaffMikeBrown:
+    Name: 'Mike Brown'
+    Position: 'Chief Financial Officer'
+    Content: '<p>Mike oversees financial operations with a proven track record in scaling businesses and managing complex finances.</p>'
+    Image: =>SilverStripe\Assets\Image.templateStaffMikeBrown
+    EmailLink: =>SilverStripe\LinkField\Models\EmailLink.templateStaffMikeEmail
+    PhoneLink: =>SilverStripe\LinkField\Models\PhoneLink.templateStaffMikePhone
+    LinkedInLink: =>SilverStripe\LinkField\Models\ExternalLink.templateStaffMikeLinkedIn
+    SortOrder: 3
+
+  templateStaffSarahChen:
+    Name: 'Sarah Chen'
+    Position: 'Senior Advisor, Innovation'
+    Content: '<p>Sarah advises on emerging technologies and innovation strategies, bringing expertise from leading tech companies.</p>'
+    Image: =>SilverStripe\Assets\Image.templateStaffSarahChen
+    EmailLink: =>SilverStripe\LinkField\Models\EmailLink.templateStaffSarahEmail
+    PhoneLink: =>SilverStripe\LinkField\Models\PhoneLink.templateStaffSarahPhone
+    LinkedInLink: =>SilverStripe\LinkField\Models\ExternalLink.templateStaffSarahLinkedIn
+    SortOrder: 4
+
+  templateStaffRobertMartinez:
+    Name: 'Robert Martinez'
+    Position: 'Senior Advisor, Strategy'
+    Content: '<p>Robert provides strategic counsel on market expansion and business development with global consulting experience.</p>'
+    Image: =>SilverStripe\Assets\Image.templateStaffRobertMartinez
+    EmailLink: =>SilverStripe\LinkField\Models\EmailLink.templateStaffRobertEmail
+    PhoneLink: =>SilverStripe\LinkField\Models\PhoneLink.templateStaffRobertPhone
+    LinkedInLink: =>SilverStripe\LinkField\Models\ExternalLink.templateStaffRobertLinkedIn
+    SortOrder: 5
+
+  templateStaffEmilyWilliams:
+    Name: 'Emily Williams'
+    Position: 'Senior Advisor, Governance'
+    Content: '<p>Emily guides governance and compliance initiatives with extensive experience in corporate law and regulatory matters.</p>'
+    Image: =>SilverStripe\Assets\Image.templateStaffEmilyWilliams
+    EmailLink: =>SilverStripe\LinkField\Models\EmailLink.templateStaffEmilyEmail
+    PhoneLink: =>SilverStripe\LinkField\Models\PhoneLink.templateStaffEmilyPhone
+    LinkedInLink: =>SilverStripe\LinkField\Models\ExternalLink.templateStaffEmilyLinkedIn
+    SortOrder: 6
+
+Dynamic\Essentials\Element\ElementStaff:
+  executive_leadership_staff:
+    Title: 'Executive Leadership'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Leadership'
+    Content: '<p class="lead">Our executive team brings decades of combined experience in technology and business leadership.</p>'
+    SizeMD: '12'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_company_leadership
+    Sort: 1
+    Staff:
+      - =>Dynamic\Essentials\Model\StaffMember.templateStaffJohnDoe
+      - =>Dynamic\Essentials\Model\StaffMember.templateStaffJaneSmith
+      - =>Dynamic\Essentials\Model\StaffMember.templateStaffMikeBrown
+
+  advisory_board_staff:
+    Title: 'Advisory Board'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Advisors'
+    Content: '<p class="lead">Our advisory board provides strategic guidance and industry expertise to drive our vision forward.</p>'
+    SizeMD: '12'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_company_leadership
+    Sort: 2
+    Staff:
+      - =>Dynamic\Essentials\Model\StaffMember.templateStaffSarahChen
+      - =>Dynamic\Essentials\Model\StaffMember.templateStaffRobertMartinez
+      - =>Dynamic\Essentials\Model\StaffMember.templateStaffEmilyWilliams
+
+# ============================================================================
+# TEMPLATES - Define the actual Template records
+# ============================================================================
+Dynamic\ElememtalTemplates\Models\Template:
+  template_three_column_cards:
+    Title: '3-Column Feature Cards'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_three_column_cards
+    LayoutImage: =>SilverStripe\Assets\Image.template_preview_1
+    PopulateMergeMatch:
+      - Title
+
+  template_hero_cta:
+    Title: 'Hero Section with CTA'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_hero_cta
+    LayoutImage: =>SilverStripe\Assets\Image.template_preview_2
+    PopulateMergeMatch:
+      - Title
+
+  template_faq_accordion:
+    Title: 'FAQ Accordion'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_faq_accordion
+    LayoutImage: =>SilverStripe\Assets\Image.template_preview_3
+    PopulateMergeMatch:
+      - Title
+
+  template_two_column_content:
+    Title: 'Two-Column Content (Image Left & Right)'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_two_column_content
+    LayoutImage: =>SilverStripe\Assets\Image.template_preview_4
+    PopulateMergeMatch:
+      - Title
+
+  template_product_detail:
+    Title: 'Product Detail Page'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_product_detail
+    LayoutImage: =>SilverStripe\Assets\Image.template_preview_5
+    PopulateMergeMatch:
+      - Title
+
+  template_service_landing:
+    Title: 'Service Landing Page'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_service_landing
+    LayoutImage: =>SilverStripe\Assets\Image.template_preview_6
+    PopulateMergeMatch:
+      - Title
+
+  template_contact_page:
+    Title: 'Contact Page'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_contact_page
+    LayoutImage: =>SilverStripe\Assets\Image.template_preview_7
+    PopulateMergeMatch:
+      - Title
+
+  template_company_leadership:
+    Title: 'Company Leadership & Governance'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_company_leadership
+    LayoutImage: =>SilverStripe\Assets\Image.template_preview_8
+    PopulateMergeMatch:
+      - Title

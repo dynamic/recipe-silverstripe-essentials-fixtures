@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" width="300" height="80">
+  <defs>
+    <linearGradient id="gearGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#E0E0E0"/>
+    </linearGradient>
+  </defs>
+  <!-- Gear Icon -->
+  <g transform="translate(10, 10)">
+    <path fill="url(#gearGrad)" d="M30,12 L32,8 L38,8 L40,12 L44,14 L48,12 L52,16 L50,20 L52,24 L56,26 L56,32 L52,34 L50,38 L52,42 L48,46 L44,44 L40,46 L38,50 L32,50 L30,46 L26,44 L22,46 L18,42 L20,38 L18,34 L14,32 L14,26 L18,24 L20,20 L18,16 L22,12 L26,14 Z"/>
+    <circle fill="#9575EA" cx="35" cy="29" r="10"/>
+    <circle fill="url(#gearGrad)" cx="35" cy="29" r="5"/>
+  </g>
+  <!-- Company Name -->
+  <text x="75" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">PRECISION</text>
+  <text x="75" y="55" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E0E0E0">MFG CO.</text>
+  <!-- Tagline -->
+  <text x="75" y="72" font-family="Arial, sans-serif" font-size="9" fill="#CCCCCC">Quality Precision Parts Since 1985</text>
+</svg>
