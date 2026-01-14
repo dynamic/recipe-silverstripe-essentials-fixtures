@@ -1,64 +1,58 @@
 ---
 Name: essentials-fixtures-populate-config
+Only:
+  environment: 'dev'
 ---
 DNADesign\Populate\Populate:
   include_yaml_fixtures:
     - 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/site-demo-content.yml'
     - 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/element-template-library.yml'
-  # Truncate these objects on each PopulateTask run for a clean slate
+    - 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/element-template-expanded.yml'
+
+  # Simplified truncate_objects using base classes
+  # This covers all subclasses automatically
   truncate_objects:
-    - SilverStripe\Assets\Image
-    - SilverStripe\Assets\Folder
+    # Assets - SilverStripe\Assets\File covers Image and Folder
+    - SilverStripe\Assets\File
+
+    # All elements via base class (covers 20+ element types)
+    - DNADesign\Elemental\Models\BaseElement
     - DNADesign\Elemental\Models\ElementalArea
-    - Dynamic\ElememtalTemplates\Models\Template
-    - Dynamic\Base\Page\BlockPage
-    - DNADesign\Elemental\Models\ElementContent
-    - Dynamic\Essentials\Element\HeroMedia
-    - Dynamic\Elements\StatCounters\Elements\ElementStatCounters
+
+    # Element child records (not covered by BaseElement inheritance)
     - Dynamic\Elements\StatCounters\Model\StatCounter
-    - Dynamic\Elements\Card\Elements\ElementCard
-    - Dynamic\Elements\Carousel\Elements\ElementCarousel
-    - Dynamic\Carousel\Model\ImageSlide
-    - Dynamic\Carousel\Model\VideoSlide
-    - Dynamic\Elements\CTA\Elements\ElementCallToAction
-    - Dynamic\Elements\CustomerService\Elements\ElementCustomerService
-    - Dynamic\Elements\Accordion\Elements\ElementAccordion
     - Dynamic\Elements\Accordion\Model\AccordionPanel
-    - Dynamic\Elements\Promos\Elements\ElementPromos
-    - Dynamic\Elements\Embedded\Elements\ElementEmbeddedCode
-    - Dynamic\Elements\Gallery\Elements\ElementPhotoGallery
-    - Dynamic\Elements\Gallery\Model\GalleryImage
-    - Dynamic\Elements\Image\Elements\ElementImage
-    - Dynamic\Elements\Oembed\Elements\ElementOembed
-    - Dynamic\Elements\Elements\ElementTestimonials
     - Dynamic\Elements\Model\Testimonial
     - Dynamic\Elements\Model\TestimonialCategory
-    - WeDevelop\ElementalGrid\Models\ElementRow
-    - Dynamic\Elements\Blog\Elements\ElementBlogPosts
-    - DNADesign\ElementalUserForms\Model\ElementForm
-    - SilverStripe\UserForms\Model\UserDefinedForm
-    - SilverStripe\UserForms\Model\EditableFormField
-    - SilverStripe\UserForms\Model\EditableFormField\EditableTextField
-    - SilverStripe\UserForms\Model\EditableFormField\EditableEmailField
-    - SilverStripe\UserForms\Model\EditableFormField\EditableDropdown
-    - SilverStripe\UserForms\Model\EditableFormField\EditableOption
-    - Dynamic\Elements\Links\Elements\LinksElement
-    - Dynamic\Elements\Links\Model\LinkListObject
-    - Dynamic\Elements\Sponsors\Elements\ElementSponsor
+    - Dynamic\Elements\Gallery\Model\GalleryImage
     - Dynamic\Elements\Sponsors\Model\Sponsor
-    - Dynamic\Essentials\Model\StaffMember
-    - Dynamic\Elements\Staff\Elements\ElementStaff
-    - Dynamic\Essentials\Element\ElementStaff
+    - Dynamic\Elements\Links\Model\LinkListObject
+    - Dynamic\Carousel\Model\ImageSlide
+    - Dynamic\Carousel\Model\VideoSlide
+
+    # Templates
+    - Dynamic\ElememtalTemplates\Models\Template
+
+    # Pages - specific types only (not SiteTree to preserve ErrorPage etc)
+    - Dynamic\Base\Page\BlockPage
     - SilverStripe\Blog\Model\Blog
     - SilverStripe\Blog\Model\BlogPost
+    - SilverStripe\ErrorPage\ErrorPage
+
+    # Links via base class (covers SiteTreeLink, ExternalLink, EmailLink, etc)
+    - SilverStripe\LinkField\Models\Link
+
+    # Staff
+    - Dynamic\Essentials\Model\StaffMember
+
+    # Navigation
     - Dynamic\Base\Model\NavigationColumn
     - Dynamic\Base\Model\NavigationGroup
     - Dynamic\Base\Model\SocialLink
-    - SilverStripe\LinkField\Models\Link
-    - SilverStripe\LinkField\Models\SiteTreeLink
-    - SilverStripe\LinkField\Models\ExternalLink
-    - SilverStripe\LinkField\Models\EmailLink
-    - SilverStripe\LinkField\Models\PhoneLink
-    - SilverStripe\LinkField\Models\FileLink
+
+    # User forms
+    - SilverStripe\UserForms\Model\UserDefinedForm
+    - SilverStripe\UserForms\Model\EditableFormField
+
   truncate_tables:
     - ElementStaff_Staff
