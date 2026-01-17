@@ -6,6 +6,7 @@ Only:
 DNADesign\Populate\Populate:
   include_yaml_fixtures:
     - 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/site-demo-content.yml'
+    - 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/template-preview-images.yml'
     - 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/element-template-library.yml'
     - 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/element-template-expanded.yml'
   
