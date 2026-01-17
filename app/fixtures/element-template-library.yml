@@ -179,6 +179,55 @@ SilverStripe\Assets\Image:
     Filename: 'assets/Templates/Gutenberg/Previews/client-logos.jpg'
     Title: 'Client Logos Preview'
 
+  # Template preview images - Generated screenshots
+  templatePreview105:
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-105.png'
+    Filename: 'assets/Templates/Previews/template-105.png'
+    Title: 'Dark Hero Banner Preview'
+    PopulateMergeAny: true
+
+  templatePreview106:
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-106.png'
+    Filename: 'assets/Templates/Previews/template-106.png'
+    Title: 'Team Members Grid Preview'
+    PopulateMergeAny: true
+
+  templatePreview107:
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-107.png'
+    Filename: 'assets/Templates/Previews/template-107.png'
+    Title: 'Pricing Tiers Preview'
+    PopulateMergeAny: true
+
+  templatePreview108:
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-108.png'
+    Filename: 'assets/Templates/Previews/template-108.png'
+    Title: 'Feature Grid Preview'
+    PopulateMergeAny: true
+
+  templatePreview109:
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-109.png'
+    Filename: 'assets/Templates/Previews/template-109.png'
+    Title: 'Newsletter Signup Preview'
+    PopulateMergeAny: true
+
+  templatePreview110:
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-110.png'
+    Filename: 'assets/Templates/Previews/template-110.png'
+    Title: 'Footer Columns Preview'
+    PopulateMergeAny: true
+
+  templatePreview111:
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-111.png'
+    Filename: 'assets/Templates/Previews/template-111.png'
+    Title: 'Portfolio Grid Preview'
+    PopulateMergeAny: true
+
+  templatePreview112:
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-112.png'
+    Filename: 'assets/Templates/Previews/template-112.png'
+    Title: 'Client Logos Preview'
+    PopulateMergeAny: true
+
 # ============================================================================
 # GUTENBERG ELEMENTAL AREAS
 # ============================================================================
