@@ -102,118 +102,96 @@ SilverStripe\Assets\Image:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-split-media.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/split-media.jpg'
     Title: 'Split Media Preview'
-    PopulateMergeMatch:
-      - Title
 
   gutenbergPreviewHeroLeft:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-hero-left.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/hero-left.jpg'
     Title: 'Hero Left Aligned Preview'
-    PopulateMergeMatch:
-      - Title
 
   gutenbergPreviewHeroRight:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-hero-right.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/hero-right.jpg'
     Title: 'Hero Right Aligned Preview'
-    PopulateMergeMatch:
-      - Title
 
   gutenbergPreviewStats:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-stats.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/stats-bar.jpg'
     Title: 'Stats Bar Preview'
-    PopulateMergeMatch:
-      - Title
 
   gutenbergPreviewTestimonials:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-testimonials.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/testimonials.jpg'
     Title: 'Testimonial Slider Preview'
-    PopulateMergeMatch:
-      - Title
 
   gutenbergPreviewAbout:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-about.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/about.jpg'
     Title: 'About Section Preview'
-    PopulateMergeMatch:
-      - Title
 
   gutenbergPreviewVideo:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-video.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/video.jpg'
     Title: 'Video Showcase Preview'
-    PopulateMergeMatch:
-      - Title
 
   gutenbergPreviewCta:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-cta-banner.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/cta-banner.jpg'
     Title: 'CTA Banner Preview'
-    PopulateMergeMatch:
-      - Title
 
   gutenbergPreviewFaq:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-faq.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/faq.jpg'
     Title: 'FAQ Section Preview'
-    PopulateMergeMatch:
-      - Title
 
   gutenbergPreviewServices:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-services.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/services.jpg'
     Title: 'Services Grid Preview'
-    PopulateMergeMatch:
-      - Title
 
   gutenbergPreviewContact:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-contact.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/contact.jpg'
     Title: 'Contact Section Preview'
-    PopulateMergeMatch:
-      - Title
 
 # ============================================================================
 # ELEMENTAL AREAS
 # ============================================================================
 DNADesign\Elemental\Models\ElementalArea:
   area_gutenberg_split_media:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_hero_left:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_hero_right:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_stats:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_testimonials:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_about:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_video:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_cta_banner:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_faq:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_services:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_contact:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_two_column:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
 # ============================================================================
 # ROWS
@@ -229,8 +207,6 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     VerticalPadding: 'py-5'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_split_media
     Sort: 1
-    PopulateMergeMatch:
-      - Title
 
   row_gutenberg_hero_left:
     Title: 'Hero Left Aligned Container'
@@ -241,8 +217,6 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     VerticalPadding: 'py-6'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_hero_left
     Sort: 1
-    PopulateMergeMatch:
-      - Title
 
   row_gutenberg_hero_right:
     Title: 'Hero Right Aligned Container'
@@ -253,8 +227,6 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     VerticalPadding: 'py-6'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_hero_right
     Sort: 1
-    PopulateMergeMatch:
-      - Title
 
   row_gutenberg_stats:
     Title: 'Stats Bar Container'
@@ -265,8 +237,6 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     VerticalPadding: 'py-4'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_stats
     Sort: 1
-    PopulateMergeMatch:
-      - Title
 
   row_gutenberg_testimonials:
     Title: 'Testimonials Container'
@@ -278,8 +248,6 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     VerticalPadding: 'py-5'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_testimonials
     Sort: 1
-    PopulateMergeMatch:
-      - Title
 
   row_gutenberg_about:
     Title: 'About Section Container'
@@ -291,8 +259,6 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     VerticalPadding: 'py-5'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_about
     Sort: 1
-    PopulateMergeMatch:
-      - Title
 
   row_gutenberg_video:
     Title: 'Video Section Container'
@@ -304,8 +270,6 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     VerticalPadding: 'py-5'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_video
     Sort: 1
-    PopulateMergeMatch:
-      - Title
 
   row_gutenberg_cta_banner:
     Title: 'CTA Banner Container'
@@ -316,8 +280,6 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     VerticalPadding: 'py-4'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_cta_banner
     Sort: 1
-    PopulateMergeMatch:
-      - Title
 
   row_gutenberg_faq:
     Title: 'FAQ Container'
@@ -329,8 +291,6 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     VerticalPadding: 'py-5'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_faq
     Sort: 1
-    PopulateMergeMatch:
-      - Title
 
   row_gutenberg_services:
     Title: 'Services Container'
@@ -342,8 +302,6 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     VerticalPadding: 'py-5'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_services
     Sort: 1
-    PopulateMergeMatch:
-      - Title
 
   row_gutenberg_contact:
     Title: 'Contact Container'
@@ -355,8 +313,6 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     VerticalPadding: 'py-5'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_contact
     Sort: 1
-    PopulateMergeMatch:
-      - Title
 
   row_gutenberg_two_column:
     Title: 'Two Column Container'
@@ -368,8 +324,6 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     VerticalPadding: 'py-5'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_two_column
     Sort: 1
-    PopulateMergeMatch:
-      - Title
 
 # ============================================================================
 # SPLIT MEDIA ELEMENTS
@@ -739,99 +693,87 @@ Dynamic\Elements\CustomerService\Elements\ElementCustomerService:
 # ============================================================================
 # EXPANDED TEMPLATES
 # ============================================================================
-Dynamic\ElememtalTemplates\Models\Template:
+Dynamic\ElementalTemplates\Models\Template:
   template_gutenberg_split_media:
     Title: 'Split Media (Image + Text)'
+    Description: '<p>Balance visual and written content with a side-by-side layout. Image on one side, compelling text on the other. Great for storytelling and feature highlights.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_split_media
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewSplitMedia
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview113
 
   template_gutenberg_hero_left:
     Title: 'Hero (Left Aligned)'
+    Description: '<p>A striking hero section with left-aligned content and dark background. Features headline, supporting text, and call-to-action button.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_hero_left
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewHeroLeft
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview114
 
   template_gutenberg_hero_right:
     Title: 'Hero (Right Aligned)'
+    Description: '<p>An impactful hero with right-aligned content on a primary colored background. Perfect for variety in page layouts and visual interest.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_hero_right
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewHeroRight
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview115
 
   template_gutenberg_stats:
     Title: 'Stats / Impact Bar'
+    Description: '<p>Showcase impressive numbers and achievements with animated counters. Display projects completed, years of experience, client satisfaction, and more.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_stats
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewStats
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview116
 
   template_gutenberg_testimonials:
     Title: 'Testimonial Slider'
+    Description: '<p>Build trust with customer testimonials in a slider format. Features client photos, quotes, names, and company affiliations.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_testimonials
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewTestimonials
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview117
 
   template_gutenberg_about:
     Title: 'About Section (Image + Text)'
+    Description: '<p>Tell your story with an image and text combination. Includes mission and vision sections alongside a compelling visual element.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_about
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewAbout
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview118
 
   template_gutenberg_video:
     Title: 'Video Showcase'
+    Description: '<p>Feature video content prominently with an embedded player. Perfect for demos, tutorials, company overviews, or promotional content.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_video
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewVideo
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview119
 
   template_gutenberg_cta_banner:
     Title: 'High-Impact CTA Banner'
+    Description: '<p>Drive conversions with a bold, attention-grabbing call-to-action banner. Primary colored background with compelling text and action button.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_cta_banner
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewCta
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview120
 
   template_gutenberg_faq:
     Title: 'FAQ Accordion Section'
+    Description: '<p>Address common questions with an organized accordion layout. Expandable panels keep content clean while making information easily accessible.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_faq
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewFaq
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview121
 
   template_gutenberg_services:
     Title: 'Services Grid (3 Column)'
+    Description: '<p>Present service offerings in a professional 3-column grid. Each card includes an image, title, description, and call-to-action link.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_services
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewServices
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview122
 
   template_gutenberg_contact:
     Title: 'Contact Section'
+    Description: '<p>Provide complete contact information including address, phone, email, and business hours. Professional layout for easy customer communication.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_contact
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewContact
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview123
 
   template_gutenberg_two_column:
     Title: 'Two-Column Content'
+    Description: '<p>Present complementary information in a balanced two-column layout. Great for comparing options, showing different aspects, or organizing related content.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_two_column
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewSplitMedia
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview124

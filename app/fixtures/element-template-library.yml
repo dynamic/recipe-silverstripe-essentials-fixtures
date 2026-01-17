@@ -143,85 +143,69 @@ SilverStripe\Assets\Image:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-dark-hero.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/dark-hero.jpg'
     Title: 'Dark Hero Banner Preview'
-    PopulateMergeMatch:
-      - Title
 
   gutenbergPreviewTeamGrid:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-team-grid.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/team-grid.jpg'
     Title: 'Team Members Grid Preview'
-    PopulateMergeMatch:
-      - Title
 
   gutenbergPreviewPricing:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-pricing.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/pricing.jpg'
     Title: 'Pricing Tiers Preview'
-    PopulateMergeMatch:
-      - Title
 
   gutenbergPreviewFeatureGrid:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-feature-grid.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/feature-grid.jpg'
     Title: 'Feature Grid Preview'
-    PopulateMergeMatch:
-      - Title
 
   gutenbergPreviewNewsletter:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-newsletter.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/newsletter.jpg'
     Title: 'Newsletter Signup Preview'
-    PopulateMergeMatch:
-      - Title
 
   gutenbergPreviewFooter:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-footer.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/footer.jpg'
     Title: 'Footer Columns Preview'
-    PopulateMergeMatch:
-      - Title
 
   gutenbergPreviewPortfolio:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-portfolio.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/portfolio.jpg'
     Title: 'Portfolio Grid Preview'
-    PopulateMergeMatch:
-      - Title
 
   gutenbergPreviewClientLogos:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-client-logos.jpg'
     Filename: 'assets/Templates/Gutenberg/Previews/client-logos.jpg'
     Title: 'Client Logos Preview'
-    PopulateMergeMatch:
-      - Title
 
 # ============================================================================
 # GUTENBERG ELEMENTAL AREAS
 # ============================================================================
 DNADesign\Elemental\Models\ElementalArea:
   area_gutenberg_dark_hero:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_team_grid:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_pricing:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_feature_grid:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_newsletter:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_footer:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_portfolio:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
   area_gutenberg_client_logos:
-    OwnerClassName: 'Dynamic\ElememtalTemplates\Models\Template'
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
 
 # ============================================================================
 # GUTENBERG ROWS
@@ -651,67 +635,59 @@ Dynamic\Elements\Sponsors\Elements\ElementSponsor:
 # ============================================================================
 # GUTENBERG TEMPLATES - Final template definitions
 # ============================================================================
-Dynamic\ElememtalTemplates\Models\Template:
+Dynamic\ElementalTemplates\Models\Template:
   template_gutenberg_dark_hero:
     Title: 'Dark Hero Banner'
+    Description: '<p>A dramatic full-width hero with dark overlay, bold typography, and centered content. Creates strong visual impact for landing pages and feature announcements.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_dark_hero
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewDarkHero
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview105
 
   template_gutenberg_team_grid:
     Title: 'Team Members Grid (4 Column)'
+    Description: '<p>Display your team in a professional 4-column grid layout with photos, names, titles, and brief bios. Perfect for leadership pages and about sections.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_team_grid
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewTeamGrid
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview106
 
   template_gutenberg_pricing:
     Title: 'Pricing Tiers (3 Column)'
+    Description: '<p>Present pricing options in a clear 3-tier layout. Features highlighted benefits, pricing, and call-to-action buttons for each plan.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_pricing
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewPricing
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview107
 
   template_gutenberg_feature_grid:
     Title: 'Feature Grid (3 Column)'
+    Description: '<p>Highlight key features or benefits in a clean 3-column grid with icons or images. Great for product features, service highlights, or value propositions.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_feature_grid
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewFeatureGrid
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview108
 
   template_gutenberg_newsletter:
     Title: 'Newsletter Signup'
+    Description: '<p>Encourage email subscriptions with an eye-catching newsletter signup section. Features compelling copy and an email capture form.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_newsletter
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewNewsletter
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview109
 
   template_gutenberg_footer:
     Title: 'Footer Columns'
+    Description: '<p>A comprehensive footer layout with multiple columns for about info, quick links, services, and contact details. Dark theme with clean typography.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_footer
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewFooter
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview110
 
   template_gutenberg_portfolio:
     Title: 'Portfolio Grid'
+    Description: '<p>Showcase work samples or projects in an attractive gallery grid. Each item features an image, title, and description with hover effects.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_portfolio
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewPortfolio
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview111
 
   template_gutenberg_client_logos:
     Title: 'Client Logos'
+    Description: '<p>Build credibility by displaying client or partner logos in a horizontal row. Clean presentation with optional descriptions.</p>'
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_client_logos
-    LayoutImage: =>SilverStripe\Assets\Image.gutenbergPreviewClientLogos
-    PopulateMergeMatch:
-      - Title
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview112

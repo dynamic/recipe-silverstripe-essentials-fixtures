@@ -15,3 +15,47 @@ DNADesign\Populate\Populate:
   truncate_objects:
     - SilverStripe\Assets\File
   truncate_tables: []
+
+---
+Name: essentials-fixtures-extensions
+---
+# Disable default Silverstripe pages (Home, About Us, Contact Us) on dev/build
+# Our fixtures will create these pages with proper content
+# Also applies FixtureRecordExtension for merge matching
+SilverStripe\CMS\Model\SiteTree:
+  create_default_pages: false
+  extensions:
+    - FixtureRecordExtension
+
+# Apply FixtureRecordExtension to base classes for populate merge protection
+# This adds FixtureIdentifier field used by PopulateMergeMatch to prevent
+# overwriting user-created content that happens to share fixture titles
+
+DNADesign\Elemental\Models\BaseElement:
+  extensions:
+    - FixtureRecordExtension
+
+Dynamic\BaseObject\Model\BaseElementObject:
+  extensions:
+    - FixtureRecordExtension
+
+Dynamic\ElementalTemplates\Models\Template:
+  extensions:
+    - FixtureRecordExtension
+
+# Child models that don't extend base classes
+Dynamic\Elements\StatCounters\Model\StatCounter:
+  extensions:
+    - FixtureRecordExtension
+
+Dynamic\Elements\Model\Testimonial:
+  extensions:
+    - FixtureRecordExtension
+
+SilverStripe\LinkField\Models\Link:
+  extensions:
+    - FixtureRecordExtension
+
+SilverStripe\Blog\Model\Blog:
+  extensions:
+    - FixtureRecordExtension
