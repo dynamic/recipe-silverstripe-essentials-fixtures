@@ -399,19 +399,22 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     Sort: 1
 
 # ============================================================================
-# SPLIT MEDIA ELEMENTS
+# SPLIT MEDIA ELEMENTS - Using ElementContent with Media Tab
 # ============================================================================
-Dynamic\Elements\Image\Elements\ElementImage:
+DNADesign\Elemental\Models\ElementContent:
   gutenberg_split_left:
     Title: 'Transform Your Business'
     ShowTitle: true
     AvailableGlobally: false
     TopTitle: 'About Us'
     TitleTag: 'h2'
-    Content: '<p class="lead">We help businesses reach their full potential through innovative solutions.</p><ul><li>Industry-leading expertise</li><li>Proven track record</li><li>Customized solutions</li></ul>'
-    SizeMD: '6'
+    HTML: '<p class="lead">We help businesses reach their full potential through innovative solutions.</p><ul><li>Industry-leading expertise</li><li>Proven track record</li><li>Customized solutions</li></ul>'
+    SizeMD: '12'
     ContentAlign: 'Left'
-    Image: =>SilverStripe\Assets\Image.gutenbergSplitLeft
+    MediaType: 'image'
+    MediaImage: =>SilverStripe\Assets\Image.gutenbergSplitLeft
+    ContentColumns: '6'
+    MediaPosition: 'order-1'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_split_media
     Sort: 2
 
@@ -421,12 +424,82 @@ Dynamic\Elements\Image\Elements\ElementImage:
     AvailableGlobally: false
     TopTitle: 'Methodology'
     TitleTag: 'h2'
-    Content: '<p class="lead">Data-driven insights combined with creative thinking deliver results that exceed expectations.</p>'
-    SizeMD: '6'
+    HTML: '<p class="lead">Data-driven insights combined with creative thinking deliver results that exceed expectations.</p>'
+    SizeMD: '12'
     ContentAlign: 'Left'
-    Image: =>SilverStripe\Assets\Image.gutenbergSplitRight
+    MediaType: 'image'
+    MediaImage: =>SilverStripe\Assets\Image.gutenbergSplitRight
+    ContentColumns: '6'
+    MediaPosition: 'order-2'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_split_media
     Sort: 3
+
+  # About Section Content
+  gutenberg_about_content:
+    Title: 'About Our Company'
+    ShowTitle: true
+    AvailableGlobally: false
+    HTML: '<p class="lead">Founded in 2010, we have grown from a small startup to an industry leader.</p><h3>Our Mission</h3><p>To empower businesses with innovative tools and strategies that drive growth.</p><h3>Our Vision</h3><p>To be the most trusted partner for businesses seeking transformation.</p>'
+    SizeMD: '6'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_about
+    Sort: 2
+
+  # Two Column Content
+  gutenberg_two_col_left:
+    Title: 'Why Choose Us'
+    ShowTitle: true
+    AvailableGlobally: false
+    HTML: '<p class="lead">Expertise, innovation, and dedication.</p><ul><li><strong>Experienced Team:</strong> Decades of combined expertise</li><li><strong>Proven Results:</strong> Track record of success</li></ul>'
+    SizeMD: '6'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_two_column
+    Sort: 2
+
+  gutenberg_two_col_right:
+    Title: 'Our Values'
+    ShowTitle: true
+    AvailableGlobally: false
+    HTML: '<p class="lead">The principles that guide everything we do.</p><ul><li><strong>Integrity:</strong> Honest and transparent</li><li><strong>Excellence:</strong> Committed to the highest standards</li></ul>'
+    SizeMD: '6'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_two_column
+    Sort: 3
+
+  # Stats Intro Content
+  gutenberg_stats_intro:
+    Title: 'Proven Results'
+    ShowTitle: true
+    TitleTag: 'h2'
+    AvailableGlobally: false
+    TopTitle: 'Our Track Record'
+    HTML: '<p class="lead">Our track record speaks for itself. Over the years, we have helped hundreds of businesses achieve their goals through innovative solutions and dedicated service.</p>'
+    SizeMD: '10'
+    OffsetMD: '1'
+    ContentAlign: 'Center'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_stats
+    BottomMargin: '0'
+    Sort: 2
+
+# ============================================================================
+# TESTIMONIALS INTRO CONTENT (SimpleContent - no media tab)
+# ============================================================================
+Dynamic\Essentials\Element\SimpleContent:
+  gutenberg_testimonials_intro:
+    Title: 'Why Clients Love Us'
+    ShowTitle: true
+    TitleTag: 'h2'
+    AvailableGlobally: false
+    TopTitle: 'Client Success'
+    HTML: '<p class="lead">We measure our success by the success of our clients. Their trust and satisfaction drive everything we do, and their stories speak louder than any claims we could make.</p>'
+    SizeMD: '10'
+    OffsetMD: '1'
+    ContentAlign: 'Center'
+    BottomMargin: '0'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_testimonials
+    Sort: 2
+
+# ============================================================================
+# ABOUT SECTION IMAGE - Visual only
+# ============================================================================
+Dynamic\Elements\Image\Elements\ElementImage:
 
   gutenberg_about_image:
     Title: 'Our Team'
@@ -484,7 +557,8 @@ Dynamic\Elements\StatCounters\Elements\ElementStatCounters:
     TopTitle: 'By the Numbers'
     SizeMD: '12'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_stats
-    Sort: 2
+    BottomMargin: '0'
+    Sort: 3
 
 Dynamic\Elements\StatCounters\Model\StatCounter:
   gutenbergStat1:
@@ -531,7 +605,7 @@ Dynamic\Elements\Elements\ElementTestimonials:
     Content: '<p class="lead">Hear from businesses we have helped succeed.</p>'
     SizeMD: '12'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_testimonials
-    Sort: 2
+    Sort: 3
 
 Dynamic\Elements\Model\Testimonial:
   gutenbergTestimonialItem1:
@@ -557,38 +631,6 @@ Dynamic\Elements\Model\Testimonial:
     Image: =>SilverStripe\Assets\Image.gutenbergTestimonial3
     Sort: 3
     ElementTestimonials: =>Dynamic\Elements\Elements\ElementTestimonials.gutenberg_testimonials
-
-# ============================================================================
-# ABOUT SECTION ELEMENTS
-# ============================================================================
-DNADesign\Elemental\Models\ElementContent:
-  gutenberg_about_content:
-    Title: 'About Our Company'
-    ShowTitle: true
-    AvailableGlobally: false
-    HTML: '<p class="lead">Founded in 2010, we have grown from a small startup to an industry leader.</p><h3>Our Mission</h3><p>To empower businesses with innovative tools and strategies that drive growth.</p><h3>Our Vision</h3><p>To be the most trusted partner for businesses seeking transformation.</p>'
-    SizeMD: '6'
-    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_about
-    Sort: 2
-
-  gutenberg_two_col_left:
-    Title: 'Why Choose Us'
-    ShowTitle: true
-    AvailableGlobally: false
-    HTML: '<p class="lead">Expertise, innovation, and dedication.</p><ul><li><strong>Experienced Team:</strong> Decades of combined expertise</li><li><strong>Proven Results:</strong> Track record of success</li></ul>'
-    SizeMD: '6'
-    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_two_column
-    Sort: 2
-
-  gutenberg_two_col_right:
-    Title: 'Our Values'
-    ShowTitle: true
-    AvailableGlobally: false
-    HTML: '<p class="lead">The principles that guide everything we do.</p><ul><li><strong>Integrity:</strong> Honest and transparent</li><li><strong>Excellence:</strong> Committed to the highest standards</li></ul>'
-    SizeMD: '6'
-    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_two_column
-    Sort: 3
-
 # ============================================================================
 # VIDEO ELEMENT
 # ============================================================================
@@ -619,6 +661,19 @@ Dynamic\Elements\CTA\Elements\ElementCallToAction:
     ContentAlign: 'Center'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_cta_banner
     Sort: 2
+
+  gutenberg_stats_cta:
+    Title: 'See Our Results'
+    ShowTitle: true
+    TitleTag: 'h3'
+    AvailableGlobally: false
+    HTML: '<p>Discover how we have helped businesses like yours achieve remarkable success.</p>'
+    SizeMD: '8'
+    OffsetMD: '2'
+    ContentAlign: 'Center'
+    CtaLink: =>SilverStripe\LinkField\Models\ExternalLink.gutenbergStatsCtaLink
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_stats
+    Sort: 4
 
 # ============================================================================
 # FAQ ACCORDION ELEMENTS
@@ -690,6 +745,11 @@ SilverStripe\LinkField\Models\ExternalLink:
     LinkText: 'Learn More'
     OpenInNew: false
     ExternalUrl: 'https://example.com/services/support'
+
+  gutenbergStatsCtaLink:
+    LinkText: 'View Our Work'
+    OpenInNew: false
+    ExternalUrl: 'https://example.com/portfolio'
 
 Dynamic\Elements\Card\Elements\ElementCard:
   gutenberg_service_1:
@@ -773,6 +833,9 @@ Dynamic\ElementalTemplates\Models\Template:
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_split_media
     LayoutImage: =>SilverStripe\Assets\Image.templatePreview113
+    FixtureIdentifier: template_gutenberg_split_media
+    PopulateMergeMatch:
+      - FixtureIdentifier
 
   template_gutenberg_hero_left:
     Title: 'Hero (Left Aligned)'
@@ -780,6 +843,9 @@ Dynamic\ElementalTemplates\Models\Template:
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_hero_left
     LayoutImage: =>SilverStripe\Assets\Image.templatePreview114
+    FixtureIdentifier: template_gutenberg_hero_left
+    PopulateMergeMatch:
+      - FixtureIdentifier
 
   template_gutenberg_hero_right:
     Title: 'Hero (Right Aligned)'
@@ -787,6 +853,9 @@ Dynamic\ElementalTemplates\Models\Template:
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_hero_right
     LayoutImage: =>SilverStripe\Assets\Image.templatePreview115
+    FixtureIdentifier: template_gutenberg_hero_right
+    PopulateMergeMatch:
+      - FixtureIdentifier
 
   template_gutenberg_stats:
     Title: 'Stats / Impact Bar'
@@ -794,6 +863,9 @@ Dynamic\ElementalTemplates\Models\Template:
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_stats
     LayoutImage: =>SilverStripe\Assets\Image.templatePreview116
+    FixtureIdentifier: template_gutenberg_stats
+    PopulateMergeMatch:
+      - FixtureIdentifier
 
   template_gutenberg_testimonials:
     Title: 'Testimonial Slider'
@@ -801,6 +873,9 @@ Dynamic\ElementalTemplates\Models\Template:
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_testimonials
     LayoutImage: =>SilverStripe\Assets\Image.templatePreview117
+    FixtureIdentifier: template_gutenberg_testimonials
+    PopulateMergeMatch:
+      - FixtureIdentifier
 
   template_gutenberg_about:
     Title: 'About Section (Image + Text)'
@@ -808,6 +883,9 @@ Dynamic\ElementalTemplates\Models\Template:
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_about
     LayoutImage: =>SilverStripe\Assets\Image.templatePreview118
+    FixtureIdentifier: template_gutenberg_about
+    PopulateMergeMatch:
+      - FixtureIdentifier
 
   template_gutenberg_video:
     Title: 'Video Showcase'
@@ -815,6 +893,9 @@ Dynamic\ElementalTemplates\Models\Template:
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_video
     LayoutImage: =>SilverStripe\Assets\Image.templatePreview119
+    FixtureIdentifier: template_gutenberg_video
+    PopulateMergeMatch:
+      - FixtureIdentifier
 
   template_gutenberg_cta_banner:
     Title: 'High-Impact CTA Banner'
@@ -822,6 +903,9 @@ Dynamic\ElementalTemplates\Models\Template:
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_cta_banner
     LayoutImage: =>SilverStripe\Assets\Image.templatePreview120
+    FixtureIdentifier: template_gutenberg_cta_banner
+    PopulateMergeMatch:
+      - FixtureIdentifier
 
   template_gutenberg_faq:
     Title: 'FAQ Accordion Section'
@@ -829,6 +913,9 @@ Dynamic\ElementalTemplates\Models\Template:
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_faq
     LayoutImage: =>SilverStripe\Assets\Image.templatePreview121
+    FixtureIdentifier: template_gutenberg_faq
+    PopulateMergeMatch:
+      - FixtureIdentifier
 
   template_gutenberg_services:
     Title: 'Services Grid (3 Column)'
@@ -836,6 +923,9 @@ Dynamic\ElementalTemplates\Models\Template:
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_services
     LayoutImage: =>SilverStripe\Assets\Image.templatePreview122
+    FixtureIdentifier: template_gutenberg_services
+    PopulateMergeMatch:
+      - FixtureIdentifier
 
   template_gutenberg_contact:
     Title: 'Contact Section'
@@ -843,6 +933,9 @@ Dynamic\ElementalTemplates\Models\Template:
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_contact
     LayoutImage: =>SilverStripe\Assets\Image.templatePreview123
+    FixtureIdentifier: template_gutenberg_contact
+    PopulateMergeMatch:
+      - FixtureIdentifier
 
   template_gutenberg_two_column:
     Title: 'Two-Column Content'
@@ -850,3 +943,6 @@ Dynamic\ElementalTemplates\Models\Template:
     PageType: 'Dynamic\Base\Page\BlockPage'
     Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_two_column
     LayoutImage: =>SilverStripe\Assets\Image.templatePreview124
+    FixtureIdentifier: template_gutenberg_two_column
+    PopulateMergeMatch:
+      - FixtureIdentifier

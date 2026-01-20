@@ -60,7 +60,7 @@ SilverStripe\Assets\Image:
   templatePreview105:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-105.png'
     Filename: 'assets/Templates/Previews/template-105.png'
-    Title: 'Dark Hero Banner Preview'
+    Title: 'Bold Hero Banner Preview'
     PopulateMergeAny: true
 
   templatePreview106:
