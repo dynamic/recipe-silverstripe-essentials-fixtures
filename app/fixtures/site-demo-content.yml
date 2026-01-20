@@ -339,8 +339,6 @@ Dynamic\Base\Page\BlockPage:
     ShowInSearch: true
     Sort: 1
     ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.homeArea
-    PopulateMergeMatch:
-      - URLSegment
 
   about:
     Title: "About Us"
@@ -350,8 +348,6 @@ Dynamic\Base\Page\BlockPage:
     ShowInSearch: true
     Sort: 2
     ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.aboutArea
-    PopulateMergeMatch:
-      - URLSegment
 
   capabilities:
     Title: "Capabilities"
@@ -361,8 +357,6 @@ Dynamic\Base\Page\BlockPage:
     ShowInSearch: true
     Sort: 3
     ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.capabilitiesArea
-    PopulateMergeMatch:
-      - URLSegment
 
   industries:
     Title: "Industries"
@@ -372,8 +366,6 @@ Dynamic\Base\Page\BlockPage:
     ShowInSearch: true
     Sort: 4
     ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.industriesArea
-    PopulateMergeMatch:
-      - URLSegment
 
   quality:
     Title: "Quality"
@@ -383,8 +375,6 @@ Dynamic\Base\Page\BlockPage:
     ShowInSearch: true
     Sort: 5
     ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.qualityArea
-    PopulateMergeMatch:
-      - URLSegment
 
   contact:
     Title: "Contact Us"
@@ -394,8 +384,6 @@ Dynamic\Base\Page\BlockPage:
     ShowInSearch: true
     Sort: 6
     ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.contactArea
-    PopulateMergeMatch:
-      - URLSegment
 
   elements:
     Title: "Elements"
@@ -405,8 +393,6 @@ Dynamic\Base\Page\BlockPage:
     ShowInSearch: true
     Sort: 7
     ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
-    PopulateMergeMatch:
-      - URLSegment
 
 # ============================================================================
 # BLOG PAGE AND BLOG POSTS
@@ -427,22 +413,16 @@ SilverStripe\LinkField\Models\SiteTreeLink:
     LinkText: "Home Page"
     Page: =>Dynamic\Base\Page\BlockPage.home
     Sort: 1
-    PopulateMergeMatch:
-      - LinkText
 
   linksElementAbout:
     LinkText: "About Our Company"
     Page: =>Dynamic\Base\Page\BlockPage.about
     Sort: 1
-    PopulateMergeMatch:
-      - LinkText
 
   linksElementCapabilities:
     LinkText: "Our Capabilities"
     Page: =>Dynamic\Base\Page\BlockPage.capabilities
     Sort: 1
-    PopulateMergeMatch:
-      - LinkText
 
   # Footer Navigation Links
   utilityRequestQuote:
@@ -451,129 +431,91 @@ SilverStripe\LinkField\Models\SiteTreeLink:
     Owner: =>SilverStripe\SiteConfig\SiteConfig.main
     OwnerRelation: "UtilityLinks"
     Sort: 1
-    PopulateMergeMatch:
-      - LinkText
 
   navLinkAbout:
     LinkText: "About Us"
     Page: =>Dynamic\Base\Page\BlockPage.about
     Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupCompany
     Sort: 1
-    PopulateMergeMatch:
-      - LinkText
 
   navLinkQuality:
     LinkText: "Quality"
     Page: =>Dynamic\Base\Page\BlockPage.quality
     Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupCompany
     Sort: 2
-    PopulateMergeMatch:
-      - LinkText
 
   navLinkContact:
     LinkText: "Contact"
     Page: =>Dynamic\Base\Page\BlockPage.contact
     Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupCompany
     Sort: 3
-    PopulateMergeMatch:
-      - LinkText
 
   navLinkCapabilities:
     LinkText: "Capabilities"
     Page: =>Dynamic\Base\Page\BlockPage.capabilities
     Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupServices
     Sort: 1
-    PopulateMergeMatch:
-      - LinkText
 
   navLinkIndustries:
     LinkText: "Industries"
     Page: =>Dynamic\Base\Page\BlockPage.industries
     Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupServices
     Sort: 2
-    PopulateMergeMatch:
-      - LinkText
 
   navLinkBlog:
     LinkText: "Blog"
     Page: =>SilverStripe\Blog\Model\Blog.BlogPage
     Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupResources
     Sort: 1
-    PopulateMergeMatch:
-      - LinkText
 
   navLinkElements:
     LinkText: "Elements"
     Page: =>Dynamic\Base\Page\BlockPage.elements
     Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupResources
     Sort: 2
-    PopulateMergeMatch:
-      - LinkText
 
 SilverStripe\LinkField\Models\EmailLink:
   staffJohnEmail:
     Email: 'john.peterson@precisionmfgco.com'
-    PopulateMergeMatch:
-      - Email
   staffSarahEmail:
     Email: 'sarah.thompson@precisionmfgco.com'
-    PopulateMergeMatch:
-      - Email
   staffMikeEmail:
     Email: 'mike.anderson@precisionmfgco.com'
-    PopulateMergeMatch:
-      - Email
 
 SilverStripe\LinkField\Models\PhoneLink:
   staffJohnPhone:
     Phone: '(920) 555-0101'
-    PopulateMergeMatch:
-      - Phone
   staffSarahPhone:
     Phone: '(920) 555-0102'
-    PopulateMergeMatch:
-      - Phone
   staffMikePhone:
     Phone: '(920) 555-0103'
-    PopulateMergeMatch:
-      - Phone
 
 SilverStripe\LinkField\Models\ExternalLink:
   accordionLink:
     LinkText: "Learn More"
     ExternalUrl: "https://google.com"
     OpenInNew: true
-    PopulateMergeMatch:
-      - ExternalUrl
 
   accordionLink2:
     LinkText: "Contact Us"
     ExternalUrl: "/contact"
     OpenInNew: false
-    PopulateMergeMatch:
-      - ExternalUrl
 
   # Social links for staff members
   staffJohnLinkedIn:
     LinkText: "LinkedIn"
     ExternalUrl: "https://www.linkedin.com/in/johnpeterson"
     OpenInNew: true
-    PopulateMergeMatch:
-      - ExternalUrl
 
   staffSarahLinkedIn:
     LinkText: "LinkedIn"
     ExternalUrl: "https://www.linkedin.com/in/sarahthompson"
     OpenInNew: true
-    PopulateMergeMatch:
-      - ExternalUrl
 
   staffMikeLinkedIn:
     LinkText: "LinkedIn"
     ExternalUrl: "https://www.linkedin.com/in/mikeanderson"
     OpenInNew: true
-    PopulateMergeMatch:
-      - ExternalUrl
 
 # ============================================================================
 # ELEMENT ROWS - Layout containers (2 per page: fluid for hero, container for content)
