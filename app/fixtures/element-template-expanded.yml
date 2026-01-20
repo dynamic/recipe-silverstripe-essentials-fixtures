@@ -326,8 +326,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     Title: 'About Section Container'
     ShowTitle: false
     AvailableGlobally: false
-    IsFluid: false
-    BackgroundStyle: 'bg-white'
+    IsFluid: true
+    BackgroundColor: '#CCBEF5'
+    BackgroundFullWidth: true
     ContainerStyle: 'container'
     VerticalPadding: 'py-5'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_about
@@ -434,15 +435,7 @@ DNADesign\Elemental\Models\ElementContent:
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_split_media
     Sort: 3
 
-  # About Section Content
-  gutenberg_about_content:
-    Title: 'About Our Company'
-    ShowTitle: true
-    AvailableGlobally: false
-    HTML: '<p class="lead">Founded in 2010, we have grown from a small startup to an industry leader.</p><h3>Our Mission</h3><p>To empower businesses with innovative tools and strategies that drive growth.</p><h3>Our Vision</h3><p>To be the most trusted partner for businesses seeking transformation.</p>'
-    SizeMD: '6'
-    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_about
-    Sort: 2
+
 
   # Two Column Content
   gutenberg_two_col_left:
@@ -496,6 +489,16 @@ Dynamic\Essentials\Element\SimpleContent:
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_testimonials
     Sort: 2
 
+  # About Section Content (7 column)
+  gutenberg_about_content:
+    Title: 'About Our Company'
+    ShowTitle: true
+    AvailableGlobally: false
+    HTML: '<p class="lead">Founded in 2010, we have grown from a small startup to an industry leader.</p><h3>Our Mission</h3><p>To empower businesses with innovative tools and strategies that drive growth.</p><h3>Our Vision</h3><p>To be the most trusted partner for businesses seeking transformation.</p>'
+    SizeMD: '7'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_about
+    Sort: 2
+
 # ============================================================================
 # ABOUT SECTION IMAGE - Visual only
 # ============================================================================
@@ -505,8 +508,9 @@ Dynamic\Elements\Image\Elements\ElementImage:
     Title: 'Our Team'
     ShowTitle: false
     AvailableGlobally: false
-    SizeMD: '6'
+    SizeMD: '5'
     Image: =>SilverStripe\Assets\Image.gutenbergAboutSection
+    ImageRounding: '1rem'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_about
     Sort: 3
 
@@ -527,6 +531,7 @@ Dynamic\Essentials\Element\HeroMedia:
     ContentAlign: 'Left'
     TextColor: 'white'
     Image: =>SilverStripe\Assets\Image.gutenbergHeroLeftAlign
+    BottomMargin: '0'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_hero_left
     Sort: 2
 
@@ -543,6 +548,7 @@ Dynamic\Essentials\Element\HeroMedia:
     ContentAlign: 'Right'
     TextColor: 'white'
     Image: =>SilverStripe\Assets\Image.gutenbergHeroRightAlign
+    BottomMargin: '0'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_hero_right
     Sort: 2
 
