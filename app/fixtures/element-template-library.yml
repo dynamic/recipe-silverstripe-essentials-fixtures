@@ -171,31 +171,31 @@ SilverStripe\Assets\Image:
   # Client logo images
   gutenbergLogo1:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/client-logo-1.png'
-    Filename: 'assets/Templates/Gutenberg/Logos/client-1.jpg'
+    Filename: 'assets/Templates/Gutenberg/Logos/client-1.png'
     Title: 'Client Logo 1'
     PopulateMergeAny: true
 
   gutenbergLogo2:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/client-logo-2.png'
-    Filename: 'assets/Templates/Gutenberg/Logos/client-2.jpg'
+    Filename: 'assets/Templates/Gutenberg/Logos/client-2.png'
     Title: 'Client Logo 2'
     PopulateMergeAny: true
 
   gutenbergLogo3:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/client-logo-3.png'
-    Filename: 'assets/Templates/Gutenberg/Logos/client-3.jpg'
+    Filename: 'assets/Templates/Gutenberg/Logos/client-3.png'
     Title: 'Client Logo 3'
     PopulateMergeAny: true
 
   gutenbergLogo4:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/client-logo-4.png'
-    Filename: 'assets/Templates/Gutenberg/Logos/client-4.jpg'
+    Filename: 'assets/Templates/Gutenberg/Logos/client-4.png'
     Title: 'Client Logo 4'
     PopulateMergeAny: true
 
   gutenbergLogo5:
     PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/client-logo-5.png'
-    Filename: 'assets/Templates/Gutenberg/Logos/client-5.jpg'
+    Filename: 'assets/Templates/Gutenberg/Logos/client-5.png'
     Title: 'Client Logo 5'
     PopulateMergeAny: true
 

@@ -26,7 +26,7 @@ Name: essentials-fixtures-extensions
 SilverStripe\CMS\Model\SiteTree:
   create_default_pages: false
   extensions:
-    - FixtureRecordExtension
+    - Dynamic\Recipe\Fixtures\Extensions\FixtureRecordExtension
 
 # Apply FixtureRecordExtension to base classes for populate merge protection
 # This adds FixtureIdentifier field used by PopulateMergeMatch to prevent
@@ -34,29 +34,29 @@ SilverStripe\CMS\Model\SiteTree:
 
 DNADesign\Elemental\Models\BaseElement:
   extensions:
-    - FixtureRecordExtension
+    - Dynamic\Recipe\Fixtures\Extensions\FixtureRecordExtension
 
 Dynamic\BaseObject\Model\BaseElementObject:
   extensions:
-    - FixtureRecordExtension
+    - Dynamic\Recipe\Fixtures\Extensions\FixtureRecordExtension
 
 Dynamic\ElementalTemplates\Models\Template:
   extensions:
-    - FixtureRecordExtension
+    - Dynamic\Recipe\Fixtures\Extensions\FixtureRecordExtension
 
 # Child models that don't extend base classes
 Dynamic\Elements\StatCounters\Model\StatCounter:
   extensions:
-    - FixtureRecordExtension
+    - Dynamic\Recipe\Fixtures\Extensions\FixtureRecordExtension
 
 Dynamic\Elements\Model\Testimonial:
   extensions:
-    - FixtureRecordExtension
+    - Dynamic\Recipe\Fixtures\Extensions\FixtureRecordExtension
 
 SilverStripe\LinkField\Models\Link:
   extensions:
-    - FixtureRecordExtension
+    - Dynamic\Recipe\Fixtures\Extensions\FixtureRecordExtension
 
 SilverStripe\Blog\Model\Blog:
   extensions:
-    - FixtureRecordExtension
+    - Dynamic\Recipe\Fixtures\Extensions\FixtureRecordExtension
