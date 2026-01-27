@@ -338,8 +338,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     Title: 'Video Section Container'
     ShowTitle: false
     AvailableGlobally: false
-    IsFluid: false
-    BackgroundStyle: 'bg-light'
+    IsFluid: true
+    BackgroundColor: '#CCBEF5'
+    BackgroundFullWidth: true
     ContainerStyle: 'container'
     VerticalPadding: 'py-5'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_video
@@ -350,7 +351,8 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     ShowTitle: false
     AvailableGlobally: false
     IsFluid: true
-    BackgroundStyle: 'bg-primary text-white'
+    BackgroundColor: '#000000'
+    BackgroundFullWidth: true
     VerticalPadding: 'py-4'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_cta_banner
     Sort: 1
@@ -359,8 +361,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     Title: 'FAQ Container'
     ShowTitle: false
     AvailableGlobally: false
-    IsFluid: false
-    BackgroundStyle: 'bg-white'
+    IsFluid: true
+    BackgroundColor: '#F2E8E3'
+    BackgroundFullWidth: true
     ContainerStyle: 'container'
     VerticalPadding: 'py-5'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_faq
@@ -370,8 +373,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     Title: 'Services Container'
     ShowTitle: false
     AvailableGlobally: false
-    IsFluid: false
-    BackgroundStyle: 'bg-white'
+    IsFluid: true
+    BackgroundColor: '#CCBEF5'
+    BackgroundFullWidth: true
     ContainerStyle: 'container'
     VerticalPadding: 'py-5'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_services
@@ -381,8 +385,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     Title: 'Contact Container'
     ShowTitle: false
     AvailableGlobally: false
-    IsFluid: false
-    BackgroundStyle: 'bg-light'
+    IsFluid: true
+    BackgroundColor: '#F2E8E3'
+    BackgroundFullWidth: true
     ContainerStyle: 'container'
     VerticalPadding: 'py-5'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_contact
@@ -456,7 +461,11 @@ DNADesign\Elemental\Models\ElementContent:
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_two_column
     Sort: 3
 
-  # Stats Intro Content
+# ============================================================================
+# TESTIMONIALS INTRO CONTENT (SimpleContent - no media tab)
+# ============================================================================
+Dynamic\Essentials\Element\SimpleContent:
+  # Stats Intro Content (moved from ElementContent)
   gutenberg_stats_intro:
     Title: 'Proven Results'
     ShowTitle: true
@@ -471,10 +480,6 @@ DNADesign\Elemental\Models\ElementContent:
     BottomMargin: '0'
     Sort: 2
 
-# ============================================================================
-# TESTIMONIALS INTRO CONTENT (SimpleContent - no media tab)
-# ============================================================================
-Dynamic\Essentials\Element\SimpleContent:
   gutenberg_testimonials_intro:
     Title: 'Why Clients Love Us'
     ShowTitle: true
@@ -497,6 +502,66 @@ Dynamic\Essentials\Element\SimpleContent:
     HTML: '<p class="lead">Founded in 2010, we have grown from a small startup to an industry leader.</p><h3>Our Mission</h3><p>To empower businesses with innovative tools and strategies that drive growth.</p><h3>Our Vision</h3><p>To be the most trusted partner for businesses seeking transformation.</p>'
     SizeMD: '7'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_about
+    Sort: 2
+
+  # Video Intro (SimpleContent - no media needed)
+  gutenberg_video_intro:
+    Title: 'Experience Our Work'
+    ShowTitle: true
+    TitleTag: 'h2'
+    AvailableGlobally: false
+    TopTitle: 'Featured Video'
+    HTML: '<p class="lead">Get an inside look at our process, our team, and the results we deliver for our clients.</p>'
+    SizeMD: '10'
+    OffsetMD: '1'
+    ContentAlign: 'Center'
+    BottomMargin: '0'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_video
+    Sort: 2
+
+  # FAQ Intro (SimpleContent)
+  gutenberg_faq_intro:
+    Title: 'Got Questions?'
+    ShowTitle: true
+    TitleTag: 'h2'
+    AvailableGlobally: false
+    TopTitle: 'FAQ'
+    HTML: '<p class="lead">Find answers to the most common questions about our services, pricing, and process.</p>'
+    SizeMD: '10'
+    OffsetMD: '1'
+    ContentAlign: 'Center'
+    BottomMargin: '0'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_faq
+    Sort: 2
+
+  # Services Intro (SimpleContent)
+  gutenberg_services_intro:
+    Title: 'What We Offer'
+    ShowTitle: true
+    TitleTag: 'h2'
+    AvailableGlobally: false
+    TopTitle: 'Our Services'
+    HTML: '<p class="lead">Comprehensive solutions tailored to your business needs. From strategy to execution, we have you covered.</p>'
+    SizeMD: '10'
+    OffsetMD: '1'
+    ContentAlign: 'Center'
+    BottomMargin: '0'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_services
+    Sort: 2
+
+  # Contact Intro (SimpleContent)
+  gutenberg_contact_intro:
+    Title: 'Let''s Connect'
+    ShowTitle: true
+    TitleTag: 'h2'
+    AvailableGlobally: false
+    TopTitle: 'Contact Us'
+    HTML: '<p class="lead">Ready to start your next project? Get in touch with our team today.</p>'
+    SizeMD: '10'
+    OffsetMD: '1'
+    ContentAlign: 'Center'
+    BottomMargin: '0'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_contact
     Sort: 2
 
 # ============================================================================
@@ -650,7 +715,7 @@ Dynamic\Elements\Oembed\Elements\ElementOembed:
     SizeMD: '8'
     OffsetMD: '2'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_video
-    Sort: 2
+    Sort: 3
 
 # ============================================================================
 # CTA BANNER ELEMENT
@@ -665,6 +730,7 @@ Dynamic\Elements\CTA\Elements\ElementCallToAction:
     SizeMD: '10'
     OffsetMD: '1'
     ContentAlign: 'Center'
+    BottomMargin: '0'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_cta_banner
     Sort: 2
 
@@ -678,6 +744,7 @@ Dynamic\Elements\CTA\Elements\ElementCallToAction:
     OffsetMD: '2'
     ContentAlign: 'Center'
     CtaLink: =>SilverStripe\LinkField\Models\ExternalLink.gutenbergStatsCtaLink
+    BottomMargin: '0'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_stats
     Sort: 4
 
@@ -695,7 +762,7 @@ Dynamic\Elements\Accordion\Elements\ElementAccordion:
     SizeMD: '10'
     OffsetMD: '1'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_faq
-    Sort: 2
+    Sort: 3
 
 Dynamic\Elements\Accordion\Model\AccordionPanel:
   gutenbergFaq1:
@@ -772,7 +839,7 @@ Dynamic\Elements\Card\Elements\ElementCard:
     Image: =>SilverStripe\Assets\Image.gutenbergService1
     ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.gutenbergServiceLink1
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_services
-    Sort: 2
+    Sort: 3
 
   gutenberg_service_2:
     Title: 'Custom Development'
@@ -788,7 +855,7 @@ Dynamic\Elements\Card\Elements\ElementCard:
     Image: =>SilverStripe\Assets\Image.gutenbergService2
     ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.gutenbergServiceLink2
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_services
-    Sort: 3
+    Sort: 4
 
   gutenberg_service_3:
     Title: 'Ongoing Support'
@@ -804,7 +871,7 @@ Dynamic\Elements\Card\Elements\ElementCard:
     Image: =>SilverStripe\Assets\Image.gutenbergService3
     ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.gutenbergServiceLink3
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_services
-    Sort: 4
+    Sort: 5
 
 # ============================================================================
 # CONTACT SECTION ELEMENT
@@ -827,7 +894,7 @@ Dynamic\Elements\CustomerService\Elements\ElementCustomerService:
     Country: 'United States'
     SizeMD: '12'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_contact
-    Sort: 2
+    Sort: 3
 
 # ============================================================================
 # EXPANDED TEMPLATES
