@@ -462,7 +462,7 @@ DNADesign\Elemental\Models\ElementContent:
     Sort: 3
 
 # ============================================================================
-# TESTIMONIALS INTRO CONTENT (SimpleContent - no media tab)
+# INTRO CONTENT (SimpleContent - no media tab)
 # ============================================================================
 Dynamic\Essentials\Element\SimpleContent:
   # Stats Intro Content (moved from ElementContent)
