@@ -352,6 +352,7 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     AvailableGlobally: false
     IsFluid: true
     BackgroundColor: '#000000'
+    BackgroundStyle: 'text-white'
     BackgroundFullWidth: true
     VerticalPadding: 'py-4'
     Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_cta_banner
