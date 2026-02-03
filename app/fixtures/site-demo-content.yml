@@ -1324,6 +1324,9 @@ Dynamic\Elements\StatCounters\Model\StatCounter:
 # ============================================================================
 Dynamic\Elements\Card\Elements\ElementCard:
   HomeCardCapabilities:
+    FixtureIdentifier: HomeCardCapabilities
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Our Capabilities"
     ShowTitle: true
     AvailableGlobally: false
@@ -1338,6 +1341,9 @@ Dynamic\Elements\Card\Elements\ElementCard:
     Sort: 4
 
   HomeCardIndustries:
+    FixtureIdentifier: HomeCardIndustries
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Industries Served"
     ShowTitle: true
     AvailableGlobally: false
@@ -1350,6 +1356,9 @@ Dynamic\Elements\Card\Elements\ElementCard:
     Sort: 5
 
   HomeCardQuality:
+    FixtureIdentifier: HomeCardQuality
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Quality Assurance"
     ShowTitle: true
     AvailableGlobally: false
@@ -1362,6 +1371,9 @@ Dynamic\Elements\Card\Elements\ElementCard:
     Sort: 6
 
   CardAgriculture:
+    FixtureIdentifier: CardAgriculture
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Agricultural Equipment"
     ShowTitle: true
     AvailableGlobally: false
@@ -1377,6 +1389,9 @@ Dynamic\Elements\Card\Elements\ElementCard:
     Sort: 5
 
   CardConstruction:
+    FixtureIdentifier: CardConstruction
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Construction Equipment"
     ShowTitle: true
     AvailableGlobally: false
@@ -1390,6 +1405,9 @@ Dynamic\Elements\Card\Elements\ElementCard:
     Sort: 6
 
   CardIndustrial:
+    FixtureIdentifier: CardIndustrial
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Industrial Machinery"
     ShowTitle: true
     AvailableGlobally: false
@@ -1403,6 +1421,9 @@ Dynamic\Elements\Card\Elements\ElementCard:
     Sort: 7
 
   ElementsCard:
+    FixtureIdentifier: ElementsCard
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "CNC Machining Services"
     ShowTitle: true
     AvailableGlobally: false
@@ -1417,6 +1438,9 @@ Dynamic\Elements\Card\Elements\ElementCard:
     Sort: 7
 
   ElementsCard2:
+    FixtureIdentifier: ElementsCard2
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Quality Inspection"
     ShowTitle: true
     AvailableGlobally: false
@@ -1433,6 +1457,9 @@ Dynamic\Elements\Card\Elements\ElementCard:
     Sort: 8
 
   ElementsCard3:
+    FixtureIdentifier: ElementsCard3
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Assembly Services"
     ShowTitle: true
     AvailableGlobally: false
@@ -1566,6 +1593,9 @@ Dynamic\Elements\CustomerService\Elements\ElementCustomerService:
 # ============================================================================
 Dynamic\Elements\Embedded\Elements\ElementEmbeddedCode:
   ElementsEmbeddedCode:
+    FixtureIdentifier: ElementsEmbeddedCode
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Embedded Code Element"
     ShowTitle: true
     AvailableGlobally: false
@@ -1874,6 +1904,9 @@ Dynamic\Elements\Carousel\Elements\ElementCarousel:
 # ============================================================================
 Dynamic\Elements\Gallery\Elements\ElementPhotoGallery:
   CapabilitiesGallery:
+    FixtureIdentifier: CapabilitiesGallery
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Our Work"
     ShowTitle: true
     AvailableGlobally: false
@@ -1882,6 +1915,9 @@ Dynamic\Elements\Gallery\Elements\ElementPhotoGallery:
     Sort: 7
 
   ElementsGallery:
+    FixtureIdentifier: ElementsGallery
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Gallery Element"
     ShowTitle: true
     AvailableGlobally: false
@@ -2021,6 +2057,9 @@ Dynamic\Elements\Model\TestimonialCategory:
 # ============================================================================
 Dynamic\Elements\Elements\ElementTestimonials:
   HomeTestimonials:
+    FixtureIdentifier: HomeTestimonials
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "What Our Customers Say"
     ShowTitle: true
     AvailableGlobally: false
@@ -2030,6 +2069,9 @@ Dynamic\Elements\Elements\ElementTestimonials:
     Sort: 8
 
   AboutTestimonials:
+    FixtureIdentifier: AboutTestimonials
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "What Our Customers Say"
     ShowTitle: true
     AvailableGlobally: false
@@ -2039,6 +2081,9 @@ Dynamic\Elements\Elements\ElementTestimonials:
     Sort: 7
 
   ElementsTestimonials:
+    FixtureIdentifier: ElementsTestimonials
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Testimonials Element"
     ShowTitle: true
     AvailableGlobally: false
@@ -2157,6 +2202,9 @@ SilverStripe\Blog\Model\BlogPost:
 # ============================================================================
 Dynamic\Elements\Blog\Elements\ElementBlogPosts:
   ElementsBlogPosts:
+    FixtureIdentifier: ElementsBlogPosts
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Blog Posts Element"
     ShowTitle: true
     AvailableGlobally: false
@@ -2172,6 +2220,9 @@ Dynamic\Elements\Blog\Elements\ElementBlogPosts:
 # ============================================================================
 DNADesign\ElementalUserForms\Model\ElementForm:
   ContactForm:
+    FixtureIdentifier: ContactForm
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Contact Form"
     ShowTitle: false
     AvailableGlobally: false
@@ -2182,6 +2233,9 @@ DNADesign\ElementalUserForms\Model\ElementForm:
     Sort: 6
 
   ElementsForm:
+    FixtureIdentifier: ElementsForm
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Form Element"
     ShowTitle: true
     AvailableGlobally: false
@@ -2195,6 +2249,9 @@ DNADesign\ElementalUserForms\Model\ElementForm:
 # Contact Form Fields
 SilverStripe\UserForms\Model\EditableFormField\EditableTextField:
   contactName:
+    FixtureIdentifier: contactName
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "Name"
     Title: "Your Name"
     Placeholder: "John Smith"
@@ -2203,6 +2260,9 @@ SilverStripe\UserForms\Model\EditableFormField\EditableTextField:
     Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.ContactForm
 
   contactCompany:
+    FixtureIdentifier: contactCompany
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "Company"
     Title: "Company Name"
     Placeholder: "Your Company"
@@ -2211,6 +2271,9 @@ SilverStripe\UserForms\Model\EditableFormField\EditableTextField:
     Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.ContactForm
 
   contactPhone:
+    FixtureIdentifier: contactPhone
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "Phone"
     Title: "Phone Number"
     Placeholder: "(920) 555-1234"
@@ -2220,6 +2283,9 @@ SilverStripe\UserForms\Model\EditableFormField\EditableTextField:
 
   # Demo form fields for Elements page
   demoName:
+    FixtureIdentifier: demoName
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "Name"
     Title: "Name"
     Placeholder: "Your name"
@@ -2228,6 +2294,9 @@ SilverStripe\UserForms\Model\EditableFormField\EditableTextField:
     Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.ElementsForm
 
   contactMessage:
+    FixtureIdentifier: contactMessage
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "Message"
     Title: "Message"
     Placeholder: "Tell us about your project requirements..."
@@ -2237,6 +2306,9 @@ SilverStripe\UserForms\Model\EditableFormField\EditableTextField:
     Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.ContactForm
 
   demoMessage:
+    FixtureIdentifier: demoMessage
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "Message"
     Title: "Message"
     Placeholder: "Your message"
@@ -2247,6 +2319,9 @@ SilverStripe\UserForms\Model\EditableFormField\EditableTextField:
 
 SilverStripe\UserForms\Model\EditableFormField\EditableEmailField:
   contactEmail:
+    FixtureIdentifier: contactEmail
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "Email"
     Title: "Email Address"
     Placeholder: "your.email@example.com"
@@ -2255,6 +2330,9 @@ SilverStripe\UserForms\Model\EditableFormField\EditableEmailField:
     Parent: =>DNADesign\ElementalUserForms\Model\ElementForm.ContactForm
 
   demoEmail:
+    FixtureIdentifier: demoEmail
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "Email"
     Title: "Email"
     Placeholder: "your@email.com"
@@ -2264,6 +2342,9 @@ SilverStripe\UserForms\Model\EditableFormField\EditableEmailField:
 
 SilverStripe\UserForms\Model\EditableFormField\EditableDropdown:
   contactInquiry:
+    FixtureIdentifier: contactInquiry
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "InquiryType"
     Title: "Type of Inquiry"
     Required: true
@@ -2272,24 +2353,36 @@ SilverStripe\UserForms\Model\EditableFormField\EditableDropdown:
 
 SilverStripe\UserForms\Model\EditableFormField\EditableOption:
   inquiryQuote:
+    FixtureIdentifier: inquiryQuote
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "Quote Request"
     Title: "Quote Request"
     Sort: 1
     Parent: =>SilverStripe\UserForms\Model\EditableFormField\EditableDropdown.contactInquiry
 
   inquiryGeneral:
+    FixtureIdentifier: inquiryGeneral
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "General Inquiry"
     Title: "General Inquiry"
     Sort: 2
     Parent: =>SilverStripe\UserForms\Model\EditableFormField\EditableDropdown.contactInquiry
 
   inquiryTechnical:
+    FixtureIdentifier: inquiryTechnical
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "Technical Question"
     Title: "Technical Question"
     Sort: 3
     Parent: =>SilverStripe\UserForms\Model\EditableFormField\EditableDropdown.contactInquiry
 
   inquiryTour:
+    FixtureIdentifier: inquiryTour
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "Facility Tour"
     Title: "Facility Tour Request"
     Sort: 4
@@ -2302,6 +2395,9 @@ SilverStripe\UserForms\Model\EditableFormField\EditableOption:
 # ============================================================================
 Dynamic\Elements\Links\Elements\LinksElement:
   ElementsLinks:
+    FixtureIdentifier: ElementsLinks
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Links Element"
     ShowTitle: true
     AvailableGlobally: false
@@ -2326,6 +2422,9 @@ Dynamic\Elements\Oembed\Elements\ElementOembed:
 # Link objects for LinksElement (demonstrating has_many Link relation)
 Dynamic\Elements\Links\Model\LinkListObject:
   linkListHome:
+    FixtureIdentifier: linkListHome
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Home Page"
     ShowTitle: true
     Content: "<p>Return to our homepage to explore all our services and capabilities.</p>"
@@ -2334,6 +2433,9 @@ Dynamic\Elements\Links\Model\LinkListObject:
     Link: =>SilverStripe\LinkField\Models\SiteTreeLink.linksElementHome
 
   linkListAbout:
+    FixtureIdentifier: linkListAbout
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "About Our Company"
     ShowTitle: true
     Content: "<p>Learn about our history, team, and commitment to manufacturing excellence.</p>"
@@ -2342,6 +2444,9 @@ Dynamic\Elements\Links\Model\LinkListObject:
     Link: =>SilverStripe\LinkField\Models\SiteTreeLink.linksElementAbout
 
   linkListCapabilities:
+    FixtureIdentifier: linkListCapabilities
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Our Capabilities"
     ShowTitle: true
     Content: "<p>Explore our CNC machining, fabrication, and quality assurance capabilities.</p>"
@@ -2350,6 +2455,9 @@ Dynamic\Elements\Links\Model\LinkListObject:
     Link: =>SilverStripe\LinkField\Models\SiteTreeLink.linksElementCapabilities
 
   linkListContact:
+    FixtureIdentifier: linkListContact
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Contact Us"
     ShowTitle: true
     Content: "<p>Get in touch with our team for quotes, questions, or facility tours.</p>"
@@ -2464,6 +2572,9 @@ Dynamic\Elements\Sponsors\Model\Sponsor:
 # ============================================================================
 Dynamic\Elements\Sponsors\Elements\ElementSponsor:
   AboutSponsors:
+    FixtureIdentifier: AboutSponsors
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Our Partners"
     ShowTitle: true
     AvailableGlobally: false
@@ -2478,6 +2589,9 @@ Dynamic\Elements\Sponsors\Elements\ElementSponsor:
       - =>Dynamic\Elements\Sponsors\Model\Sponsor.sponsorDemo4
 
   ElementsSponsors:
+    FixtureIdentifier: ElementsSponsors
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Sponsors Element"
     ShowTitle: true
     AvailableGlobally: false
@@ -2540,6 +2654,9 @@ Dynamic\Essentials\Model\StaffMember:
 # ============================================================================
 Dynamic\Essentials\Element\ElementStaff:
   AboutStaff:
+    FixtureIdentifier: AboutStaff
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Our Leadership Team"
     ShowTitle: true
     AvailableGlobally: false
@@ -2553,6 +2670,9 @@ Dynamic\Essentials\Element\ElementStaff:
       - =>Dynamic\Essentials\Model\StaffMember.staffMike
 
   ElementsStaff:
+    FixtureIdentifier: ElementsStaff
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Staff Element"
     ShowTitle: true
     AvailableGlobally: false
