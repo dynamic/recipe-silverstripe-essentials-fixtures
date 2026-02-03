@@ -2117,6 +2117,9 @@ Dynamic\Elements\Model\Testimonial:
 # ============================================================================
 SilverStripe\Blog\Model\BlogPost:
   BlogPost1:
+    FixtureIdentifier: BlogPost1
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Advanced CNC Techniques"
     URLSegment: "advanced-cnc-techniques"
     Content: "<p>Explore our latest advancements in CNC technology and how they enable tighter tolerances and faster production times. Our investment in 5-axis milling centers allows us to machine complex geometries in a single setup.</p><p>Learn more about our capabilities and how we can help with your next project.</p>"
@@ -2126,6 +2129,9 @@ SilverStripe\Blog\Model\BlogPost:
     Parent: =>SilverStripe\Blog\Model\Blog.BlogPage
 
   BlogPost2:
+    FixtureIdentifier: BlogPost2
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Quality Assurance Process"
     URLSegment: "quality-assurance-process"
     Content: "<p>Our comprehensive quality assurance process ensures every part meets your specifications. From incoming material inspection to final dimensional verification, we employ multiple quality checkpoints throughout production.</p><p>We maintain ISO 9001:2015 certification and provide full documentation for every order.</p>"
@@ -2135,6 +2141,9 @@ SilverStripe\Blog\Model\BlogPost:
     Parent: =>SilverStripe\Blog\Model\Blog.BlogPage
 
   BlogPost3:
+    FixtureIdentifier: BlogPost3
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Materials We Machine"
     URLSegment: "materials-we-machine"
     Content: "<p>We have extensive experience machining a wide variety of materials including aluminum, steel, stainless steel, brass, and engineered plastics. Each material presents unique challenges that our experienced team has mastered.</p><p>Contact us to discuss your specific material requirements and how we can optimize your designs for manufacturability.</p>"
@@ -2488,6 +2497,9 @@ Dynamic\Elements\Sponsors\Elements\ElementSponsor:
 
 Dynamic\Essentials\Model\StaffMember:
   staffJohn:
+    FixtureIdentifier: staffJohn
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "John Peterson"
     Position: "President & CEO"
     Content: "<p>John co-founded Precision MFG Co. in 1985. He holds a degree in Mechanical Engineering from UW-Madison and has over 40 years of experience in the manufacturing industry.</p>"
@@ -2498,6 +2510,9 @@ Dynamic\Essentials\Model\StaffMember:
     LinkedInLink: =>SilverStripe\LinkField\Models\ExternalLink.staffJohnLinkedIn
 
   staffSarah:
+    FixtureIdentifier: staffSarah
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "Sarah Thompson"
     Position: "VP of Operations"
     Content: "<p>Sarah joined Precision MFG Co. in 2005. She earned her Industrial Engineering degree from Michigan Tech and holds a Six Sigma Black Belt certification.</p>"
@@ -2508,6 +2523,9 @@ Dynamic\Essentials\Model\StaffMember:
     LinkedInLink: =>SilverStripe\LinkField\Models\ExternalLink.staffSarahLinkedIn
 
   staffMike:
+    FixtureIdentifier: staffMike
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "Mike Anderson"
     Position: "Chief Technology Officer"
     Content: "<p>Mike oversees our CNC programming, CAD/CAM operations, and technology investments. He has been with the company for 15 years.</p>"
