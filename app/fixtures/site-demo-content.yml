@@ -14,181 +14,280 @@
 # ============================================================================
 SilverStripe\Assets\Image:
   siteLogo:
+    FixtureIdentifier: siteLogo
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/logo.svg"
     Filename: "assets/Demo/logo.svg"
     Title: "Precision MFG Co. Logo"
-    PopulateMergeAny: true
 
   heroHome:
+    FixtureIdentifier: heroHome
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/hero-home.jpg"
     Filename: "assets/Demo/Heroes/hero-home.jpg"
     Title: "Manufacturing Floor"
-    PopulateMergeAny: true
 
   heroAbout:
+    FixtureIdentifier: heroAbout
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/hero-about-v2.jpg"
     Filename: "assets/Demo/Heroes/hero-about-v2.jpg"
     Title: "Team at Work"
-    PopulateMergeAny: true
 
   heroCapabilities:
+    FixtureIdentifier: heroCapabilities
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/hero-capabilities.jpg"
     Filename: "assets/Demo/Heroes/hero-capabilities.jpg"
     Title: "CNC Machinery"
 
   heroIndustries:
+    FixtureIdentifier: heroIndustries
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/hero-industries.jpg"
     Filename: "assets/Demo/Heroes/hero-industries.jpg"
     Title: "Industrial Equipment"
 
   heroQuality:
+    FixtureIdentifier: heroQuality
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/hero-quality.jpg"
     Filename: "assets/Demo/Heroes/hero-quality.jpg"
     Title: "Quality Inspection"
 
   heroContact:
+    FixtureIdentifier: heroContact
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/hero-contact.jpg"
     Filename: "assets/Demo/Heroes/hero-contact.jpg"
     Title: "Contact Us"
 
   heroElements:
+    FixtureIdentifier: heroElements
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/hero-elements.jpg"
     Filename: "assets/Demo/Heroes/hero-elements.jpg"
     Title: "Element Showcase"
 
   # Card images
   cardAgriculture:
+    FixtureIdentifier: cardAgriculture
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gallery-1.jpg"
     Filename: "assets/Demo/Cards/card-agriculture.jpg"
     Title: "Agriculture"
 
   cardConstruction:
+    FixtureIdentifier: cardConstruction
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gallery-3.jpg"
     Filename: "assets/Demo/Cards/card-construction.jpg"
     Title: "Construction"
 
   cardIndustrial:
+    FixtureIdentifier: cardIndustrial
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gallery-4.jpg"
     Filename: "assets/Demo/Cards/card-industrial.jpg"
     Title: "Industrial"
 
   # Gallery images
   gallery1:
+    FixtureIdentifier: gallery1
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gallery-1.jpg"
     Filename: "assets/Demo/Gallery/gallery-1.jpg"
     Title: "Precision Machining"
 
   gallery2:
+    FixtureIdentifier: gallery2
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gallery-2.jpg"
     Filename: "assets/Demo/Gallery/gallery-2.jpg"
     Title: "Quality Control"
 
   gallery3:
+    FixtureIdentifier: gallery3
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gallery-3.jpg"
     Filename: "assets/Demo/Gallery/gallery-3.jpg"
     Title: "CNC Operations"
 
   gallery4:
+    FixtureIdentifier: gallery4
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gallery-4.jpg"
     Filename: "assets/Demo/Gallery/gallery-4.jpg"
     Title: "Finished Parts"
 
   # Testimonial images
   testimonial1:
+    FixtureIdentifier: testimonial1
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/testimonial-1.jpg"
     Filename: "assets/Demo/Testimonials/testimonial-1.jpg"
     Title: "Mike Johnson"
 
   testimonial2:
+    FixtureIdentifier: testimonial2
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/testimonial-2.jpg"
     Filename: "assets/Demo/Testimonials/testimonial-2.jpg"
     Title: "Sarah Chen"
 
   # Staff images
   staff1:
+    FixtureIdentifier: staff1
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/staff-1.jpg"
     Filename: "assets/Demo/Staff/staff-1.jpg"
     Title: "Staff Member 1"
 
   staff2:
+    FixtureIdentifier: staff2
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/staff-2.jpg"
     Filename: "assets/Demo/Staff/staff-2.jpg"
     Title: "Staff Member 2"
 
   staffMike:
+    FixtureIdentifier: staffMike
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/staff-mike-v2.jpg"
     Filename: "assets/Demo/Staff/staff-mike-v2.jpg"
     Title: "Mike Anderson"
 
   # Carousel images
   carousel1:
+    FixtureIdentifier: carousel1
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/carousel-1.jpg"
     Filename: "assets/Demo/Carousel/carousel-1.jpg"
     Title: "Slide 1"
 
   carousel2:
+    FixtureIdentifier: carousel2
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/carousel-2.jpg"
     Filename: "assets/Demo/Carousel/carousel-2.jpg"
     Title: "Slide 2"
 
   carousel3:
+    FixtureIdentifier: carousel3
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/carousel-3.jpg"
     Filename: "assets/Demo/Carousel/carousel-3.jpg"
     Title: "Slide 3"
 
   carousel4:
+    FixtureIdentifier: carousel4
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/carousel-4.jpg"
     Filename: "assets/Demo/Carousel/carousel-4.jpg"
     Title: "Slide 4"
 
   # Content image
   contentImage:
+    FixtureIdentifier: contentImage
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/promo-1.jpg"
     Filename: "assets/Demo/Content/content-image.jpg"
     Title: "Manufacturing Process"
 
   contentValues:
+    FixtureIdentifier: contentValues
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/content-values.jpg"
     Filename: "assets/Demo/Content/content-values.jpg"
     Title: "Core Values"
 
   # Sponsor images
   sponsorImage1:
+    FixtureIdentifier: sponsorImage1
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/sponsor-1.jpg"
     Filename: "assets/Demo/Sponsors/sponsor-1.jpg"
     Title: "Sponsor 1"
 
   sponsorImage2:
+    FixtureIdentifier: sponsorImage2
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/sponsor-2.jpg"
     Filename: "assets/Demo/Sponsors/sponsor-2.jpg"
     Title: "Sponsor 2"
 
   sponsorImage3:
+    FixtureIdentifier: sponsorImage3
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/sponsor-3.jpg"
     Filename: "assets/Demo/Sponsors/sponsor-3.jpg"
     Title: "Sponsor 3"
 
   sponsorImage4:
+    FixtureIdentifier: sponsorImage4
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/sponsor-4.jpg"
     Filename: "assets/Demo/Sponsors/sponsor-4.jpg"
     Title: "Sponsor 4"
 
   sponsorImage5:
+    FixtureIdentifier: sponsorImage5
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/sponsor-5.jpg"
     Filename: "assets/Demo/Sponsors/sponsor-5.jpg"
     Title: "Sponsor 5"
 
   sponsorImage6:
+    FixtureIdentifier: sponsorImage6
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/sponsor-6.jpg"
     Filename: "assets/Demo/Sponsors/sponsor-6.jpg"
     Title: "Sponsor 6"
 
   sponsorImage7:
+    FixtureIdentifier: sponsorImage7
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/sponsor-7.jpg"
     Filename: "assets/Demo/Sponsors/sponsor-7.jpg"
     Title: "Sponsor 7"
 
   sponsorImage8:
+    FixtureIdentifier: sponsorImage8
+    PopulateMergeMatch:
+      - FixtureIdentifier
     PopulateFileFrom: "vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/sponsor-8.jpg"
     Filename: "assets/Demo/Sponsors/sponsor-8.jpg"
     Title: "Sponsor 8"
@@ -232,23 +331,31 @@ SilverStripe\SiteConfig\SiteConfig:
     # Footer Content
     FooterNote: "<p>Precision MFG Co. is a family-owned manufacturing company specializing in precision machining and fabrication services. We are committed to quality, reliability, and customer satisfaction.</p>"
     FooterCopyright: "© 2025 Precision MFG Co. All rights reserved. | Privacy Policy | Terms of Service"
-    PopulateMergeAny: true
 
 # ============================================================================
 # NAVIGATION COLUMNS - Footer navigation structure
 # ============================================================================
 Dynamic\Base\Model\NavigationColumn:
   navColCompany:
+    FixtureIdentifier: navColCompany
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Company"
     SortOrder: 1
     Config: =>SilverStripe\SiteConfig\SiteConfig.main
 
   navColServices:
+    FixtureIdentifier: navColServices
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Services"
     SortOrder: 2
     Config: =>SilverStripe\SiteConfig\SiteConfig.main
 
   navColResources:
+    FixtureIdentifier: navColResources
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Resources"
     SortOrder: 3
     Config: =>SilverStripe\SiteConfig\SiteConfig.main
@@ -258,16 +365,25 @@ Dynamic\Base\Model\NavigationColumn:
 # ============================================================================
 Dynamic\Base\Model\NavigationGroup:
   navGroupCompany:
+    FixtureIdentifier: navGroupCompany
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Company Links"
     SortOrder: 1
     NavigationColumn: =>Dynamic\Base\Model\NavigationColumn.navColCompany
 
   navGroupServices:
+    FixtureIdentifier: navGroupServices
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Services Links"
     SortOrder: 1
     NavigationColumn: =>Dynamic\Base\Model\NavigationColumn.navColServices
 
   navGroupResources:
+    FixtureIdentifier: navGroupResources
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Resources Links"
     SortOrder: 1
     NavigationColumn: =>Dynamic\Base\Model\NavigationColumn.navColResources
@@ -277,6 +393,9 @@ Dynamic\Base\Model\NavigationGroup:
 # ============================================================================
 Dynamic\Base\Model\SocialLink:
   socialFacebook:
+    FixtureIdentifier: socialFacebook
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Facebook"
     SocialChannel: "facebook"
     ExternalUrl: "https://www.facebook.com/precisionmfgco"
@@ -285,6 +404,9 @@ Dynamic\Base\Model\SocialLink:
     OwnerRelation: "SocialLinks"
 
   socialInstagram:
+    FixtureIdentifier: socialInstagram
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Instagram"
     SocialChannel: "instagram"
     ExternalUrl: "https://www.instagram.com/precisionmfgco"
@@ -293,6 +415,9 @@ Dynamic\Base\Model\SocialLink:
     OwnerRelation: "SocialLinks"
 
   socialLinkedIn:
+    FixtureIdentifier: socialLinkedIn
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "LinkedIn"
     SocialChannel: "linkedin"
     ExternalUrl: "https://www.linkedin.com/company/precisionmfgco"
@@ -301,6 +426,9 @@ Dynamic\Base\Model\SocialLink:
     OwnerRelation: "SocialLinks"
 
   socialYouTube:
+    FixtureIdentifier: socialYouTube
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "YouTube"
     SocialChannel: "youtube"
     ExternalUrl: "https://www.youtube.com/@precisionmfgco"
@@ -332,6 +460,9 @@ DNADesign\Elemental\Models\ElementalArea:
 # ============================================================================
 Dynamic\Base\Page\BlockPage:
   home:
+    FixtureIdentifier: home
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Home"
     URLSegment: "home"
     ParentID: 0
@@ -341,6 +472,9 @@ Dynamic\Base\Page\BlockPage:
     ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.homeArea
 
   about:
+    FixtureIdentifier: about
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "About Us"
     URLSegment: "about-us"
     ParentID: 0
@@ -350,6 +484,9 @@ Dynamic\Base\Page\BlockPage:
     ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.aboutArea
 
   capabilities:
+    FixtureIdentifier: capabilities
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Capabilities"
     URLSegment: "capabilities"
     ParentID: 0
@@ -359,6 +496,9 @@ Dynamic\Base\Page\BlockPage:
     ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.capabilitiesArea
 
   industries:
+    FixtureIdentifier: industries
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Industries"
     URLSegment: "industries"
     ParentID: 0
@@ -368,6 +508,9 @@ Dynamic\Base\Page\BlockPage:
     ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.industriesArea
 
   quality:
+    FixtureIdentifier: quality
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Quality"
     URLSegment: "quality"
     ParentID: 0
@@ -377,6 +520,9 @@ Dynamic\Base\Page\BlockPage:
     ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.qualityArea
 
   contact:
+    FixtureIdentifier: contact
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Contact Us"
     URLSegment: "contact"
     ParentID: 0
@@ -386,6 +532,9 @@ Dynamic\Base\Page\BlockPage:
     ElementalArea: =>DNADesign\Elemental\Models\ElementalArea.contactArea
 
   elements:
+    FixtureIdentifier: elements
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Elements"
     URLSegment: "elements"
     ParentID: 0
@@ -399,6 +548,9 @@ Dynamic\Base\Page\BlockPage:
 # ============================================================================
 SilverStripe\Blog\Model\Blog:
   BlogPage:
+    FixtureIdentifier: BlogPage
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Blog"
     URLSegment: "blog"
     Parent: =>Dynamic\Base\Page\BlockPage.about
@@ -410,22 +562,34 @@ SilverStripe\Blog\Model\Blog:
 # ============================================================================
 SilverStripe\LinkField\Models\SiteTreeLink:
   linksElementHome:
+    FixtureIdentifier: linksElementHome
+    PopulateMergeMatch:
+      - FixtureIdentifier
     LinkText: "Home Page"
     Page: =>Dynamic\Base\Page\BlockPage.home
     Sort: 1
 
   linksElementAbout:
+    FixtureIdentifier: linksElementAbout
+    PopulateMergeMatch:
+      - FixtureIdentifier
     LinkText: "About Our Company"
     Page: =>Dynamic\Base\Page\BlockPage.about
     Sort: 1
 
   linksElementCapabilities:
+    FixtureIdentifier: linksElementCapabilities
+    PopulateMergeMatch:
+      - FixtureIdentifier
     LinkText: "Our Capabilities"
     Page: =>Dynamic\Base\Page\BlockPage.capabilities
     Sort: 1
 
   # Footer Navigation Links
   utilityRequestQuote:
+    FixtureIdentifier: utilityRequestQuote
+    PopulateMergeMatch:
+      - FixtureIdentifier
     LinkText: "Request a Quote"
     Page: =>Dynamic\Base\Page\BlockPage.contact
     Owner: =>SilverStripe\SiteConfig\SiteConfig.main
@@ -433,42 +597,63 @@ SilverStripe\LinkField\Models\SiteTreeLink:
     Sort: 1
 
   navLinkAbout:
+    FixtureIdentifier: navLinkAbout
+    PopulateMergeMatch:
+      - FixtureIdentifier
     LinkText: "About Us"
     Page: =>Dynamic\Base\Page\BlockPage.about
     Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupCompany
     Sort: 1
 
   navLinkQuality:
+    FixtureIdentifier: navLinkQuality
+    PopulateMergeMatch:
+      - FixtureIdentifier
     LinkText: "Quality"
     Page: =>Dynamic\Base\Page\BlockPage.quality
     Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupCompany
     Sort: 2
 
   navLinkContact:
+    FixtureIdentifier: navLinkContact
+    PopulateMergeMatch:
+      - FixtureIdentifier
     LinkText: "Contact"
     Page: =>Dynamic\Base\Page\BlockPage.contact
     Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupCompany
     Sort: 3
 
   navLinkCapabilities:
+    FixtureIdentifier: navLinkCapabilities
+    PopulateMergeMatch:
+      - FixtureIdentifier
     LinkText: "Capabilities"
     Page: =>Dynamic\Base\Page\BlockPage.capabilities
     Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupServices
     Sort: 1
 
   navLinkIndustries:
+    FixtureIdentifier: navLinkIndustries
+    PopulateMergeMatch:
+      - FixtureIdentifier
     LinkText: "Industries"
     Page: =>Dynamic\Base\Page\BlockPage.industries
     Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupServices
     Sort: 2
 
   navLinkBlog:
+    FixtureIdentifier: navLinkBlog
+    PopulateMergeMatch:
+      - FixtureIdentifier
     LinkText: "Blog"
     Page: =>SilverStripe\Blog\Model\Blog.BlogPage
     Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupResources
     Sort: 1
 
   navLinkElements:
+    FixtureIdentifier: navLinkElements
+    PopulateMergeMatch:
+      - FixtureIdentifier
     LinkText: "Elements"
     Page: =>Dynamic\Base\Page\BlockPage.elements
     Owner: =>Dynamic\Base\Model\NavigationGroup.navGroupResources
@@ -476,43 +661,76 @@ SilverStripe\LinkField\Models\SiteTreeLink:
 
 SilverStripe\LinkField\Models\EmailLink:
   staffJohnEmail:
+    FixtureIdentifier: staffJohnEmail
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Email: 'john.peterson@precisionmfgco.com'
   staffSarahEmail:
+    FixtureIdentifier: staffSarahEmail
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Email: 'sarah.thompson@precisionmfgco.com'
   staffMikeEmail:
+    FixtureIdentifier: staffMikeEmail
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Email: 'mike.anderson@precisionmfgco.com'
 
 SilverStripe\LinkField\Models\PhoneLink:
   staffJohnPhone:
+    FixtureIdentifier: staffJohnPhone
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Phone: '(920) 555-0101'
   staffSarahPhone:
+    FixtureIdentifier: staffSarahPhone
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Phone: '(920) 555-0102'
   staffMikePhone:
+    FixtureIdentifier: staffMikePhone
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Phone: '(920) 555-0103'
 
 SilverStripe\LinkField\Models\ExternalLink:
   accordionLink:
+    FixtureIdentifier: accordionLink
+    PopulateMergeMatch:
+      - FixtureIdentifier
     LinkText: "Learn More"
     ExternalUrl: "https://google.com"
     OpenInNew: true
 
   accordionLink2:
+    FixtureIdentifier: accordionLink2
+    PopulateMergeMatch:
+      - FixtureIdentifier
     LinkText: "Contact Us"
     ExternalUrl: "/contact"
     OpenInNew: false
 
   # Social links for staff members
   staffJohnLinkedIn:
+    FixtureIdentifier: staffJohnLinkedIn
+    PopulateMergeMatch:
+      - FixtureIdentifier
     LinkText: "LinkedIn"
     ExternalUrl: "https://www.linkedin.com/in/johnpeterson"
     OpenInNew: true
 
   staffSarahLinkedIn:
+    FixtureIdentifier: staffSarahLinkedIn
+    PopulateMergeMatch:
+      - FixtureIdentifier
     LinkText: "LinkedIn"
     ExternalUrl: "https://www.linkedin.com/in/sarahthompson"
     OpenInNew: true
 
   staffMikeLinkedIn:
+    FixtureIdentifier: staffMikeLinkedIn
+    PopulateMergeMatch:
+      - FixtureIdentifier
     LinkText: "LinkedIn"
     ExternalUrl: "https://www.linkedin.com/in/mikeanderson"
     OpenInNew: true
@@ -523,6 +741,9 @@ SilverStripe\LinkField\Models\ExternalLink:
 WeDevelop\ElementalGrid\Models\ElementRow:
   # Home page rows
   HomeRowFluid:
+    FixtureIdentifier: HomeRowFluid
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Hero Row"
     ShowTitle: false
     AvailableGlobally: false
@@ -530,6 +751,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     Parent: =>DNADesign\Elemental\Models\ElementalArea.homeArea
     Sort: 1
   HomeRowContainer:
+    FixtureIdentifier: HomeRowContainer
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Content Row"
     ShowTitle: false
     AvailableGlobally: false
@@ -539,6 +763,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
 
   # About page rows
   AboutRowFluid:
+    FixtureIdentifier: AboutRowFluid
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Hero Row"
     ShowTitle: false
     AvailableGlobally: false
@@ -546,6 +773,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     Parent: =>DNADesign\Elemental\Models\ElementalArea.aboutArea
     Sort: 1
   AboutRowContainer:
+    FixtureIdentifier: AboutRowContainer
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Content Row"
     ShowTitle: false
     AvailableGlobally: false
@@ -555,6 +785,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
 
   # Capabilities page rows
   CapabilitiesRowFluid:
+    FixtureIdentifier: CapabilitiesRowFluid
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Hero Row"
     ShowTitle: false
     AvailableGlobally: false
@@ -562,6 +795,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     Parent: =>DNADesign\Elemental\Models\ElementalArea.capabilitiesArea
     Sort: 1
   CapabilitiesRowContainer:
+    FixtureIdentifier: CapabilitiesRowContainer
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Content Row"
     ShowTitle: false
     AvailableGlobally: false
@@ -571,6 +807,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
 
   # Industries page rows
   IndustriesRowFluid:
+    FixtureIdentifier: IndustriesRowFluid
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Hero Row"
     ShowTitle: false
     AvailableGlobally: false
@@ -578,6 +817,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     Parent: =>DNADesign\Elemental\Models\ElementalArea.industriesArea
     Sort: 1
   IndustriesRowContainer:
+    FixtureIdentifier: IndustriesRowContainer
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Content Row"
     ShowTitle: false
     AvailableGlobally: false
@@ -587,6 +829,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
 
   # Quality page rows
   QualityRowFluid:
+    FixtureIdentifier: QualityRowFluid
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Hero Row"
     ShowTitle: false
     AvailableGlobally: false
@@ -594,6 +839,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     Parent: =>DNADesign\Elemental\Models\ElementalArea.qualityArea
     Sort: 1
   QualityRowContainer:
+    FixtureIdentifier: QualityRowContainer
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Content Row"
     ShowTitle: false
     AvailableGlobally: false
@@ -603,6 +851,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
 
   # Contact page rows
   ContactRowFluid:
+    FixtureIdentifier: ContactRowFluid
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Hero Row"
     ShowTitle: false
     AvailableGlobally: false
@@ -610,6 +861,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     Parent: =>DNADesign\Elemental\Models\ElementalArea.contactArea
     Sort: 1
   ContactRowContainer:
+    FixtureIdentifier: ContactRowContainer
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Content Row"
     ShowTitle: false
     AvailableGlobally: false
@@ -619,6 +873,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
 
   # Elements page rows
   ElementsRowFluid:
+    FixtureIdentifier: ElementsRowFluid
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Hero Row"
     ShowTitle: false
     AvailableGlobally: false
@@ -626,6 +883,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
     Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
     Sort: 1
   ElementsRowContainer:
+    FixtureIdentifier: ElementsRowContainer
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Content Row"
     ShowTitle: false
     AvailableGlobally: false
@@ -638,6 +898,9 @@ WeDevelop\ElementalGrid\Models\ElementRow:
 # ============================================================================
 Dynamic\Essentials\Element\HeroMedia:
   HomeHero:
+    FixtureIdentifier: HomeHero
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Precision Manufacturing Excellence"
     ShowTitle: true
     AvailableGlobally: false
@@ -649,6 +912,9 @@ Dynamic\Essentials\Element\HeroMedia:
     Sort: 2
 
   AboutHero:
+    FixtureIdentifier: AboutHero
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Our Story"
     ShowTitle: true
     AvailableGlobally: false
@@ -661,6 +927,9 @@ Dynamic\Essentials\Element\HeroMedia:
     Sort: 2
 
   CapabilitiesHero:
+    FixtureIdentifier: CapabilitiesHero
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Our Capabilities"
     ShowTitle: true
     AvailableGlobally: false
@@ -673,6 +942,9 @@ Dynamic\Essentials\Element\HeroMedia:
     Sort: 2
 
   IndustriesHero:
+    FixtureIdentifier: IndustriesHero
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Industries We Serve"
     ShowTitle: true
     AvailableGlobally: false
@@ -685,6 +957,9 @@ Dynamic\Essentials\Element\HeroMedia:
     Sort: 2
 
   QualityHero:
+    FixtureIdentifier: QualityHero
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Quality Assurance"
     ShowTitle: true
     AvailableGlobally: false
@@ -697,6 +972,9 @@ Dynamic\Essentials\Element\HeroMedia:
     Sort: 2
 
   ContactHero:
+    FixtureIdentifier: ContactHero
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Contact Us"
     ShowTitle: true
     AvailableGlobally: false
@@ -709,6 +987,9 @@ Dynamic\Essentials\Element\HeroMedia:
     Sort: 2
 
   ElementsHero:
+    FixtureIdentifier: ElementsHero
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Element Showcase"
     ShowTitle: true
     AvailableGlobally: false
@@ -727,6 +1008,9 @@ Dynamic\Essentials\Element\HeroMedia:
 DNADesign\Elemental\Models\ElementContent:
   # Home page content
   HomeIntro:
+    FixtureIdentifier: HomeIntro
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Your Partner in Precision Manufacturing"
     ShowTitle: true
     AvailableGlobally: false
@@ -737,6 +1021,9 @@ DNADesign\Elemental\Models\ElementContent:
     Sort: 3
 
   HomeVideo:
+    FixtureIdentifier: HomeVideo
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "See Our Facility in Action"
     ShowTitle: true
     AvailableGlobally: false
@@ -748,6 +1035,9 @@ DNADesign\Elemental\Models\ElementContent:
 
   # About page content
   AboutHistory:
+    FixtureIdentifier: AboutHistory
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "40 Years of Excellence"
     ShowTitle: true
     AvailableGlobally: false
@@ -758,6 +1048,9 @@ DNADesign\Elemental\Models\ElementContent:
     Sort: 4
 
   AboutValues:
+    FixtureIdentifier: AboutValues
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Our Core Values"
     ShowTitle: true
     AvailableGlobally: false
@@ -772,6 +1065,9 @@ DNADesign\Elemental\Models\ElementContent:
 
   # Capabilities page content
   CapabilitiesIntro:
+    FixtureIdentifier: CapabilitiesIntro
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Manufacturing Services"
     ShowTitle: true
     AvailableGlobally: false
@@ -781,6 +1077,9 @@ DNADesign\Elemental\Models\ElementContent:
     Sort: 4
 
   CapabilitiesVideo:
+    FixtureIdentifier: CapabilitiesVideo
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "CNC Machining in Action"
     ShowTitle: true
     AvailableGlobally: false
@@ -791,6 +1090,9 @@ DNADesign\Elemental\Models\ElementContent:
 
   # Industries page content
   IndustriesIntro:
+    FixtureIdentifier: IndustriesIntro
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Serving Diverse Industries"
     ShowTitle: true
     AvailableGlobally: false
@@ -801,6 +1103,9 @@ DNADesign\Elemental\Models\ElementContent:
 
   # Quality page content
   QualityProcess:
+    FixtureIdentifier: QualityProcess
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Our Quality Process"
     ShowTitle: true
     AvailableGlobally: false
@@ -812,6 +1117,9 @@ DNADesign\Elemental\Models\ElementContent:
 
   # Contact page content
   ContactForm:
+    FixtureIdentifier: ContactForm
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Request a Quote"
     ShowTitle: true
     AvailableGlobally: false
@@ -823,6 +1131,9 @@ DNADesign\Elemental\Models\ElementContent:
 
   # Elements page - Content element showcase
   ElementsContent:
+    FixtureIdentifier: ElementsContent
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Content Element"
     ShowTitle: true
     AvailableGlobally: false
@@ -842,6 +1153,9 @@ DNADesign\Elemental\Models\ElementContent:
 # ============================================================================
 Dynamic\Elements\StatCounters\Elements\ElementStatCounters:
   HomeStats:
+    FixtureIdentifier: HomeStats
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "By the Numbers"
     ShowTitle: true
     AvailableGlobally: false
@@ -850,6 +1164,9 @@ Dynamic\Elements\StatCounters\Elements\ElementStatCounters:
     Sort: 7
 
   IndustriesStats:
+    FixtureIdentifier: IndustriesStats
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Sector Expertise"
     ShowTitle: true
     AvailableGlobally: false
@@ -858,6 +1175,9 @@ Dynamic\Elements\StatCounters\Elements\ElementStatCounters:
     Sort: 8
 
   ElementsStats:
+    FixtureIdentifier: ElementsStats
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Stat Counters Element"
     ShowTitle: true
     AvailableGlobally: false
@@ -868,6 +1188,9 @@ Dynamic\Elements\StatCounters\Elements\ElementStatCounters:
 
 Dynamic\Elements\StatCounters\Model\StatCounter:
   StatYears:
+    FixtureIdentifier: StatYears
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "40+"
     Label: "Years in Business"
     Statistic: "40"
@@ -876,6 +1199,9 @@ Dynamic\Elements\StatCounters\Model\StatCounter:
     ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.HomeStats
 
   StatEmployees:
+    FixtureIdentifier: StatEmployees
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "75+"
     Label: "Skilled Employees"
     Statistic: "75"
@@ -884,6 +1210,9 @@ Dynamic\Elements\StatCounters\Model\StatCounter:
     ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.HomeStats
 
   StatMachines:
+    FixtureIdentifier: StatMachines
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "24"
     Label: "CNC Machines"
     Statistic: "24"
@@ -892,6 +1221,9 @@ Dynamic\Elements\StatCounters\Model\StatCounter:
     ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.HomeStats
 
   StatDelivery:
+    FixtureIdentifier: StatDelivery
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "99.7%"
     Label: "On-Time Delivery"
     Statistic: "99.7"
@@ -900,6 +1232,9 @@ Dynamic\Elements\StatCounters\Model\StatCounter:
     ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.HomeStats
 
   StatAg:
+    FixtureIdentifier: StatAg
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "30+"
     Label: "Years in Agriculture"
     Statistic: "30"
@@ -908,6 +1243,9 @@ Dynamic\Elements\StatCounters\Model\StatCounter:
     ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.IndustriesStats
 
   StatParts:
+    FixtureIdentifier: StatParts
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "1M+"
     Label: "Parts Delivered"
     Statistic: "1000000"
@@ -916,6 +1254,9 @@ Dynamic\Elements\StatCounters\Model\StatCounter:
     ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.IndustriesStats
 
   StatPartners:
+    FixtureIdentifier: StatPartners
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "50+"
     Label: "Industry Partners"
     Statistic: "50"
@@ -924,6 +1265,9 @@ Dynamic\Elements\StatCounters\Model\StatCounter:
     ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.IndustriesStats
 
   StatCert:
+    FixtureIdentifier: StatCert
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "100%"
     Label: "Quality Certified"
     Statistic: "100"
@@ -932,6 +1276,9 @@ Dynamic\Elements\StatCounters\Model\StatCounter:
     ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.IndustriesStats
 
   ElementsStat1:
+    FixtureIdentifier: ElementsStat1
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "100"
     Label: "Demo Stat"
     Statistic: "100"
@@ -940,6 +1287,9 @@ Dynamic\Elements\StatCounters\Model\StatCounter:
     ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.ElementsStats
 
   ElementsStat2:
+    FixtureIdentifier: ElementsStat2
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "50%"
     Label: "Percentage"
     Statistic: "50"
@@ -948,6 +1298,9 @@ Dynamic\Elements\StatCounters\Model\StatCounter:
     ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.ElementsStats
 
   ElementsStat3:
+    FixtureIdentifier: ElementsStat3
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "200"
     Label: "Demo Stat 3"
     Statistic: "200"
@@ -956,6 +1309,9 @@ Dynamic\Elements\StatCounters\Model\StatCounter:
     ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.ElementsStats
 
   ElementsStat4:
+    FixtureIdentifier: ElementsStat4
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "75%"
     Label: "Demo Percentage"
     Statistic: "75"
@@ -1096,6 +1452,9 @@ Dynamic\Elements\Card\Elements\ElementCard:
 # ============================================================================
 Dynamic\Elements\CTA\Elements\ElementCallToAction:
   HomeCTA:
+    FixtureIdentifier: HomeCTA
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Ready to Start Your Project?"
     ShowTitle: true
     AvailableGlobally: false
@@ -1105,6 +1464,9 @@ Dynamic\Elements\CTA\Elements\ElementCallToAction:
     Sort: 10
 
   QualityCTA:
+    FixtureIdentifier: QualityCTA
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Quality Documentation Available"
     ShowTitle: true
     AvailableGlobally: false
@@ -1114,6 +1476,9 @@ Dynamic\Elements\CTA\Elements\ElementCallToAction:
     Sort: 5
 
   CapabilitiesCTA:
+    FixtureIdentifier: CapabilitiesCTA
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Have a Project in Mind?"
     ShowTitle: true
     AvailableGlobally: false
@@ -1123,6 +1488,9 @@ Dynamic\Elements\CTA\Elements\ElementCallToAction:
     Sort: 8
 
   IndustriesCTA:
+    FixtureIdentifier: IndustriesCTA
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Partner with Precision"
     ShowTitle: true
     AvailableGlobally: false
@@ -1132,6 +1500,9 @@ Dynamic\Elements\CTA\Elements\ElementCallToAction:
     Sort: 9
 
   ElementsCTA:
+    FixtureIdentifier: ElementsCTA
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Call To Action Element"
     ShowTitle: true
     AvailableGlobally: false
@@ -1146,6 +1517,9 @@ Dynamic\Elements\CTA\Elements\ElementCallToAction:
 # ============================================================================
 Dynamic\Elements\CustomerService\Elements\ElementCustomerService:
   ContactInfo:
+    FixtureIdentifier: ContactInfo
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Get in Touch"
     ShowTitle: true
     AvailableGlobally: false
@@ -1166,6 +1540,9 @@ Dynamic\Elements\CustomerService\Elements\ElementCustomerService:
     Sort: 4
 
   ElementsCustomerService:
+    FixtureIdentifier: ElementsCustomerService
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Customer Service Element"
     ShowTitle: true
     AvailableGlobally: false
@@ -1203,6 +1580,9 @@ Dynamic\Elements\Embedded\Elements\ElementEmbeddedCode:
 # ============================================================================
 Dynamic\Elements\Accordion\Elements\ElementAccordion:
   QualityAccordion:
+    FixtureIdentifier: QualityAccordion
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Quality FAQs"
     ShowTitle: true
     AvailableGlobally: false
@@ -1212,6 +1592,9 @@ Dynamic\Elements\Accordion\Elements\ElementAccordion:
     Sort: 6
 
   CapabilitiesAccordion:
+    FixtureIdentifier: CapabilitiesAccordion
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Machine Specifications"
     ShowTitle: true
     AvailableGlobally: false
@@ -1221,6 +1604,9 @@ Dynamic\Elements\Accordion\Elements\ElementAccordion:
     Sort: 5
 
   ElementsAccordion:
+    FixtureIdentifier: ElementsAccordion
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Accordion Element"
     ShowTitle: true
     AvailableGlobally: false
@@ -1231,6 +1617,9 @@ Dynamic\Elements\Accordion\Elements\ElementAccordion:
 
 Dynamic\Elements\Accordion\Model\AccordionPanel:
   QualityPanel1:
+    FixtureIdentifier: QualityPanel1
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Are you ISO certified?"
     ShowTitle: true
     Content: "<p>Yes, we are ISO 9001:2015 certified. Our quality management system is audited annually to ensure compliance and continuous improvement.</p>"
@@ -1238,6 +1627,9 @@ Dynamic\Elements\Accordion\Model\AccordionPanel:
     Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.QualityAccordion
 
   QualityPanel2:
+    FixtureIdentifier: QualityPanel2
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Do you provide material certifications?"
     ShowTitle: true
     Content: "<p>Yes, we provide full material certifications (MTRs) and Certificates of Conformance (C of C) with every shipment upon request.</p>"
@@ -1245,6 +1637,9 @@ Dynamic\Elements\Accordion\Model\AccordionPanel:
     Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.QualityAccordion
 
   QualityPanel3:
+    FixtureIdentifier: QualityPanel3
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "What inspection equipment do you use?"
     ShowTitle: true
     Content: "<p>Our quality lab is equipped with a Zeiss CMM, optical comparators, vision systems, and a full range of calibrated hand tools.</p>"
@@ -1252,6 +1647,9 @@ Dynamic\Elements\Accordion\Model\AccordionPanel:
     Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.QualityAccordion
 
   CapabilitiesPanelCNC:
+    FixtureIdentifier: CapabilitiesPanelCNC
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "CNC Machining Specs"
     ShowTitle: true
     Content: "<ul><li>Turning up to 24 inch diameter</li><li>Milling capacity up to 40 x 20 x 25 inches</li><li>Live tooling and sub-spindle capabilities</li><li>Lights-out manufacturing for high-volume runs</li><li>Tolerances as tight as 0.0005 inches</li></ul>"
@@ -1259,6 +1657,9 @@ Dynamic\Elements\Accordion\Model\AccordionPanel:
     Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.CapabilitiesAccordion
 
   CapabilitiesPanelFab:
+    FixtureIdentifier: CapabilitiesPanelFab
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Fabrication Specs"
     ShowTitle: true
     Content: "<ul><li>Fiber laser cutting up to 1 inch steel</li><li>CNC press brakes with 320-ton capacity</li><li>MIG, TIG, and robotic welding</li><li>AWS D1.1 certified welders on staff</li></ul>"
@@ -1266,6 +1667,9 @@ Dynamic\Elements\Accordion\Model\AccordionPanel:
     Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.CapabilitiesAccordion
 
   AccordionPanel1:
+    FixtureIdentifier: AccordionPanel1
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "What materials do you work with?"
     ShowTitle: true
     Content: "<p>We machine a wide variety of materials including aluminum, steel, stainless steel, brass, bronze, copper, and engineered plastics like Delrin, UHMW, and Nylon.</p>"
@@ -1275,6 +1679,9 @@ Dynamic\Elements\Accordion\Model\AccordionPanel:
     Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.ElementsAccordion
 
   AccordionPanel2:
+    FixtureIdentifier: AccordionPanel2
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "What is your typical lead time?"
     ShowTitle: true
     Content: "<p>Standard lead times range from 2-4 weeks depending on complexity and quantity. We also offer expedited services for rush orders.</p>"
@@ -1283,6 +1690,9 @@ Dynamic\Elements\Accordion\Model\AccordionPanel:
     Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.ElementsAccordion
 
   AccordionPanel3:
+    FixtureIdentifier: AccordionPanel3
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Do you offer design assistance?"
     ShowTitle: true
     Content: "<p>Yes! Our engineering team provides Design for Manufacturing (DFM) feedback at no charge to help optimize your designs for production.</p>"
@@ -1290,6 +1700,9 @@ Dynamic\Elements\Accordion\Model\AccordionPanel:
     Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.ElementsAccordion
 
   AccordionPanel4:
+    FixtureIdentifier: AccordionPanel4
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "What quality certifications do you hold?"
     ShowTitle: true
     Content: "<p>We maintain ISO 9001:2015 certification and provide full material certifications, FAIR reports, and Certificates of Conformance with every order.</p>"
@@ -1386,6 +1799,9 @@ Dynamic\Carousel\Model\VideoSlide:
 
 Dynamic\Elements\Carousel\Elements\ElementCarousel:
   AboutCarousel:
+    FixtureIdentifier: AboutCarousel
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Our Facility"
     ShowTitle: true
     AvailableGlobally: false
@@ -1398,6 +1814,9 @@ Dynamic\Elements\Carousel\Elements\ElementCarousel:
     Slides: =>Dynamic\Carousel\Model\ImageSlide.SlideNew1, =>Dynamic\Carousel\Model\ImageSlide.SlideNew2
 
   ElementsCarouselSlide:
+    FixtureIdentifier: ElementsCarouselSlide
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Carousel Element (Default)"
     ShowTitle: true
     AvailableGlobally: false
@@ -1413,6 +1832,9 @@ Dynamic\Elements\Carousel\Elements\ElementCarousel:
     Slides: =>Dynamic\Carousel\Model\ImageSlide.Slide3, =>Dynamic\Carousel\Model\ImageSlide.Slide4, =>Dynamic\Carousel\Model\VideoSlide.SlideVideo
 
   ElementsCarouselFade:
+    FixtureIdentifier: ElementsCarouselFade
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Carousel Element (Thumbs Style)"
     ShowTitle: true
     AvailableGlobally: false
@@ -1429,6 +1851,9 @@ Dynamic\Elements\Carousel\Elements\ElementCarousel:
     Slides: =>Dynamic\Carousel\Model\ImageSlide.Slide5, =>Dynamic\Carousel\Model\ImageSlide.Slide6
 
   ElementsCarouselAutoplay:
+    FixtureIdentifier: ElementsCarouselAutoplay
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Carousel Element (Slides Style)"
     ShowTitle: true
     AvailableGlobally: false
@@ -1467,6 +1892,9 @@ Dynamic\Elements\Gallery\Elements\ElementPhotoGallery:
 
 Dynamic\Elements\Gallery\Model\GalleryImage:
   GalleryImage1:
+    FixtureIdentifier: GalleryImage1
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Precision Machined Parts"
     Caption: "CNC turned components"
     SortOrder: 1
@@ -1474,6 +1902,9 @@ Dynamic\Elements\Gallery\Model\GalleryImage:
     PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.CapabilitiesGallery
 
   GalleryImage2:
+    FixtureIdentifier: GalleryImage2
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Quality Inspection"
     Caption: "CMM measurement in progress"
     SortOrder: 2
@@ -1481,6 +1912,9 @@ Dynamic\Elements\Gallery\Model\GalleryImage:
     PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.CapabilitiesGallery
 
   GalleryImage3:
+    FixtureIdentifier: GalleryImage3
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "CNC Milling"
     Caption: "5-axis milling operation"
     SortOrder: 3
@@ -1488,6 +1922,9 @@ Dynamic\Elements\Gallery\Model\GalleryImage:
     PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.CapabilitiesGallery
 
   GalleryImage4:
+    FixtureIdentifier: GalleryImage4
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Finished Assembly"
     Caption: "Ready for shipment"
     SortOrder: 4
@@ -1495,6 +1932,9 @@ Dynamic\Elements\Gallery\Model\GalleryImage:
     PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.CapabilitiesGallery
 
   ElementsGalleryImage1:
+    FixtureIdentifier: ElementsGalleryImage1
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Gallery Demo 1"
     Caption: "First gallery image"
     SortOrder: 1
@@ -1502,6 +1942,9 @@ Dynamic\Elements\Gallery\Model\GalleryImage:
     PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.ElementsGallery
 
   ElementsGalleryImage2:
+    FixtureIdentifier: ElementsGalleryImage2
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Gallery Demo 2"
     Caption: "Second gallery image"
     SortOrder: 2
@@ -1509,6 +1952,9 @@ Dynamic\Elements\Gallery\Model\GalleryImage:
     PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.ElementsGallery
 
   ElementsGalleryImage3:
+    FixtureIdentifier: ElementsGalleryImage3
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Gallery Demo 3"
     Caption: "Third gallery image"
     SortOrder: 3
@@ -1516,6 +1962,9 @@ Dynamic\Elements\Gallery\Model\GalleryImage:
     PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.ElementsGallery
 
   ElementsGalleryImage4:
+    FixtureIdentifier: ElementsGalleryImage4
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Gallery Demo 4"
     Caption: "Fourth gallery image"
     SortOrder: 4
@@ -1523,6 +1972,9 @@ Dynamic\Elements\Gallery\Model\GalleryImage:
     PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.ElementsGallery
 
   ElementsGalleryImage5:
+    FixtureIdentifier: ElementsGalleryImage5
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Gallery Demo 5"
     Caption: "Fifth gallery image showing additional content"
     SortOrder: 5
@@ -1530,6 +1982,9 @@ Dynamic\Elements\Gallery\Model\GalleryImage:
     PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.ElementsGallery
 
   ElementsGalleryImage6:
+    FixtureIdentifier: ElementsGalleryImage6
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Gallery Demo 6"
     Caption: "Sixth gallery image completing the showcase"
     SortOrder: 6
@@ -1541,6 +1996,9 @@ Dynamic\Elements\Gallery\Model\GalleryImage:
 # ============================================================================
 Dynamic\Elements\Image\Elements\ElementImage:
   ElementsImage:
+    FixtureIdentifier: ElementsImage
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Image Element"
     ShowTitle: true
     AvailableGlobally: false
@@ -1592,6 +2050,9 @@ Dynamic\Elements\Elements\ElementTestimonials:
 
 Dynamic\Elements\Model\Testimonial:
   Testimonial1:
+    FixtureIdentifier: Testimonial1
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Long-Term Partner"
     Content: "Precision Manufacturing has been our go-to supplier for critical hydraulic components for over 15 years. Their quality is consistent and their team is responsive."
     Name: "Mike Johnson"
@@ -1601,6 +2062,9 @@ Dynamic\Elements\Model\Testimonial:
     Image: =>SilverStripe\Assets\Image.testimonial1
 
   Testimonial2:
+    FixtureIdentifier: Testimonial2
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Cost Savings"
     Content: "When we need tight tolerances and fast turnaround, Precision Manufacturing delivers. Their DFM feedback has helped us reduce costs on multiple projects."
     Name: "Sarah Chen"
@@ -1610,6 +2074,9 @@ Dynamic\Elements\Model\Testimonial:
     Image: =>SilverStripe\Assets\Image.testimonial2
 
   ElementsTestimonial1:
+    FixtureIdentifier: ElementsTestimonial1
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Excellent Service"
     Content: "This is an example testimonial showing how the element displays customer feedback with a photo and attribution."
     Name: "Demo Customer"
@@ -1620,6 +2087,9 @@ Dynamic\Elements\Model\Testimonial:
     TestimonialCategories: =>Dynamic\Elements\Model\TestimonialCategory.categoryManufacturing
 
   ElementsTestimonial2:
+    FixtureIdentifier: ElementsTestimonial2
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Outstanding Quality"
     Content: "The precision and quality of their work consistently exceeds our expectations. Their attention to detail is remarkable."
     Name: "Jennifer Williams"
@@ -1630,6 +2100,9 @@ Dynamic\Elements\Model\Testimonial:
     TestimonialCategories: =>Dynamic\Elements\Model\TestimonialCategory.categoryManufacturing
 
   ElementsTestimonial3:
+    FixtureIdentifier: ElementsTestimonial3
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Reliable Partner"
     Content: "We've worked with them for years and they never disappoint. On-time delivery and responsive communication."
     Name: "David Martinez"
@@ -1644,6 +2117,9 @@ Dynamic\Elements\Model\Testimonial:
 # ============================================================================
 SilverStripe\Blog\Model\BlogPost:
   BlogPost1:
+    FixtureIdentifier: BlogPost1
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Advanced CNC Techniques"
     URLSegment: "advanced-cnc-techniques"
     Content: "<p>Explore our latest advancements in CNC technology and how they enable tighter tolerances and faster production times. Our investment in 5-axis milling centers allows us to machine complex geometries in a single setup.</p><p>Learn more about our capabilities and how we can help with your next project.</p>"
@@ -1653,6 +2129,9 @@ SilverStripe\Blog\Model\BlogPost:
     Parent: =>SilverStripe\Blog\Model\Blog.BlogPage
 
   BlogPost2:
+    FixtureIdentifier: BlogPost2
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Quality Assurance Process"
     URLSegment: "quality-assurance-process"
     Content: "<p>Our comprehensive quality assurance process ensures every part meets your specifications. From incoming material inspection to final dimensional verification, we employ multiple quality checkpoints throughout production.</p><p>We maintain ISO 9001:2015 certification and provide full documentation for every order.</p>"
@@ -1662,6 +2141,9 @@ SilverStripe\Blog\Model\BlogPost:
     Parent: =>SilverStripe\Blog\Model\Blog.BlogPage
 
   BlogPost3:
+    FixtureIdentifier: BlogPost3
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Materials We Machine"
     URLSegment: "materials-we-machine"
     Content: "<p>We have extensive experience machining a wide variety of materials including aluminum, steel, stainless steel, brass, and engineered plastics. Each material presents unique challenges that our experienced team has mastered.</p><p>Contact us to discuss your specific material requirements and how we can optimize your designs for manufacturability.</p>"
@@ -1830,6 +2312,9 @@ Dynamic\Elements\Links\Elements\LinksElement:
 
 Dynamic\Elements\Oembed\Elements\ElementOembed:
   ElementsOembed:
+    FixtureIdentifier: ElementsOembed
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Media Element"
     ShowTitle: true
     AvailableGlobally: false
@@ -1876,66 +2361,99 @@ Dynamic\Elements\Links\Model\LinkListObject:
 
 Dynamic\Elements\Sponsors\Model\Sponsor:
   sponsorAcme:
+    FixtureIdentifier: sponsorAcme
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Acme Industrial Supply"
     URL: "https://www.acme-industrial.example.com"
     Image: =>SilverStripe\Assets\Image.sponsorImage1
     SortOrder: 1
 
   sponsorMidwest:
+    FixtureIdentifier: sponsorMidwest
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Midwest Materials"
     URL: "https://www.midwest-materials.example.com"
     Image: =>SilverStripe\Assets\Image.sponsorImage2
     SortOrder: 2
 
   sponsorPrecision:
+    FixtureIdentifier: sponsorPrecision
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Precision Tools Inc."
     URL: "https://www.precision-tools.example.com"
     Image: =>SilverStripe\Assets\Image.sponsorImage3
     SortOrder: 3
 
   sponsorDemo1:
+    FixtureIdentifier: sponsorDemo1
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Demo Sponsor 1"
     URL: "https://www.example.com"
     Image: =>SilverStripe\Assets\Image.sponsorImage1
     SortOrder: 1
 
   sponsorDemo2:
+    FixtureIdentifier: sponsorDemo2
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Demo Sponsor 2"
     URL: "https://www.example.com"
     Image: =>SilverStripe\Assets\Image.sponsorImage2
     SortOrder: 2
 
   sponsorDemo3:
+    FixtureIdentifier: sponsorDemo3
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Demo Sponsor 3"
     URL: "https://www.example.com"
     Image: =>SilverStripe\Assets\Image.sponsorImage3
     SortOrder: 3
 
   sponsorDemo4:
+    FixtureIdentifier: sponsorDemo4
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Demo Sponsor 4"
     URL: "https://www.example.com"
     Image: =>SilverStripe\Assets\Image.sponsorImage4
     SortOrder: 4
 
   sponsorDemo5:
+    FixtureIdentifier: sponsorDemo5
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Demo Sponsor 5"
     URL: "https://www.example.com"
     Image: =>SilverStripe\Assets\Image.sponsorImage5
     SortOrder: 5
 
   sponsorDemo6:
+    FixtureIdentifier: sponsorDemo6
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Demo Sponsor 6"
     URL: "https://www.example.com"
     Image: =>SilverStripe\Assets\Image.sponsorImage6
     SortOrder: 6
 
   sponsorDemo7:
+    FixtureIdentifier: sponsorDemo7
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Demo Sponsor 7"
     URL: "https://www.example.com"
     Image: =>SilverStripe\Assets\Image.sponsorImage7
     SortOrder: 7
 
   sponsorDemo8:
+    FixtureIdentifier: sponsorDemo8
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Demo Sponsor 8"
     URL: "https://www.example.com"
     Image: =>SilverStripe\Assets\Image.sponsorImage8
@@ -1979,6 +2497,9 @@ Dynamic\Elements\Sponsors\Elements\ElementSponsor:
 
 Dynamic\Essentials\Model\StaffMember:
   staffJohn:
+    FixtureIdentifier: staffJohn
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "John Peterson"
     Position: "President & CEO"
     Content: "<p>John co-founded Precision MFG Co. in 1985. He holds a degree in Mechanical Engineering from UW-Madison and has over 40 years of experience in the manufacturing industry.</p>"
@@ -1989,6 +2510,9 @@ Dynamic\Essentials\Model\StaffMember:
     LinkedInLink: =>SilverStripe\LinkField\Models\ExternalLink.staffJohnLinkedIn
 
   staffSarah:
+    FixtureIdentifier: staffSarah
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "Sarah Thompson"
     Position: "VP of Operations"
     Content: "<p>Sarah joined Precision MFG Co. in 2005. She earned her Industrial Engineering degree from Michigan Tech and holds a Six Sigma Black Belt certification.</p>"
@@ -1999,6 +2523,9 @@ Dynamic\Essentials\Model\StaffMember:
     LinkedInLink: =>SilverStripe\LinkField\Models\ExternalLink.staffSarahLinkedIn
 
   staffMike:
+    FixtureIdentifier: staffMike
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Name: "Mike Anderson"
     Position: "Chief Technology Officer"
     Content: "<p>Mike oversees our CNC programming, CAD/CAM operations, and technology investments. He has been with the company for 15 years.</p>"
