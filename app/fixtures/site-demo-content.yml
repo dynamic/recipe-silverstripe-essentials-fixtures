@@ -2565,3 +2565,330 @@ Dynamic\Essentials\Element\ElementStaff:
       - =>Dynamic\Essentials\Model\StaffMember.staffSarah
       - =>Dynamic\Essentials\Model\StaffMember.staffMike
 
+# ============================================================================
+# CHART ELEMENT - ElementChart, TableRows, then TableCells
+# ============================================================================
+
+# ElementCharts first (parent elements)
+Dynamic\Essentials\Element\ElementChart:
+  QualityMaterialSpecs:
+    FixtureIdentifier: QualityMaterialSpecs
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Material Capabilities"
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: "What We Work With"
+    Content: "<p>We machine a wide variety of materials to meet your exact specifications.</p>"
+    Footnotes: "<p>* Lead times are estimates and may vary based on complexity and current capacity.</p>"
+    CollapsibleChart: 0
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.qualityArea
+    Sort: 5
+
+  ElementsChart:
+    FixtureIdentifier: ElementsChart
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Chart Element"
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: "Tabular Data"
+    Content: "<p>Display structured data in a responsive table format with optional collapsible behavior.</p>"
+    CollapsibleChart: 0
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.elementsArea
+    Sort: 24
+
+# TableRows second (reference ElementCharts)
+Dynamic\Essentials\Model\TableRow:
+  # Quality Chart Rows
+  qualityRowHeader:
+    FixtureIdentifier: qualityRowHeader
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Header"
+    SortOrder: 1
+    Chart: =>Dynamic\Essentials\Element\ElementChart.QualityMaterialSpecs
+  qualityRowAluminum:
+    FixtureIdentifier: qualityRowAluminum
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Aluminum"
+    SortOrder: 2
+    Chart: =>Dynamic\Essentials\Element\ElementChart.QualityMaterialSpecs
+  qualityRowSteel:
+    FixtureIdentifier: qualityRowSteel
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Steel"
+    SortOrder: 3
+    Chart: =>Dynamic\Essentials\Element\ElementChart.QualityMaterialSpecs
+  qualityRowStainless:
+    FixtureIdentifier: qualityRowStainless
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Stainless"
+    SortOrder: 4
+    Chart: =>Dynamic\Essentials\Element\ElementChart.QualityMaterialSpecs
+
+  # Elements Chart Rows
+  elementsRowHeader:
+    FixtureIdentifier: elementsRowHeader
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Header"
+    SortOrder: 1
+    Chart: =>Dynamic\Essentials\Element\ElementChart.ElementsChart
+  elementsRowSupport:
+    FixtureIdentifier: elementsRowSupport
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Support"
+    SortOrder: 2
+    Chart: =>Dynamic\Essentials\Element\ElementChart.ElementsChart
+  elementsRowUpdates:
+    FixtureIdentifier: elementsRowUpdates
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Updates"
+    SortOrder: 3
+    Chart: =>Dynamic\Essentials\Element\ElementChart.ElementsChart
+
+# TableCells last (reference TableRows)
+Dynamic\Essentials\Model\TableCell:
+  # Quality Chart - Header Row
+  qualityCellMaterial:
+    FixtureIdentifier: qualityCellMaterial
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Material"
+    Bold: true
+    SortOrder: 1
+    TableRow: =>Dynamic\Essentials\Model\TableRow.qualityRowHeader
+  qualityCellTolerance:
+    FixtureIdentifier: qualityCellTolerance
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Tolerance"
+    Bold: true
+    SortOrder: 2
+    TableRow: =>Dynamic\Essentials\Model\TableRow.qualityRowHeader
+  qualityCellLeadTime:
+    FixtureIdentifier: qualityCellLeadTime
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Lead Time"
+    Bold: true
+    SortOrder: 3
+    TableRow: =>Dynamic\Essentials\Model\TableRow.qualityRowHeader
+  qualityCellMinOrder:
+    FixtureIdentifier: qualityCellMinOrder
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Min Order"
+    Bold: true
+    SortOrder: 4
+    TableRow: =>Dynamic\Essentials\Model\TableRow.qualityRowHeader
+
+  # Quality Chart - Aluminum Row
+  qualityCellAluminum:
+    FixtureIdentifier: qualityCellAluminum
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Aluminum Alloys"
+    Bold: false
+    SortOrder: 1
+    TableRow: =>Dynamic\Essentials\Model\TableRow.qualityRowAluminum
+  qualityCellAluminumTol:
+    FixtureIdentifier: qualityCellAluminumTol
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: '±0.001"'
+    Bold: false
+    SortOrder: 2
+    TableRow: =>Dynamic\Essentials\Model\TableRow.qualityRowAluminum
+  qualityCellAluminumLead:
+    FixtureIdentifier: qualityCellAluminumLead
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "2-3 weeks"
+    Bold: false
+    SortOrder: 3
+    TableRow: =>Dynamic\Essentials\Model\TableRow.qualityRowAluminum
+  qualityCellAluminumMin:
+    FixtureIdentifier: qualityCellAluminumMin
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "100 pcs"
+    Bold: false
+    SortOrder: 4
+    TableRow: =>Dynamic\Essentials\Model\TableRow.qualityRowAluminum
+
+  # Quality Chart - Steel Row
+  qualityCellSteel:
+    FixtureIdentifier: qualityCellSteel
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Carbon Steel"
+    Bold: false
+    SortOrder: 1
+    TableRow: =>Dynamic\Essentials\Model\TableRow.qualityRowSteel
+  qualityCellSteelTol:
+    FixtureIdentifier: qualityCellSteelTol
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: '±0.002"'
+    Bold: false
+    SortOrder: 2
+    TableRow: =>Dynamic\Essentials\Model\TableRow.qualityRowSteel
+  qualityCellSteelLead:
+    FixtureIdentifier: qualityCellSteelLead
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "3-4 weeks"
+    Bold: false
+    SortOrder: 3
+    TableRow: =>Dynamic\Essentials\Model\TableRow.qualityRowSteel
+  qualityCellSteelMin:
+    FixtureIdentifier: qualityCellSteelMin
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "50 pcs"
+    Bold: false
+    SortOrder: 4
+    TableRow: =>Dynamic\Essentials\Model\TableRow.qualityRowSteel
+
+  # Quality Chart - Stainless Row
+  qualityCellStainless:
+    FixtureIdentifier: qualityCellStainless
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Stainless 304/316"
+    Bold: false
+    SortOrder: 1
+    TableRow: =>Dynamic\Essentials\Model\TableRow.qualityRowStainless
+  qualityCellStainlessTol:
+    FixtureIdentifier: qualityCellStainlessTol
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: '±0.001"'
+    Bold: false
+    SortOrder: 2
+    TableRow: =>Dynamic\Essentials\Model\TableRow.qualityRowStainless
+  qualityCellStainlessLead:
+    FixtureIdentifier: qualityCellStainlessLead
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "3-5 weeks"
+    Bold: false
+    SortOrder: 3
+    TableRow: =>Dynamic\Essentials\Model\TableRow.qualityRowStainless
+  qualityCellStainlessMin:
+    FixtureIdentifier: qualityCellStainlessMin
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "25 pcs"
+    Bold: false
+    SortOrder: 4
+    TableRow: =>Dynamic\Essentials\Model\TableRow.qualityRowStainless
+
+  # Elements Chart - Header Row
+  elementsCellFeature:
+    FixtureIdentifier: elementsCellFeature
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Feature"
+    Bold: true
+    SortOrder: 1
+    TableRow: =>Dynamic\Essentials\Model\TableRow.elementsRowHeader
+  elementsCellStandard:
+    FixtureIdentifier: elementsCellStandard
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Standard"
+    Bold: true
+    SortOrder: 2
+    TableRow: =>Dynamic\Essentials\Model\TableRow.elementsRowHeader
+  elementsCellPremium:
+    FixtureIdentifier: elementsCellPremium
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Premium"
+    Bold: true
+    SortOrder: 3
+    TableRow: =>Dynamic\Essentials\Model\TableRow.elementsRowHeader
+  elementsCellEnterprise:
+    FixtureIdentifier: elementsCellEnterprise
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Enterprise"
+    Bold: true
+    SortOrder: 4
+    TableRow: =>Dynamic\Essentials\Model\TableRow.elementsRowHeader
+
+  # Elements Chart - Support Row
+  elementsCellSupport:
+    FixtureIdentifier: elementsCellSupport
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Support"
+    Bold: false
+    SortOrder: 1
+    TableRow: =>Dynamic\Essentials\Model\TableRow.elementsRowSupport
+  elementsCellSupportStd:
+    FixtureIdentifier: elementsCellSupportStd
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Email"
+    Bold: false
+    SortOrder: 2
+    TableRow: =>Dynamic\Essentials\Model\TableRow.elementsRowSupport
+  elementsCellSupportPrem:
+    FixtureIdentifier: elementsCellSupportPrem
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "24/7 Phone"
+    Bold: false
+    SortOrder: 3
+    TableRow: =>Dynamic\Essentials\Model\TableRow.elementsRowSupport
+  elementsCellSupportEnt:
+    FixtureIdentifier: elementsCellSupportEnt
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Dedicated Rep"
+    Bold: false
+    SortOrder: 4
+    TableRow: =>Dynamic\Essentials\Model\TableRow.elementsRowSupport
+
+  # Elements Chart - Updates Row
+  elementsCellUpdates:
+    FixtureIdentifier: elementsCellUpdates
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Updates"
+    Bold: false
+    SortOrder: 1
+    TableRow: =>Dynamic\Essentials\Model\TableRow.elementsRowUpdates
+  elementsCellUpdatesStd:
+    FixtureIdentifier: elementsCellUpdatesStd
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Quarterly"
+    Bold: false
+    SortOrder: 2
+    TableRow: =>Dynamic\Essentials\Model\TableRow.elementsRowUpdates
+  elementsCellUpdatesPrem:
+    FixtureIdentifier: elementsCellUpdatesPrem
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Monthly"
+    Bold: false
+    SortOrder: 3
+    TableRow: =>Dynamic\Essentials\Model\TableRow.elementsRowUpdates
+  elementsCellUpdatesEnt:
+    FixtureIdentifier: elementsCellUpdatesEnt
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: "Real-time"
+    Bold: false
+    SortOrder: 4
+    TableRow: =>Dynamic\Essentials\Model\TableRow.elementsRowUpdates
