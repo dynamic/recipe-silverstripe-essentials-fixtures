@@ -37,10 +37,5 @@
             "silverstripe/vendor-plugin": true
         },
         "process-timeout": 600
-    },
-    "extra": {
-        "project-files": [
-            "app/_config/fixtures-populate.yml"
-        ]
     }
 }

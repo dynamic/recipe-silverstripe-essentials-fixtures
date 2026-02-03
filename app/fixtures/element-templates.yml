@@ -1,0 +1,2561 @@
+# Element Templates - Consolidated
+# Merged from element-template-library.yml and element-template-expanded.yml
+
+SilverStripe\Assets\Image:
+  # Hero images
+  gutenbergHeroDark:
+    FixtureIdentifier: gutenbergHeroDark
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/hero-dark-banner.jpg'
+    Filename: 'assets/Templates/Gutenberg/Heroes/hero-dark-banner.jpg'
+    Title: 'Dark Hero Banner Background'
+
+  gutenbergHeroLight:
+    FixtureIdentifier: gutenbergHeroLight
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/hero-light-section.jpg'
+    Filename: 'assets/Templates/Gutenberg/Heroes/hero-light-section.jpg'
+    Title: 'Light Section Hero Background'
+
+  # Team member images
+  gutenbergTeam1:
+    FixtureIdentifier: gutenbergTeam1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/team-member-1.jpg'
+    Filename: 'assets/Templates/Gutenberg/Team/member-1.jpg'
+    Title: 'Team Member 1 Photo'
+
+  gutenbergTeam2:
+    FixtureIdentifier: gutenbergTeam2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/team-member-2.jpg'
+    Filename: 'assets/Templates/Gutenberg/Team/member-2.jpg'
+    Title: 'Team Member 2 Photo'
+
+  gutenbergTeam3:
+    FixtureIdentifier: gutenbergTeam3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/team-member-3.jpg'
+    Filename: 'assets/Templates/Gutenberg/Team/member-3.jpg'
+    Title: 'Team Member 3 Photo'
+
+  gutenbergTeam4:
+    FixtureIdentifier: gutenbergTeam4
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/team-member-4.jpg'
+    Filename: 'assets/Templates/Gutenberg/Team/member-4.jpg'
+    Title: 'Team Member 4 Photo'
+
+  # Feature/pricing images
+  gutenbergPricingBg:
+    FixtureIdentifier: gutenbergPricingBg
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/pricing-background.jpg'
+    Filename: 'assets/Templates/Gutenberg/Pricing/pricing-bg.jpg'
+    Title: 'Pricing Section Background'
+
+  gutenbergFeature1:
+    FixtureIdentifier: gutenbergFeature1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/feature-icon-1.jpg'
+    Filename: 'assets/Templates/Gutenberg/Features/feature-1.jpg'
+    Title: 'Feature Icon 1'
+
+  gutenbergFeature2:
+    FixtureIdentifier: gutenbergFeature2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/feature-icon-2.jpg'
+    Filename: 'assets/Templates/Gutenberg/Features/feature-2.jpg'
+    Title: 'Feature Icon 2'
+
+  gutenbergFeature3:
+    FixtureIdentifier: gutenbergFeature3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/feature-icon-3.jpg'
+    Filename: 'assets/Templates/Gutenberg/Features/feature-3.jpg'
+    Title: 'Feature Icon 3'
+
+  # Portfolio images
+  gutenbergPortfolio1:
+    FixtureIdentifier: gutenbergPortfolio1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/portfolio-project-1.jpg'
+    Filename: 'assets/Templates/Gutenberg/Portfolio/project-1.jpg'
+    Title: 'Portfolio Project 1'
+
+  gutenbergPortfolio2:
+    FixtureIdentifier: gutenbergPortfolio2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/portfolio-project-2.jpg'
+    Filename: 'assets/Templates/Gutenberg/Portfolio/project-2.jpg'
+    Title: 'Portfolio Project 2'
+
+  gutenbergPortfolio3:
+    FixtureIdentifier: gutenbergPortfolio3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/portfolio-project-3.jpg'
+    Filename: 'assets/Templates/Gutenberg/Portfolio/project-3.jpg'
+    Title: 'Portfolio Project 3'
+
+  gutenbergPortfolio4:
+    FixtureIdentifier: gutenbergPortfolio4
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/portfolio-project-4.jpg'
+    Filename: 'assets/Templates/Gutenberg/Portfolio/project-4.jpg'
+    Title: 'Portfolio Project 4'
+
+  # Service Grid Card Images
+  serviceCardImage1:
+    FixtureIdentifier: serviceCardImage1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/service-card-1.jpg'
+    Filename: 'assets/Templates/Gutenberg/ServiceGrid/service-card-1.jpg'
+    Title: 'Strategic Planning Icon'
+
+  serviceCardImage2:
+    FixtureIdentifier: serviceCardImage2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/service-card-2.jpg'
+    Filename: 'assets/Templates/Gutenberg/ServiceGrid/service-card-2.jpg'
+    Title: 'Custom Development Icon'
+
+  serviceCardImage3:
+    FixtureIdentifier: serviceCardImage3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/service-card-3.jpg'
+    Filename: 'assets/Templates/Gutenberg/ServiceGrid/service-card-3.jpg'
+    Title: 'Cloud Integration Icon'
+
+  serviceCardImage4:
+    FixtureIdentifier: serviceCardImage4
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/service-card-4.jpg'
+    Filename: 'assets/Templates/Gutenberg/ServiceGrid/service-card-4.jpg'
+    Title: 'Data Analytics Icon'
+
+  serviceCardImage5:
+    FixtureIdentifier: serviceCardImage5
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/service-card-5.jpg'
+    Filename: 'assets/Templates/Gutenberg/ServiceGrid/service-card-5.jpg'
+    Title: 'Security Consulting Icon'
+
+  serviceCardImage6:
+    FixtureIdentifier: serviceCardImage6
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/service-card-6.jpg'
+    Filename: 'assets/Templates/Gutenberg/ServiceGrid/service-card-6.jpg'
+    Title: 'Ongoing Support Icon'
+
+  # Product Detail Images - Downloaded from Lorem Picsum
+  productSlide1:
+    FixtureIdentifier: productSlide1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/product/product-slide-1.jpg'
+    Filename: 'assets/Templates/Gutenberg/Product/product-slide-1.jpg'
+    Title: 'Product Slide 1'
+
+  productSlide2:
+    FixtureIdentifier: productSlide2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/product/product-slide-2.jpg'
+    Filename: 'assets/Templates/Gutenberg/Product/product-slide-2.jpg'
+    Title: 'Product Slide 2'
+
+  productSlide3:
+    FixtureIdentifier: productSlide3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/product/product-slide-3.jpg'
+    Filename: 'assets/Templates/Gutenberg/Product/product-slide-3.jpg'
+    Title: 'Product Slide 3'
+
+  productFeatureEngineering:
+    FixtureIdentifier: productFeatureEngineering
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/product/feature-engineering.jpg'
+    Filename: 'assets/Templates/Gutenberg/Product/feature-engineering.jpg'
+    Title: 'Custom Engineering Feature'
+
+  productFeatureMaterials:
+    FixtureIdentifier: productFeatureMaterials
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/product/feature-materials.jpg'
+    Filename: 'assets/Templates/Gutenberg/Product/feature-materials.jpg'
+    Title: 'Premium Materials Feature'
+
+  productFeatureDelivery:
+    FixtureIdentifier: productFeatureDelivery
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/product/feature-delivery.jpg'
+    Filename: 'assets/Templates/Gutenberg/Product/feature-delivery.jpg'
+    Title: 'Fast Turnaround Feature'
+
+  # Client logo images
+  gutenbergLogo1:
+    FixtureIdentifier: gutenbergLogo1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/client-logo-1.png'
+    Filename: 'assets/Templates/Gutenberg/Logos/client-1.png'
+    Title: 'Client Logo 1'
+
+  gutenbergLogo2:
+    FixtureIdentifier: gutenbergLogo2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/client-logo-2.png'
+    Filename: 'assets/Templates/Gutenberg/Logos/client-2.png'
+    Title: 'Client Logo 2'
+
+  gutenbergLogo3:
+    FixtureIdentifier: gutenbergLogo3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/client-logo-3.png'
+    Filename: 'assets/Templates/Gutenberg/Logos/client-3.png'
+    Title: 'Client Logo 3'
+
+  gutenbergLogo4:
+    FixtureIdentifier: gutenbergLogo4
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/client-logo-4.png'
+    Filename: 'assets/Templates/Gutenberg/Logos/client-4.png'
+    Title: 'Client Logo 4'
+
+  gutenbergLogo5:
+    FixtureIdentifier: gutenbergLogo5
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/client-logo-5.png'
+    Filename: 'assets/Templates/Gutenberg/Logos/client-5.png'
+    Title: 'Client Logo 5'
+
+  gutenbergLogo6:
+    FixtureIdentifier: gutenbergLogo6
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/client-logo-6.png'
+    Filename: 'assets/Templates/Gutenberg/Logos/client-6.jpg'
+    Title: 'Client Logo 6'
+
+  # Template preview images
+  gutenbergPreviewDarkHero:
+    FixtureIdentifier: gutenbergPreviewDarkHero
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-dark-hero.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/dark-hero.jpg'
+    Title: 'Dark Hero Banner Preview'
+
+  gutenbergPreviewTeamGrid:
+    FixtureIdentifier: gutenbergPreviewTeamGrid
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-team-grid.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/team-grid.jpg'
+    Title: 'Team Members Grid Preview'
+
+  gutenbergPreviewPricing:
+    FixtureIdentifier: gutenbergPreviewPricing
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-pricing.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/pricing.jpg'
+    Title: 'Pricing Tiers Preview'
+
+  gutenbergPreviewFeatureGrid:
+    FixtureIdentifier: gutenbergPreviewFeatureGrid
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-feature-grid.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/feature-grid.jpg'
+    Title: 'Feature Grid Preview'
+
+  gutenbergPreviewNewsletter:
+    FixtureIdentifier: gutenbergPreviewNewsletter
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-newsletter.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/newsletter.jpg'
+    Title: 'Newsletter Signup Preview'
+
+  gutenbergPreviewFooter:
+    FixtureIdentifier: gutenbergPreviewFooter
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-footer.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/footer.jpg'
+    Title: 'Footer Columns Preview'
+
+  gutenbergPreviewPortfolio:
+    FixtureIdentifier: gutenbergPreviewPortfolio
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-portfolio.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/portfolio.jpg'
+    Title: 'Portfolio Grid Preview'
+
+  gutenbergPreviewClientLogos:
+    FixtureIdentifier: gutenbergPreviewClientLogos
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-client-logos.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/client-logos.jpg'
+    Title: 'Client Logos Preview'
+
+  # Template preview images - Generated screenshots
+  templatePreview105:
+    FixtureIdentifier: templatePreview105
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-105.png'
+    Filename: 'assets/Templates/Previews/template-105.png'
+    Title: 'Dark Hero Banner Preview'
+
+  templatePreview106:
+    FixtureIdentifier: templatePreview106
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-106.png'
+    Filename: 'assets/Templates/Previews/template-106.png'
+    Title: 'Team Members Grid Preview'
+
+  templatePreview107:
+    FixtureIdentifier: templatePreview107
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-107.png'
+    Filename: 'assets/Templates/Previews/template-107.png'
+    Title: 'Pricing Tiers Preview'
+
+  templatePreview108:
+    FixtureIdentifier: templatePreview108
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-108.png'
+    Filename: 'assets/Templates/Previews/template-108.png'
+    Title: 'Feature Grid Preview'
+
+  templatePreview109:
+    FixtureIdentifier: templatePreview109
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-109.png'
+    Filename: 'assets/Templates/Previews/template-109.png'
+    Title: 'Product Detail Page Preview'
+
+  templatePreview110:
+    FixtureIdentifier: templatePreview110
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-110.png'
+    Filename: 'assets/Templates/Previews/template-110.png'
+    Title: 'Footer Columns Preview'
+
+  templatePreview111:
+    FixtureIdentifier: templatePreview111
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-111.png'
+    Filename: 'assets/Templates/Previews/template-111.png'
+    Title: 'Portfolio Grid Preview'
+
+  templatePreview112:
+    FixtureIdentifier: templatePreview112
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-112.png'
+    Filename: 'assets/Templates/Previews/template-112.png'
+    Title: 'Client Logos Preview'
+
+# ============================================================================
+# GUTENBERG ELEMENTAL AREAS
+# ============================================================================
+  # Split media images
+  gutenbergSplitLeft:
+    FixtureIdentifier: gutenbergSplitLeft
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/split-media-left.jpg'
+    Filename: 'assets/Templates/Gutenberg/Split/split-left.jpg'
+    Title: 'Split Media Left Image'
+
+  gutenbergSplitRight:
+    FixtureIdentifier: gutenbergSplitRight
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/split-media-right.jpg'
+    Filename: 'assets/Templates/Gutenberg/Split/split-right.jpg'
+    Title: 'Split Media Right Image'
+
+  # Hero alignment images
+  gutenbergHeroLeftAlign:
+    FixtureIdentifier: gutenbergHeroLeftAlign
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/hero-left-align.jpg'
+    Filename: 'assets/Templates/Gutenberg/Heroes/hero-left-align.jpg'
+    Title: 'Hero Left Aligned Background'
+
+  gutenbergHeroRightAlign:
+    FixtureIdentifier: gutenbergHeroRightAlign
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/hero-right-align.jpg'
+    Filename: 'assets/Templates/Gutenberg/Heroes/hero-right-align.jpg'
+    Title: 'Hero Right Aligned Background'
+
+  # Stats bar image
+  gutenbergStatsBg:
+    FixtureIdentifier: gutenbergStatsBg
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/stats-bar-bg.jpg'
+    Filename: 'assets/Templates/Gutenberg/Stats/stats-bg.jpg'
+    Title: 'Stats Bar Background'
+
+  # Testimonial images
+  gutenbergTestimonial1:
+    FixtureIdentifier: gutenbergTestimonial1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/testimonial-1.jpg'
+    Filename: 'assets/Templates/Gutenberg/Testimonials/testimonial-1.jpg'
+    Title: 'Testimonial 1 Photo'
+
+  gutenbergTestimonial2:
+    FixtureIdentifier: gutenbergTestimonial2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/testimonial-2.jpg'
+    Filename: 'assets/Templates/Gutenberg/Testimonials/testimonial-2.jpg'
+    Title: 'Testimonial 2 Photo'
+
+  gutenbergTestimonial3:
+    FixtureIdentifier: gutenbergTestimonial3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/testimonial-3.jpg'
+    Filename: 'assets/Templates/Gutenberg/Testimonials/testimonial-3.jpg'
+    Title: 'Testimonial 3 Photo'
+
+  # About section image
+  gutenbergAboutSection:
+    FixtureIdentifier: gutenbergAboutSection
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/about-section.jpg'
+    Filename: 'assets/Templates/Gutenberg/About/about-section.jpg'
+    Title: 'About Section Image'
+
+  # Video thumbnail
+  gutenbergVideoThumb:
+    FixtureIdentifier: gutenbergVideoThumb
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/video-thumbnail.jpg'
+    Filename: 'assets/Templates/Gutenberg/Video/thumbnail.jpg'
+    Title: 'Video Section Thumbnail'
+
+  # CTA banner
+  gutenbergCtaBanner:
+    FixtureIdentifier: gutenbergCtaBanner
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/cta-banner.jpg'
+    Filename: 'assets/Templates/Gutenberg/CTA/cta-banner.jpg'
+    Title: 'CTA Banner Background'
+
+  # Service images
+  gutenbergService1:
+    FixtureIdentifier: gutenbergService1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/service-1.jpg'
+    Filename: 'assets/Templates/Gutenberg/Services/service-1.jpg'
+    Title: 'Service 1 Image'
+
+  gutenbergService2:
+    FixtureIdentifier: gutenbergService2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/service-2.jpg'
+    Filename: 'assets/Templates/Gutenberg/Services/service-2.jpg'
+    Title: 'Service 2 Image'
+
+  gutenbergService3:
+    FixtureIdentifier: gutenbergService3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/service-3.jpg'
+    Filename: 'assets/Templates/Gutenberg/Services/service-3.jpg'
+    Title: 'Service 3 Image'
+
+  # Preview images
+  gutenbergPreviewSplitMedia:
+    FixtureIdentifier: gutenbergPreviewSplitMedia
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-split-media.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/split-media.jpg'
+    Title: 'Split Media Preview'
+
+  gutenbergPreviewHeroLeft:
+    FixtureIdentifier: gutenbergPreviewHeroLeft
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-hero-left.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/hero-left.jpg'
+    Title: 'Hero Left Aligned Preview'
+
+  gutenbergPreviewHeroRight:
+    FixtureIdentifier: gutenbergPreviewHeroRight
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-hero-right.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/hero-right.jpg'
+    Title: 'Hero Right Aligned Preview'
+
+  gutenbergPreviewStats:
+    FixtureIdentifier: gutenbergPreviewStats
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-stats.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/stats-bar.jpg'
+    Title: 'Stats Bar Preview'
+
+  gutenbergPreviewTestimonials:
+    FixtureIdentifier: gutenbergPreviewTestimonials
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-testimonials.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/testimonials.jpg'
+    Title: 'Testimonial Slider Preview'
+
+  gutenbergPreviewAbout:
+    FixtureIdentifier: gutenbergPreviewAbout
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-about.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/about.jpg'
+    Title: 'About Section Preview'
+
+  gutenbergPreviewVideo:
+    FixtureIdentifier: gutenbergPreviewVideo
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-video.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/video.jpg'
+    Title: 'Video Showcase Preview'
+
+  gutenbergPreviewCta:
+    FixtureIdentifier: gutenbergPreviewCta
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-cta-banner.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/cta-banner.jpg'
+    Title: 'CTA Banner Preview'
+
+  gutenbergPreviewFaq:
+    FixtureIdentifier: gutenbergPreviewFaq
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-faq.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/faq.jpg'
+    Title: 'FAQ Section Preview'
+
+  gutenbergPreviewServices:
+    FixtureIdentifier: gutenbergPreviewServices
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-services.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/services.jpg'
+    Title: 'Services Grid Preview'
+
+  gutenbergPreviewContact:
+    FixtureIdentifier: gutenbergPreviewContact
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/gutenberg/preview-contact.jpg'
+    Filename: 'assets/Templates/Gutenberg/Previews/contact.jpg'
+    Title: 'Contact Section Preview'
+
+  # Template preview images - Generated screenshots
+  templatePreview113:
+    FixtureIdentifier: templatePreview113
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-113.png'
+    Filename: 'assets/Templates/Previews/template-113.png'
+    Title: 'Split Media Preview'
+
+  templatePreview114:
+    FixtureIdentifier: templatePreview114
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-114.png'
+    Filename: 'assets/Templates/Previews/template-114.png'
+    Title: 'Hero Left Aligned Preview'
+
+  templatePreview115:
+    FixtureIdentifier: templatePreview115
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-115.png'
+    Filename: 'assets/Templates/Previews/template-115.png'
+    Title: 'Hero Right Aligned Preview'
+
+  templatePreview116:
+    FixtureIdentifier: templatePreview116
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-116.png'
+    Filename: 'assets/Templates/Previews/template-116.png'
+    Title: 'Stats Bar Preview'
+
+  templatePreview117:
+    FixtureIdentifier: templatePreview117
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-117.png'
+    Filename: 'assets/Templates/Previews/template-117.png'
+    Title: 'Testimonial Slider Preview'
+
+  templatePreview118:
+    FixtureIdentifier: templatePreview118
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-118.png'
+    Filename: 'assets/Templates/Previews/template-118.png'
+    Title: 'About Section Preview'
+
+  templatePreview119:
+    FixtureIdentifier: templatePreview119
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-119.png'
+    Filename: 'assets/Templates/Previews/template-119.png'
+    Title: 'Video Showcase Preview'
+
+  templatePreview120:
+    FixtureIdentifier: templatePreview120
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-120.png'
+    Filename: 'assets/Templates/Previews/template-120.png'
+    Title: 'CTA Banner Preview'
+
+  templatePreview121:
+    FixtureIdentifier: templatePreview121
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-121.png'
+    Filename: 'assets/Templates/Previews/template-121.png'
+    Title: 'FAQ Accordion Section Preview'
+
+  templatePreview122:
+    FixtureIdentifier: templatePreview122
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-122.png'
+    Filename: 'assets/Templates/Previews/template-122.png'
+    Title: 'Services Grid Preview'
+
+  templatePreview123:
+    FixtureIdentifier: templatePreview123
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-123.png'
+    Filename: 'assets/Templates/Previews/template-123.png'
+    Title: 'Contact Section Preview'
+
+  templatePreview124:
+    FixtureIdentifier: templatePreview124
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    PopulateFileFrom: 'vendor/dynamic/recipe-silverstripe-essentials-fixtures/app/fixtures/images/template-previews/template-124.png'
+    Filename: 'assets/Templates/Previews/template-124.png'
+    Title: 'Two-Column Content Preview'
+
+# ============================================================================
+# ELEMENTAL AREAS
+# ============================================================================
+DNADesign\Elemental\Models\ElementalArea:
+  area_gutenberg_bold_hero:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_team_grid:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_pricing:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_feature_grid:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_product_detail:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_service_grid:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_portfolio:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_client_logos:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+# ============================================================================
+# GUTENBERG ROWS
+# ============================================================================
+  area_gutenberg_split_media:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_hero_left:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_hero_right:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_stats:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_testimonials:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_about:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_video:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_cta_banner:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_faq:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_services:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_contact:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+  area_gutenberg_two_column:
+    OwnerClassName: 'Dynamic\ElementalTemplates\Models\Template'
+
+# ============================================================================
+# ROWS
+# ============================================================================
+WeDevelop\ElementalGrid\Models\ElementRow:
+  row_gutenberg_bold_hero_fluid:
+    FixtureIdentifier: row_gutenberg_bold_hero_fluid
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Bold Hero Banner'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    BackgroundStyle: 'bg-primary text-white'
+    VerticalPadding: 'py-6'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_bold_hero
+    Sort: 1
+
+  row_gutenberg_bold_hero_container:
+    FixtureIdentifier: row_gutenberg_bold_hero_container
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Hero Secondary Content'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    ContainerStyle: 'container'
+    BackgroundStyle: 'bg-light'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_bold_hero
+    Sort: 3
+
+  row_gutenberg_team:
+    FixtureIdentifier: row_gutenberg_team
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Team Grid Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    BackgroundStyle: 'bg-white'
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_team_grid
+    Sort: 1
+
+  row_gutenberg_pricing:
+    FixtureIdentifier: row_gutenberg_pricing
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Pricing Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    BackgroundStyle: 'bg-light'
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_pricing
+    Sort: 1
+
+  row_gutenberg_features:
+    FixtureIdentifier: row_gutenberg_features
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Feature Grid Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    BackgroundStyle: 'bg-white'
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_feature_grid
+    Sort: 1
+
+  row_gutenberg_product_hero:
+    FixtureIdentifier: row_gutenberg_product_hero
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Product Hero'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    ContainerStyle: 'container'
+    BackgroundStyle: 'bg-white'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_product_detail
+    Sort: 1
+
+  row_gutenberg_product_features:
+    FixtureIdentifier: row_gutenberg_product_features
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Product Features'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    ContainerStyle: 'container'
+    BackgroundStyle: 'bg-light'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_product_detail
+    Sort: 4
+
+  row_gutenberg_service_grid:
+    FixtureIdentifier: row_gutenberg_service_grid
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Service Grid Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    BackgroundStyle: 'bg-light'
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_service_grid
+    Sort: 1
+
+  row_gutenberg_portfolio:
+    FixtureIdentifier: row_gutenberg_portfolio
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Portfolio Grid Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    BackgroundStyle: 'bg-white'
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_portfolio
+    Sort: 1
+
+  row_gutenberg_logos:
+    FixtureIdentifier: row_gutenberg_logos
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Client Logos Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    BackgroundStyle: 'bg-light'
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-4'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_client_logos
+    Sort: 1
+
+  row_gutenberg_logos_cta:
+    FixtureIdentifier: row_gutenberg_logos_cta
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Partner CTA Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    BackgroundStyle: 'bg-primary text-white'
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_client_logos
+    Sort: 3
+
+# ============================================================================
+# GUTENBERG HERO MEDIA - Bold Hero Banner
+# ============================================================================
+  row_gutenberg_split_media:
+    FixtureIdentifier: row_gutenberg_split_media
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Split Media Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    BackgroundStyle: 'bg-white'
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_split_media
+    Sort: 1
+
+  row_gutenberg_hero_left:
+    FixtureIdentifier: row_gutenberg_hero_left
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Hero Left Aligned Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    BackgroundStyle: 'bg-dark text-white'
+    VerticalPadding: 'py-6'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_hero_left
+    Sort: 1
+
+  row_gutenberg_hero_right:
+    FixtureIdentifier: row_gutenberg_hero_right
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Hero Right Aligned Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    BackgroundStyle: 'bg-primary text-white'
+    VerticalPadding: 'py-6'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_hero_right
+    Sort: 1
+
+  row_gutenberg_stats:
+    FixtureIdentifier: row_gutenberg_stats
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Stats Bar Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    BackgroundStyle: 'bg-dark text-white'
+    VerticalPadding: 'py-4'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_stats
+    Sort: 1
+
+  row_gutenberg_testimonials:
+    FixtureIdentifier: row_gutenberg_testimonials
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Testimonials Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    BackgroundStyle: 'bg-light'
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_testimonials
+    Sort: 1
+
+  row_gutenberg_about:
+    FixtureIdentifier: row_gutenberg_about
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'About Section Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    BackgroundColor: '#CCBEF5'
+    BackgroundFullWidth: true
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_about
+    Sort: 1
+
+  row_gutenberg_video:
+    FixtureIdentifier: row_gutenberg_video
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Video Section Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    BackgroundColor: '#CCBEF5'
+    BackgroundFullWidth: true
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_video
+    Sort: 1
+
+  row_gutenberg_cta_banner:
+    FixtureIdentifier: row_gutenberg_cta_banner
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'CTA Banner Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    BackgroundColor: '#000000'
+    BackgroundStyle: 'text-white'
+    BackgroundFullWidth: true
+    VerticalPadding: 'py-4'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_cta_banner
+    Sort: 1
+
+  row_gutenberg_faq:
+    FixtureIdentifier: row_gutenberg_faq
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'FAQ Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    BackgroundColor: '#F2E8E3'
+    BackgroundFullWidth: true
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_faq
+    Sort: 1
+
+  row_gutenberg_services:
+    FixtureIdentifier: row_gutenberg_services
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Services Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    BackgroundColor: '#CCBEF5'
+    BackgroundFullWidth: true
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_services
+    Sort: 1
+
+  row_gutenberg_contact:
+    FixtureIdentifier: row_gutenberg_contact
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Contact Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: true
+    BackgroundColor: '#F2E8E3'
+    BackgroundFullWidth: true
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_contact
+    Sort: 1
+
+  row_gutenberg_two_column:
+    FixtureIdentifier: row_gutenberg_two_column
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Two Column Container'
+    ShowTitle: false
+    AvailableGlobally: false
+    IsFluid: false
+    BackgroundStyle: 'bg-white'
+    ContainerStyle: 'container'
+    VerticalPadding: 'py-5'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_two_column
+    Sort: 1
+
+# ============================================================================
+# SPLIT MEDIA ELEMENTS - Using ElementContent with Media Tab
+# ============================================================================
+Dynamic\Essentials\Element\HeroMedia:
+  gutenberg_bold_hero:
+    FixtureIdentifier: gutenberg_bold_hero
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'A commitment to innovation and sustainability'
+    ShowTitle: true
+    TitleTag: 'h1'
+    AvailableGlobally: false
+    TopTitle: 'Welcome'
+    Content: '<p class="lead">Pioneering sustainable solutions for tomorrow. Join us in creating a better future through innovative technology and responsible practices.</p>'
+    MediaType: 'Image'
+    CallToActionStyle: 'light'
+    PrimaryButtonLabel: 'Learn More'
+    ContentAlign: 'Center'
+    BottomMargin: '0'
+    Image: =>SilverStripe\Assets\Image.gutenbergHeroDark
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_bold_hero
+    Sort: 2
+
+# ============================================================================
+# GUTENBERG STAFF - Team members for 4-column grid
+# ============================================================================
+  gutenberg_hero_left:
+    FixtureIdentifier: gutenberg_hero_left
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Leading Innovation Forward'
+    ShowTitle: true
+    TitleTag: 'h1'
+    AvailableGlobally: false
+    TopTitle: 'Since 2010'
+    Content: '<p class="lead">Building tomorrow''s solutions with today''s technology.</p>'
+    MediaType: 'Image'
+    CallToActionStyle: 'primary'
+    PrimaryButtonLabel: 'Our Solutions'
+    ContentAlign: 'Left'
+    TextColor: 'white'
+    Image: =>SilverStripe\Assets\Image.gutenbergHeroLeftAlign
+    BottomMargin: '0'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_hero_left
+    Sort: 2
+
+  gutenberg_hero_right:
+    FixtureIdentifier: gutenberg_hero_right
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Excellence in Every Detail'
+    ShowTitle: true
+    TitleTag: 'h1'
+    AvailableGlobally: false
+    TopTitle: 'Welcome'
+    Content: '<p class="lead">Where precision meets passion.</p>'
+    MediaType: 'Image'
+    CallToActionStyle: 'light'
+    PrimaryButtonLabel: 'Discover More'
+    ContentAlign: 'Right'
+    TextColor: 'white'
+    Image: =>SilverStripe\Assets\Image.gutenbergHeroRightAlign
+    BottomMargin: '0'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_hero_right
+    Sort: 2
+
+# ============================================================================
+# STATS ELEMENTS
+# ============================================================================
+Dynamic\Essentials\Model\StaffMember:
+  gutenbergTeamMember1:
+    FixtureIdentifier: gutenbergTeamMember1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Name: 'Alex Rivera'
+    Position: 'Chief Executive Officer'
+    Content: '<p>Alex leads our vision with over 20 years of industry experience in transformative technology solutions.</p>'
+    Image: =>SilverStripe\Assets\Image.gutenbergTeam1
+    SortOrder: 1
+
+  gutenbergTeamMember2:
+    FixtureIdentifier: gutenbergTeamMember2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Name: 'Jordan Chen'
+    Position: 'Chief Technology Officer'
+    Content: '<p>Jordan drives our technical innovation, bringing expertise in AI and cloud architecture to every project.</p>'
+    Image: =>SilverStripe\Assets\Image.gutenbergTeam2
+    SortOrder: 2
+
+  gutenbergTeamMember3:
+    FixtureIdentifier: gutenbergTeamMember3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Name: 'Morgan Taylor'
+    Position: 'VP of Design'
+    Content: '<p>Morgan shapes user experiences with a passion for accessibility and human-centered design principles.</p>'
+    Image: =>SilverStripe\Assets\Image.gutenbergTeam3
+    SortOrder: 3
+
+  gutenbergTeamMember4:
+    FixtureIdentifier: gutenbergTeamMember4
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Name: 'Casey Williams'
+    Position: 'VP of Operations'
+    Content: '<p>Casey ensures excellence in delivery, optimizing processes and fostering team collaboration.</p>'
+    Image: =>SilverStripe\Assets\Image.gutenbergTeam4
+    SortOrder: 4
+
+Dynamic\Essentials\Element\ElementStaff:
+  gutenberg_team_grid:
+    FixtureIdentifier: gutenberg_team_grid
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Meet Our Team'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Leadership'
+    Content: '<p class="lead">Our diverse team brings together expertise from various backgrounds to deliver exceptional results.</p>'
+    SizeMD: '12'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_team_grid
+    Sort: 2
+    Staff:
+      - =>Dynamic\Essentials\Model\StaffMember.gutenbergTeamMember1
+      - =>Dynamic\Essentials\Model\StaffMember.gutenbergTeamMember2
+      - =>Dynamic\Essentials\Model\StaffMember.gutenbergTeamMember3
+      - =>Dynamic\Essentials\Model\StaffMember.gutenbergTeamMember4
+
+# ============================================================================
+# GUTENBERG PRICING CARDS - 3-column pricing tiers
+# ============================================================================
+SilverStripe\LinkField\Models\ExternalLink:
+  gutenbergPricingBasicLink:
+    FixtureIdentifier: gutenbergPricingBasicLink
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    LinkText: 'Get Started'
+    OpenInNew: false
+    ExternalUrl: 'https://example.com/pricing/basic'
+
+  gutenbergPricingProLink:
+    FixtureIdentifier: gutenbergPricingProLink
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    LinkText: 'Start Free Trial'
+    OpenInNew: false
+    ExternalUrl: 'https://example.com/pricing/professional'
+
+  gutenbergPricingEnterpriseLink:
+    FixtureIdentifier: gutenbergPricingEnterpriseLink
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    LinkText: 'Contact Sales'
+    OpenInNew: false
+    ExternalUrl: 'https://example.com/pricing/enterprise'
+
+  gutenbergPartnerLink:
+    FixtureIdentifier: gutenbergPartnerLink
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    LinkText: 'Become a Partner'
+    OpenInNew: false
+    ExternalUrl: 'https://example.com/partners'
+
+  gutenbergServiceLink1:
+    FixtureIdentifier: gutenbergServiceLink1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    LinkText: 'Learn More'
+    OpenInNew: false
+    ExternalUrl: 'https://example.com/services/consulting'
+
+  gutenbergServiceLink2:
+    FixtureIdentifier: gutenbergServiceLink2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    LinkText: 'Learn More'
+    OpenInNew: false
+    ExternalUrl: 'https://example.com/services/development'
+
+  gutenbergServiceLink3:
+    FixtureIdentifier: gutenbergServiceLink3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    LinkText: 'Learn More'
+    OpenInNew: false
+    ExternalUrl: 'https://example.com/services/support'
+
+  gutenbergStatsCtaLink:
+    FixtureIdentifier: gutenbergStatsCtaLink
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    LinkText: 'View Our Work'
+    OpenInNew: false
+    ExternalUrl: 'https://example.com/portfolio'
+
+Dynamic\Elements\Card\Elements\ElementCard:
+  gutenberg_pricing_basic:
+    FixtureIdentifier: gutenberg_pricing_basic
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Basic'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: '$29/mo'
+    TitleTag: 'h3'
+    Content: '<ul><li>5 Projects</li><li>10GB Storage</li><li>Email Support</li><li>Basic Analytics</li></ul>'
+    BackgroundColor: '#FFFFFF'
+    ButtonColor: 'Primary'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.gutenbergPricingBasicLink
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_pricing
+    Sort: 2
+
+  gutenberg_pricing_professional:
+    FixtureIdentifier: gutenberg_pricing_professional
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Professional'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: '$79/mo'
+    TitleTag: 'h3'
+    Content: '<ul><li>Unlimited Projects</li><li>100GB Storage</li><li>Priority Support</li><li>Advanced Analytics</li><li>API Access</li></ul>'
+    BackgroundColor: '#CCBEF5'
+    ButtonColor: 'Purple'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.gutenbergPricingProLink
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_pricing
+    Sort: 3
+
+  gutenberg_pricing_enterprise:
+    FixtureIdentifier: gutenberg_pricing_enterprise
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Enterprise'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Custom'
+    TitleTag: 'h3'
+    Content: '<ul><li>Everything in Pro</li><li>Unlimited Storage</li><li>24/7 Phone Support</li><li>Custom Integrations</li><li>Dedicated Manager</li></ul>'
+    BackgroundColor: '#F2E8E3'
+    ButtonColor: 'Yellow'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.gutenbergPricingEnterpriseLink
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_pricing
+    Sort: 4
+
+  # Feature Grid Cards
+  gutenberg_feature_1:
+    FixtureIdentifier: gutenberg_feature_1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Lightning Fast'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Performance'
+    TitleTag: 'h3'
+    Content: '<p>Optimized for speed with cutting-edge technology. Experience load times under 100ms and seamless interactions.</p>'
+    BackgroundColor: '#FFFFFF'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    Image: =>SilverStripe\Assets\Image.gutenbergFeature1
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_feature_grid
+    Sort: 2
+
+  gutenberg_feature_2:
+    FixtureIdentifier: gutenberg_feature_2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Secure by Design'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Security'
+    TitleTag: 'h3'
+    Content: '<p>Enterprise-grade security with end-to-end encryption. Your data is protected with the latest security protocols.</p>'
+    BackgroundColor: '#FFFFFF'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    Image: =>SilverStripe\Assets\Image.gutenbergFeature2
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_feature_grid
+    Sort: 3
+
+  gutenberg_feature_3:
+    FixtureIdentifier: gutenberg_feature_3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Scale Infinitely'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Scalability'
+    TitleTag: 'h3'
+    Content: '<p>Built to grow with your business. From startup to enterprise, our infrastructure scales automatically.</p>'
+    BackgroundColor: '#FFFFFF'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    Image: =>SilverStripe\Assets\Image.gutenbergFeature3
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_feature_grid
+    Sort: 4
+
+  # Product Detail Page Feature Cards
+  product_feature_1:
+    FixtureIdentifier: product_feature_1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Custom Engineering'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Design'
+    TitleTag: 'h3'
+    Content: '<p>Every cylinder is engineered to your exact specifications. Our team works with you from concept to delivery.</p>'
+    BackgroundColor: '#FFFFFF'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    Image: =>SilverStripe\Assets\Image.productFeatureEngineering
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_product_detail
+    Sort: 5
+
+  product_feature_2:
+    FixtureIdentifier: product_feature_2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Premium Materials'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Quality'
+    TitleTag: 'h3'
+    Content: '<p>We use only the highest quality materials to ensure lasting durability and reliable performance under pressure.</p>'
+    BackgroundColor: '#FFFFFF'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    Image: =>SilverStripe\Assets\Image.productFeatureMaterials
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_product_detail
+    Sort: 6
+
+  product_feature_3:
+    FixtureIdentifier: product_feature_3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Fast Turnaround'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Delivery'
+    TitleTag: 'h3'
+    Content: '<p>Quick production with expedited shipping options available. Most orders ship within 2-4 weeks.</p>'
+    BackgroundColor: '#FFFFFF'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    Image: =>SilverStripe\Assets\Image.productFeatureDelivery
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_product_detail
+    Sort: 7
+
+  # Service Grid Cards (6 cards in 3x2 layout)
+  gutenberg_service_1:
+    FixtureIdentifier: gutenberg_service_1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Strategic Planning'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Strategy'
+    TitleTag: 'h3'
+    Content: '<p>Develop comprehensive roadmaps and actionable strategies aligned with your business objectives and market conditions.</p>'
+    BackgroundColor: '#FFFFFF'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    Image: =>SilverStripe\Assets\Image.serviceCardImage1
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_service_grid
+    Sort: 2
+
+  gutenberg_service_2:
+    FixtureIdentifier: gutenberg_service_2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Custom Development'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Development'
+    TitleTag: 'h3'
+    Content: '<p>Tailored software solutions built with modern technologies, best practices, and a focus on maintainability.</p>'
+    BackgroundColor: '#FFFFFF'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    Image: =>SilverStripe\Assets\Image.serviceCardImage2
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_service_grid
+    Sort: 3
+
+  gutenberg_service_3:
+    FixtureIdentifier: gutenberg_service_3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Cloud Integration'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Cloud'
+    TitleTag: 'h3'
+    Content: '<p>Seamless migration and integration with leading cloud platforms to enhance scalability and reliability.</p>'
+    BackgroundColor: '#FFFFFF'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    Image: =>SilverStripe\Assets\Image.serviceCardImage3
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_service_grid
+    Sort: 4
+
+  gutenberg_service_4:
+    FixtureIdentifier: gutenberg_service_4
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Data Analytics'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Analytics'
+    TitleTag: 'h3'
+    Content: '<p>Transform raw data into actionable insights with advanced analytics and visualization dashboards.</p>'
+    BackgroundColor: '#FFFFFF'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    Image: =>SilverStripe\Assets\Image.serviceCardImage4
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_service_grid
+    Sort: 5
+
+  gutenberg_service_5:
+    FixtureIdentifier: gutenberg_service_5
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Security Consulting'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Security'
+    TitleTag: 'h3'
+    Content: '<p>Protect your digital assets with industry-leading security frameworks, audits, and compliance solutions.</p>'
+    BackgroundColor: '#FFFFFF'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    Image: =>SilverStripe\Assets\Image.serviceCardImage5
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_service_grid
+    Sort: 6
+
+  gutenberg_service_6:
+    FixtureIdentifier: gutenberg_service_6
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Ongoing Support'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Support'
+    TitleTag: 'h3'
+    Content: '<p>Round-the-clock assistance and maintenance to keep your systems running smoothly and efficiently.</p>'
+    BackgroundColor: '#FFFFFF'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    Image: =>SilverStripe\Assets\Image.serviceCardImage6
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_service_grid
+    Sort: 7
+
+# ============================================================================
+# PRODUCT DETAIL ELEMENTS
+# ============================================================================
+
+# Product Image Slides for Carousel
+  gutenberg_services_card_1:
+    FixtureIdentifier: gutenberg_services_card_1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Strategic Consulting'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Services'
+    TitleTag: 'h3'
+    Content: '<p>Expert guidance to help you make informed decisions.</p>'
+    BackgroundColor: '#FFFFFF'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    Image: =>SilverStripe\Assets\Image.gutenbergService1
+    ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.gutenbergServiceLink1
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_services
+    Sort: 3
+
+  gutenberg_services_card_2:
+    FixtureIdentifier: gutenberg_services_card_2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Custom Development'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Services'
+    TitleTag: 'h3'
+    Content: '<p>Tailored solutions built to address your unique challenges.</p>'
+    BackgroundColor: '#F8F9FA'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    Image: =>SilverStripe\Assets\Image.gutenbergService2
+    ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.gutenbergServiceLink2
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_services
+    Sort: 4
+
+  gutenberg_services_card_3:
+    FixtureIdentifier: gutenberg_services_card_3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Ongoing Support'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Services'
+    TitleTag: 'h3'
+    Content: '<p>Reliable support to keep your systems running smoothly.</p>'
+    BackgroundColor: '#FFFFFF'
+    Position: 'Top'
+    SizeMD: '4'
+    ContentAlign: 'Center'
+    Image: =>SilverStripe\Assets\Image.gutenbergService3
+    ElementLink: =>SilverStripe\LinkField\Models\ExternalLink.gutenbergServiceLink3
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_services
+    Sort: 5
+
+# ============================================================================
+# CONTACT SECTION ELEMENT
+# ============================================================================
+Dynamic\Carousel\Model\ImageSlide:
+  product_slide_1:
+    FixtureIdentifier: product_slide_1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Product View - Front'
+    TopTitle: 'View 1'
+    Content: '<p>High-quality front view of the hydraulic cylinder</p>'
+    Image: =>SilverStripe\Assets\Image.productSlide1
+
+  product_slide_2:
+    FixtureIdentifier: product_slide_2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Product View - Side'
+    TopTitle: 'View 2'
+    Content: '<p>Side profile showing precision construction</p>'
+    Image: =>SilverStripe\Assets\Image.productSlide2
+
+  product_slide_3:
+    FixtureIdentifier: product_slide_3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Product View - Detail'
+    TopTitle: 'View 3'
+    Content: '<p>Close-up of precision engineered components</p>'
+    Image: =>SilverStripe\Assets\Image.productSlide3
+
+# Product Image Carousel
+Dynamic\Elements\Carousel\Elements\ElementCarousel:
+  product_detail_carousel:
+    FixtureIdentifier: product_detail_carousel
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Product Gallery'
+    ShowTitle: false
+    AvailableGlobally: false
+    Controls: 'On'
+    Indicators: 'On'
+    Transitions: 'Fade'
+    Autoplay: 'Off'
+    Style: 'Thumbs'
+    SizeMD: '6'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_product_detail
+    Sort: 2
+    Slides: =>Dynamic\Carousel\Model\ImageSlide.product_slide_1, =>Dynamic\Carousel\Model\ImageSlide.product_slide_2, =>Dynamic\Carousel\Model\ImageSlide.product_slide_3
+
+# Product Info Content - moved to footer ElementContent section below
+# ============================================================================
+# GUTENBERG BOLD HERO CTA
+# ============================================================================
+Dynamic\Elements\CTA\Elements\ElementCallToAction:
+
+  gutenberg_bold_hero_cta:
+    FixtureIdentifier: gutenberg_bold_hero_cta
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Take the Next Step'
+    ShowTitle: true
+    TitleTag: 'h2'
+    AvailableGlobally: false
+    TopTitle: 'Ready to Get Started?'
+    HTML: '<p class="lead">Discover how we can help transform your business with innovative solutions tailored to your needs.</p>'
+    CallToActionStyle: 'primary'
+    SizeMD: '8'
+    OffsetMD: '2'
+    ContentAlign: 'Center'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_bold_hero
+    Sort: 4
+
+  gutenberg_partner_cta:
+    FixtureIdentifier: gutenberg_partner_cta
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Join Our Partner Network'
+    ShowTitle: true
+    TitleTag: 'h2'
+    AvailableGlobally: false
+    TopTitle: 'Partner With Us'
+    HTML: '<p class="lead">Become part of our growing network of industry leaders. We are always looking for innovative companies to collaborate with.</p>'
+    CallToActionStyle: 'light'
+    SizeMD: '8'
+    OffsetMD: '2'
+    ContentAlign: 'Center'
+    CtaLink: =>SilverStripe\LinkField\Models\ExternalLink.gutenbergPartnerLink
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_client_logos
+    Sort: 4
+
+# ============================================================================
+# GUTENBERG FOOTER CONTENT
+# ============================================================================
+  gutenberg_cta_banner:
+    FixtureIdentifier: gutenberg_cta_banner
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Ready to Get Started?'
+    ShowTitle: true
+    TitleTag: 'h2'
+    AvailableGlobally: false
+    HTML: '<p class="lead">Contact us today and discover how we can help transform your business.</p>'
+    SizeMD: '10'
+    OffsetMD: '1'
+    ContentAlign: 'Center'
+    BottomMargin: '0'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_cta_banner
+    Sort: 2
+
+  gutenberg_stats_cta:
+    FixtureIdentifier: gutenberg_stats_cta
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'See Our Results'
+    ShowTitle: true
+    TitleTag: 'h3'
+    AvailableGlobally: false
+    HTML: '<p>Discover how we have helped businesses like yours achieve remarkable success.</p>'
+    SizeMD: '8'
+    OffsetMD: '2'
+    ContentAlign: 'Center'
+    CtaLink: =>SilverStripe\LinkField\Models\ExternalLink.gutenbergStatsCtaLink
+    BottomMargin: '0'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_stats
+    Sort: 4
+
+# ============================================================================
+# FAQ ACCORDION ELEMENTS
+# ============================================================================
+DNADesign\Elemental\Models\ElementContent:
+  # Product Detail Content
+  product_detail_content:
+    FixtureIdentifier: product_detail_content
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Precision Hydraulic Cylinder'
+    ShowTitle: true
+    TitleTag: 'h1'
+    AvailableGlobally: false
+    TopTitle: 'Custom Manufacturing'
+    HTML: '<p class="lead">Heavy-duty hydraulic cylinders engineered for maximum performance and reliability in demanding industrial applications.</p><h3>Specifications</h3><ul><li><strong>Bore Sizes:</strong> 2" to 24" diameter</li><li><strong>Stroke Length:</strong> Custom to 240"</li><li><strong>Pressure Rating:</strong> Up to 5,000 PSI</li><li><strong>Rod Material:</strong> Chrome-plated steel</li></ul><p><a href="/contact" class="btn btn-primary btn-lg mt-3">Request a Quote</a></p>'
+    SizeMD: '6'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_product_detail
+    Sort: 3
+
+# ============================================================================
+# GUTENBERG PORTFOLIO GALLERY
+# ============================================================================
+# Gallery element - defined FIRST so GalleryImages can reference it
+  gutenberg_split_left:
+    FixtureIdentifier: gutenberg_split_left
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Transform Your Business'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'About Us'
+    TitleTag: 'h2'
+    HTML: '<p class="lead">We help businesses reach their full potential through innovative solutions.</p><ul><li>Industry-leading expertise</li><li>Proven track record</li><li>Customized solutions</li></ul>'
+    SizeMD: '12'
+    ContentAlign: 'Left'
+    MediaType: 'image'
+    MediaImage: =>SilverStripe\Assets\Image.gutenbergSplitLeft
+    ContentColumns: '6'
+    MediaPosition: 'order-1'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_split_media
+    Sort: 2
+
+  gutenberg_split_right:
+    FixtureIdentifier: gutenberg_split_right
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Our Approach'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Methodology'
+    TitleTag: 'h2'
+    HTML: '<p class="lead">Data-driven insights combined with creative thinking deliver results that exceed expectations.</p>'
+    SizeMD: '12'
+    ContentAlign: 'Left'
+    MediaType: 'image'
+    MediaImage: =>SilverStripe\Assets\Image.gutenbergSplitRight
+    ContentColumns: '6'
+    MediaPosition: 'order-2'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_split_media
+    Sort: 3
+
+
+
+  # Two Column Content
+  gutenberg_two_col_left:
+    FixtureIdentifier: gutenberg_two_col_left
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Why Choose Us'
+    ShowTitle: true
+    AvailableGlobally: false
+    HTML: '<p class="lead">Expertise, innovation, and dedication.</p><ul><li><strong>Experienced Team:</strong> Decades of combined expertise</li><li><strong>Proven Results:</strong> Track record of success</li></ul>'
+    SizeMD: '6'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_two_column
+    Sort: 2
+
+  gutenberg_two_col_right:
+    FixtureIdentifier: gutenberg_two_col_right
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Our Values'
+    ShowTitle: true
+    AvailableGlobally: false
+    HTML: '<p class="lead">The principles that guide everything we do.</p><ul><li><strong>Integrity:</strong> Honest and transparent</li><li><strong>Excellence:</strong> Committed to the highest standards</li></ul>'
+    SizeMD: '6'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_two_column
+    Sort: 3
+
+# ============================================================================
+# INTRO CONTENT (SimpleContent - no media tab)
+# ============================================================================
+Dynamic\Elements\Gallery\Elements\ElementPhotoGallery:
+  gutenberg_portfolio_gallery:
+    FixtureIdentifier: gutenberg_portfolio_gallery
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Our Work'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Portfolio'
+    Content: '<p class="lead">Browse our latest projects and see how we have helped clients achieve their goals.</p>'
+    SizeMD: '12'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_portfolio
+    Sort: 2
+
+
+# Gallery images - reference the gallery via PhotoGallery has_one
+Dynamic\Elements\Gallery\Model\GalleryImage:
+  gutenbergGallery1:
+    FixtureIdentifier: gutenbergGallery1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Modern Web Application'
+    Caption: 'Full-stack development for enterprise client'
+    Image: =>SilverStripe\Assets\Image.gutenbergPortfolio1
+    SortOrder: 1
+    PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.gutenberg_portfolio_gallery
+
+  gutenbergGallery2:
+    FixtureIdentifier: gutenbergGallery2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'E-commerce Platform'
+    Caption: 'Custom online store with 50k+ products'
+    Image: =>SilverStripe\Assets\Image.gutenbergPortfolio2
+    SortOrder: 2
+    PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.gutenberg_portfolio_gallery
+
+  gutenbergGallery3:
+    FixtureIdentifier: gutenbergGallery3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Mobile App Design'
+    Caption: 'Award-winning iOS and Android application'
+    Image: =>SilverStripe\Assets\Image.gutenbergPortfolio3
+    SortOrder: 3
+    PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.gutenberg_portfolio_gallery
+
+  gutenbergGallery4:
+    FixtureIdentifier: gutenbergGallery4
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Brand Identity'
+    Caption: 'Complete rebrand for Fortune 500 company'
+    Image: =>SilverStripe\Assets\Image.gutenbergPortfolio4
+    SortOrder: 4
+    PhotoGallery: =>Dynamic\Elements\Gallery\Elements\ElementPhotoGallery.gutenberg_portfolio_gallery
+
+
+# ============================================================================
+# GUTENBERG CLIENT LOGOS / SPONSORS
+# ============================================================================
+Dynamic\Elements\Sponsors\Model\Sponsor:
+  gutenbergSponsor1:
+    FixtureIdentifier: gutenbergSponsor1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'TechCorp'
+    Image: =>SilverStripe\Assets\Image.gutenbergLogo1
+    SortOrder: 1
+
+  gutenbergSponsor2:
+    FixtureIdentifier: gutenbergSponsor2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'InnovateLabs'
+    Image: =>SilverStripe\Assets\Image.gutenbergLogo2
+    SortOrder: 2
+
+  gutenbergSponsor3:
+    FixtureIdentifier: gutenbergSponsor3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'GlobalSoft'
+    Image: =>SilverStripe\Assets\Image.gutenbergLogo3
+    SortOrder: 3
+
+  gutenbergSponsor4:
+    FixtureIdentifier: gutenbergSponsor4
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'FutureTech'
+    Image: =>SilverStripe\Assets\Image.gutenbergLogo4
+    SortOrder: 4
+
+  gutenbergSponsor5:
+    FixtureIdentifier: gutenbergSponsor5
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'DataDriven'
+    Image: =>SilverStripe\Assets\Image.gutenbergLogo5
+    SortOrder: 5
+
+  gutenbergSponsor6:
+    FixtureIdentifier: gutenbergSponsor6
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'CloudFirst'
+    Image: =>SilverStripe\Assets\Image.gutenbergLogo6
+    SortOrder: 6
+
+Dynamic\Elements\Sponsors\Elements\ElementSponsor:
+  gutenberg_client_logos:
+    FixtureIdentifier: gutenberg_client_logos
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Trusted By Industry Leaders'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Our Clients'
+    Content: '<p class="lead">We are proud to work with some of the most innovative companies in the world.</p>'
+    SizeMD: '12'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_client_logos
+    Sort: 2
+    Sponsors:
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.gutenbergSponsor1
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.gutenbergSponsor2
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.gutenbergSponsor3
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.gutenbergSponsor4
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.gutenbergSponsor5
+      - =>Dynamic\Elements\Sponsors\Model\Sponsor.gutenbergSponsor6
+
+# ============================================================================
+# GUTENBERG TEMPLATES - Final template definitions
+# ============================================================================
+Dynamic\ElementalTemplates\Models\Template:
+  template_gutenberg_bold_hero:
+    FixtureIdentifier: template_gutenberg_bold_hero
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Bold Hero Banner'
+    Description: '<p>A full-width hero section with bold typography and centered content. Features a heading, supporting text, and call-to-action button. Creates strong visual impact for landing pages.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_bold_hero
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview105
+
+  template_gutenberg_team_grid:
+    FixtureIdentifier: template_gutenberg_team_grid
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Team Members Grid (4 Column)'
+    Description: '<p>Display your team in a professional 4-column grid layout with photos, names, titles, and brief bios. Perfect for leadership pages and about sections.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_team_grid
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview106
+
+  template_gutenberg_pricing:
+    FixtureIdentifier: template_gutenberg_pricing
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Pricing Tiers (3 Column)'
+    Description: '<p>Present pricing options in a clear 3-tier layout. Features highlighted benefits, pricing, and call-to-action buttons for each plan.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_pricing
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview107
+
+  template_gutenberg_feature_grid:
+    FixtureIdentifier: template_gutenberg_feature_grid
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Feature Grid (3 Column)'
+    Description: '<p>Highlight key features or benefits in a clean 3-column grid with icons or images. Great for product features, service highlights, or value propositions.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_feature_grid
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview108
+
+  template_gutenberg_product_detail:
+    FixtureIdentifier: template_gutenberg_product_detail
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Product Detail Page'
+    Description: '<p>A complete product page layout with image carousel, product specifications, and feature highlights. Perfect for showcasing individual products or services.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_product_detail
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview109
+
+  template_gutenberg_service_grid:
+    FixtureIdentifier: template_gutenberg_service_grid
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Service Grid (3x2)'
+    Description: '<p>A flexible 6-item service grid showcasing your offerings. Features icons, titles, and descriptions in a clean 3-column layout. Perfect for services, features, or benefits sections.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_service_grid
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview110
+
+  template_gutenberg_portfolio:
+    FixtureIdentifier: template_gutenberg_portfolio
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Portfolio Grid'
+    Description: '<p>Showcase work samples or projects in an attractive gallery grid. Each item features an image, title, and description with hover effects.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_portfolio
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview111
+
+  template_gutenberg_client_logos:
+    FixtureIdentifier: template_gutenberg_client_logos
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Client Logos'
+    Description: '<p>Build credibility by displaying client or partner logos in a horizontal row. Clean presentation with optional descriptions.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_client_logos
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview112
+
+  template_gutenberg_split_media:
+    FixtureIdentifier: template_gutenberg_split_media
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Split Media (Image + Text)'
+    Description: '<p>Balance visual and written content with a side-by-side layout. Image on one side, compelling text on the other. Great for storytelling and feature highlights.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_split_media
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview113
+
+  template_gutenberg_hero_left:
+    FixtureIdentifier: template_gutenberg_hero_left
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Hero (Left Aligned)'
+    Description: '<p>A striking hero section with left-aligned content and dark background. Features headline, supporting text, and call-to-action button.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_hero_left
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview114
+
+  template_gutenberg_hero_right:
+    FixtureIdentifier: template_gutenberg_hero_right
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Hero (Right Aligned)'
+    Description: '<p>An impactful hero with right-aligned content on a primary colored background. Perfect for variety in page layouts and visual interest.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_hero_right
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview115
+
+  template_gutenberg_stats:
+    FixtureIdentifier: template_gutenberg_stats
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Stats / Impact Bar'
+    Description: '<p>Showcase impressive numbers and achievements with animated counters. Display projects completed, years of experience, client satisfaction, and more.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_stats
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview116
+
+  template_gutenberg_testimonials:
+    FixtureIdentifier: template_gutenberg_testimonials
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Testimonial Slider'
+    Description: '<p>Build trust with customer testimonials in a slider format. Features client photos, quotes, names, and company affiliations.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_testimonials
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview117
+
+  template_gutenberg_about:
+    FixtureIdentifier: template_gutenberg_about
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'About Section (Image + Text)'
+    Description: '<p>Tell your story with an image and text combination. Includes mission and vision sections alongside a compelling visual element.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_about
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview118
+
+  template_gutenberg_video:
+    FixtureIdentifier: template_gutenberg_video
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Video Showcase'
+    Description: '<p>Feature video content prominently with an embedded player. Perfect for demos, tutorials, company overviews, or promotional content.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_video
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview119
+
+  template_gutenberg_cta_banner:
+    FixtureIdentifier: template_gutenberg_cta_banner
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'High-Impact CTA Banner'
+    Description: '<p>Drive conversions with a bold, attention-grabbing call-to-action banner. Primary colored background with compelling text and action button.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_cta_banner
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview120
+
+  template_gutenberg_faq:
+    FixtureIdentifier: template_gutenberg_faq
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'FAQ Accordion Section'
+    Description: '<p>Address common questions with an organized accordion layout. Expandable panels keep content clean while making information easily accessible.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_faq
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview121
+
+  template_gutenberg_services:
+    FixtureIdentifier: template_gutenberg_services
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Services Grid (3 Column)'
+    Description: '<p>Present service offerings in a professional 3-column grid. Each card includes an image, title, description, and call-to-action link.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_services
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview122
+
+  template_gutenberg_contact:
+    FixtureIdentifier: template_gutenberg_contact
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Contact Section'
+    Description: '<p>Provide complete contact information including address, phone, email, and business hours. Professional layout for easy customer communication.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_contact
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview123
+
+  template_gutenberg_two_column:
+    FixtureIdentifier: template_gutenberg_two_column
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Two-Column Content'
+    Description: '<p>Present complementary information in a balanced two-column layout. Great for comparing options, showing different aspects, or organizing related content.</p>'
+    PageType: 'Dynamic\Base\Page\BlockPage'
+    Elements: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_two_column
+    LayoutImage: =>SilverStripe\Assets\Image.templatePreview124
+
+Dynamic\Essentials\Element\SimpleContent:
+  # Stats Intro Content (moved from ElementContent)
+  gutenberg_stats_intro:
+    FixtureIdentifier: gutenberg_stats_intro
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Proven Results'
+    ShowTitle: true
+    TitleTag: 'h2'
+    AvailableGlobally: false
+    TopTitle: 'Our Track Record'
+    HTML: '<p class="lead">Our track record speaks for itself. Over the years, we have helped hundreds of businesses achieve their goals through innovative solutions and dedicated service.</p>'
+    SizeMD: '10'
+    OffsetMD: '1'
+    ContentAlign: 'Center'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_stats
+    BottomMargin: '0'
+    Sort: 2
+
+  gutenberg_testimonials_intro:
+    FixtureIdentifier: gutenberg_testimonials_intro
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Why Clients Love Us'
+    ShowTitle: true
+    TitleTag: 'h2'
+    AvailableGlobally: false
+    TopTitle: 'Client Success'
+    HTML: '<p class="lead">We measure our success by the success of our clients. Their trust and satisfaction drive everything we do, and their stories speak louder than any claims we could make.</p>'
+    SizeMD: '10'
+    OffsetMD: '1'
+    ContentAlign: 'Center'
+    BottomMargin: '0'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_testimonials
+    Sort: 2
+
+  # About Section Content (7 column)
+  gutenberg_about_content:
+    FixtureIdentifier: gutenberg_about_content
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'About Our Company'
+    ShowTitle: true
+    AvailableGlobally: false
+    HTML: '<p class="lead">Founded in 2010, we have grown from a small startup to an industry leader.</p><h3>Our Mission</h3><p>To empower businesses with innovative tools and strategies that drive growth.</p><h3>Our Vision</h3><p>To be the most trusted partner for businesses seeking transformation.</p>'
+    SizeMD: '7'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_about
+    Sort: 2
+
+  # Video Intro (SimpleContent - no media needed)
+  gutenberg_video_intro:
+    FixtureIdentifier: gutenberg_video_intro
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Experience Our Work'
+    ShowTitle: true
+    TitleTag: 'h2'
+    AvailableGlobally: false
+    TopTitle: 'Featured Video'
+    HTML: '<p class="lead">Get an inside look at our process, our team, and the results we deliver for our clients.</p>'
+    SizeMD: '10'
+    OffsetMD: '1'
+    ContentAlign: 'Center'
+    BottomMargin: '0'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_video
+    Sort: 2
+
+  # FAQ Intro (SimpleContent)
+  gutenberg_faq_intro:
+    FixtureIdentifier: gutenberg_faq_intro
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Got Questions?'
+    ShowTitle: true
+    TitleTag: 'h2'
+    AvailableGlobally: false
+    TopTitle: 'FAQ'
+    HTML: '<p class="lead">Find answers to the most common questions about our services, pricing, and process.</p>'
+    SizeMD: '10'
+    OffsetMD: '1'
+    ContentAlign: 'Center'
+    BottomMargin: '0'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_faq
+    Sort: 2
+
+  # Services Intro (SimpleContent)
+  gutenberg_services_intro:
+    FixtureIdentifier: gutenberg_services_intro
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'What We Offer'
+    ShowTitle: true
+    TitleTag: 'h2'
+    AvailableGlobally: false
+    TopTitle: 'Our Services'
+    HTML: '<p class="lead">Comprehensive solutions tailored to your business needs. From strategy to execution, we have you covered.</p>'
+    SizeMD: '10'
+    OffsetMD: '1'
+    ContentAlign: 'Center'
+    BottomMargin: '0'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_services
+    Sort: 2
+
+  # Contact Intro (SimpleContent)
+  gutenberg_contact_intro:
+    FixtureIdentifier: gutenberg_contact_intro
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Let''s Connect'
+    ShowTitle: true
+    TitleTag: 'h2'
+    AvailableGlobally: false
+    TopTitle: 'Contact Us'
+    HTML: '<p class="lead">Ready to start your next project? Get in touch with our team today.</p>'
+    SizeMD: '10'
+    OffsetMD: '1'
+    ContentAlign: 'Center'
+    BottomMargin: '0'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_contact
+    Sort: 2
+
+# ============================================================================
+# ABOUT SECTION IMAGE - Visual only
+# ============================================================================
+Dynamic\Elements\Image\Elements\ElementImage:
+
+  gutenberg_about_image:
+    FixtureIdentifier: gutenberg_about_image
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Our Team'
+    ShowTitle: false
+    AvailableGlobally: false
+    SizeMD: '5'
+    Image: =>SilverStripe\Assets\Image.gutenbergAboutSection
+    ImageRounding: '1rem'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_about
+    Sort: 3
+
+# ============================================================================
+# HERO ELEMENTS
+# ============================================================================
+Dynamic\Elements\StatCounters\Elements\ElementStatCounters:
+  gutenberg_stats_bar:
+    FixtureIdentifier: gutenberg_stats_bar
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Our Impact'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'By the Numbers'
+    SizeMD: '12'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_stats
+    BottomMargin: '0'
+    Sort: 3
+
+Dynamic\Elements\StatCounters\Model\StatCounter:
+  gutenbergStat1:
+    FixtureIdentifier: gutenbergStat1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: '500+'
+    Label: 'Projects Completed'
+    Statistic: '500'
+    StatType: 'Int'
+    SortOrder: 1
+    ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.gutenberg_stats_bar
+
+  gutenbergStat2:
+    FixtureIdentifier: gutenbergStat2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: '98%'
+    Label: 'Client Satisfaction'
+    Statistic: '98'
+    StatType: 'Percentage'
+    SortOrder: 2
+    ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.gutenberg_stats_bar
+
+  gutenbergStat3:
+    FixtureIdentifier: gutenbergStat3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: '15+'
+    Label: 'Years Experience'
+    Statistic: '15'
+    StatType: 'Int'
+    SortOrder: 3
+    ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.gutenberg_stats_bar
+
+  gutenbergStat4:
+    FixtureIdentifier: gutenbergStat4
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: '50+'
+    Label: 'Team Members'
+    Statistic: '50'
+    StatType: 'Int'
+    SortOrder: 4
+    ElementStatCounters: =>Dynamic\Elements\StatCounters\Elements\ElementStatCounters.gutenberg_stats_bar
+
+# ============================================================================
+# TESTIMONIAL ELEMENTS
+# ============================================================================
+Dynamic\Elements\Elements\ElementTestimonials:
+  gutenberg_testimonials:
+    FixtureIdentifier: gutenberg_testimonials
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'What Our Clients Say'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Testimonials'
+    Content: '<p class="lead">Hear from businesses we have helped succeed.</p>'
+    SizeMD: '12'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_testimonials
+    Sort: 3
+
+Dynamic\Elements\Model\Testimonial:
+  gutenbergTestimonialItem1:
+    FixtureIdentifier: gutenbergTestimonialItem1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Name: 'Sarah Mitchell'
+    Company: 'TechStart Inc.'
+    Content: 'Working with this team transformed our operations. Highly recommended!'
+    Image: =>SilverStripe\Assets\Image.gutenbergTestimonial1
+    Sort: 1
+    ElementTestimonials: =>Dynamic\Elements\Elements\ElementTestimonials.gutenberg_testimonials
+
+  gutenbergTestimonialItem2:
+    FixtureIdentifier: gutenbergTestimonialItem2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Name: 'James Peterson'
+    Company: 'Global Dynamics'
+    Content: 'The level of professionalism and quality of work is unmatched.'
+    Image: =>SilverStripe\Assets\Image.gutenbergTestimonial2
+    Sort: 2
+    ElementTestimonials: =>Dynamic\Elements\Elements\ElementTestimonials.gutenberg_testimonials
+
+  gutenbergTestimonialItem3:
+    FixtureIdentifier: gutenbergTestimonialItem3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Name: 'Emily Rodriguez'
+    Company: 'Creative Solutions'
+    Content: 'A fantastic partner for any project. Their innovative approach made all the difference.'
+    Image: =>SilverStripe\Assets\Image.gutenbergTestimonial3
+    Sort: 3
+    ElementTestimonials: =>Dynamic\Elements\Elements\ElementTestimonials.gutenberg_testimonials
+# ============================================================================
+# VIDEO ELEMENT
+# ============================================================================
+Dynamic\Elements\Oembed\Elements\ElementOembed:
+  gutenberg_video:
+    FixtureIdentifier: gutenberg_video
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'See Us in Action'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Video'
+    EmbedURL: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+    SizeMD: '8'
+    OffsetMD: '2'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_video
+    Sort: 3
+
+# ============================================================================
+# CTA BANNER ELEMENT
+# ============================================================================
+Dynamic\Elements\Accordion\Elements\ElementAccordion:
+  gutenberg_faq:
+    FixtureIdentifier: gutenberg_faq
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Frequently Asked Questions'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'FAQ'
+    Content: '<p class="lead">Find answers to common questions.</p>'
+    OpenFirstPanel: true
+    SizeMD: '10'
+    OffsetMD: '1'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_faq
+    Sort: 3
+
+Dynamic\Elements\Accordion\Model\AccordionPanel:
+  gutenbergFaq1:
+    FixtureIdentifier: gutenbergFaq1
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'What services do you offer?'
+    ShowTitle: true
+    Content: '<p>We offer consulting, implementation, training, and ongoing support.</p>'
+    SortOrder: 1
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.gutenberg_faq
+
+  gutenbergFaq2:
+    FixtureIdentifier: gutenbergFaq2
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'How long does a typical project take?'
+    ShowTitle: true
+    Content: '<p>Small projects take 2-4 weeks, larger initiatives may span several months.</p>'
+    SortOrder: 2
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.gutenberg_faq
+
+  gutenbergFaq3:
+    FixtureIdentifier: gutenbergFaq3
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'What are your pricing options?'
+    ShowTitle: true
+    Content: '<p>We offer fixed-price projects, hourly rates, and retainer arrangements.</p>'
+    SortOrder: 3
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.gutenberg_faq
+
+  gutenbergFaq4:
+    FixtureIdentifier: gutenbergFaq4
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Do you offer ongoing support?'
+    ShowTitle: true
+    Content: '<p>Yes! We provide comprehensive support packages for continued success.</p>'
+    SortOrder: 4
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.gutenberg_faq
+
+  gutenbergFaq5:
+    FixtureIdentifier: gutenbergFaq5
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'How do I get started?'
+    ShowTitle: true
+    Content: '<p>Reach out via our contact form for a free consultation.</p>'
+    SortOrder: 5
+    Accordion: =>Dynamic\Elements\Accordion\Elements\ElementAccordion.gutenberg_faq
+
+# ============================================================================
+# SERVICES GRID ELEMENTS
+# ============================================================================
+Dynamic\Elements\CustomerService\Elements\ElementCustomerService:
+  gutenberg_contact:
+    FixtureIdentifier: gutenberg_contact
+    PopulateMergeMatch:
+      - FixtureIdentifier
+    Title: 'Contact Us'
+    ShowTitle: true
+    AvailableGlobally: false
+    TopTitle: 'Get in Touch'
+    Content: '<p>We would love to hear from you.</p>'
+    LocationName: 'Headquarters'
+    Phone: '(555) 123-4567'
+    Email: 'hello@example.com'
+    Hours: '<p>Monday - Friday: 9am - 5pm</p>'
+    Address: '123 Business Avenue'
+    City: 'Innovation City'
+    State: 'CA'
+    PostalCode: '90210'
+    Country: 'United States'
+    SizeMD: '12'
+    Parent: =>DNADesign\Elemental\Models\ElementalArea.area_gutenberg_contact
+    Sort: 3
+
+# ============================================================================
+# EXPANDED TEMPLATES
+# ============================================================================
