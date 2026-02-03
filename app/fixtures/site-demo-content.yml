@@ -337,16 +337,25 @@ SilverStripe\SiteConfig\SiteConfig:
 # ============================================================================
 Dynamic\Base\Model\NavigationColumn:
   navColCompany:
+    FixtureIdentifier: navColCompany
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Company"
     SortOrder: 1
     Config: =>SilverStripe\SiteConfig\SiteConfig.main
 
   navColServices:
+    FixtureIdentifier: navColServices
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Services"
     SortOrder: 2
     Config: =>SilverStripe\SiteConfig\SiteConfig.main
 
   navColResources:
+    FixtureIdentifier: navColResources
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Resources"
     SortOrder: 3
     Config: =>SilverStripe\SiteConfig\SiteConfig.main
@@ -356,16 +365,25 @@ Dynamic\Base\Model\NavigationColumn:
 # ============================================================================
 Dynamic\Base\Model\NavigationGroup:
   navGroupCompany:
+    FixtureIdentifier: navGroupCompany
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Company Links"
     SortOrder: 1
     NavigationColumn: =>Dynamic\Base\Model\NavigationColumn.navColCompany
 
   navGroupServices:
+    FixtureIdentifier: navGroupServices
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Services Links"
     SortOrder: 1
     NavigationColumn: =>Dynamic\Base\Model\NavigationColumn.navColServices
 
   navGroupResources:
+    FixtureIdentifier: navGroupResources
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Resources Links"
     SortOrder: 1
     NavigationColumn: =>Dynamic\Base\Model\NavigationColumn.navColResources
@@ -375,6 +393,9 @@ Dynamic\Base\Model\NavigationGroup:
 # ============================================================================
 Dynamic\Base\Model\SocialLink:
   socialFacebook:
+    FixtureIdentifier: socialFacebook
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Facebook"
     SocialChannel: "facebook"
     ExternalUrl: "https://www.facebook.com/precisionmfgco"
@@ -383,6 +404,9 @@ Dynamic\Base\Model\SocialLink:
     OwnerRelation: "SocialLinks"
 
   socialInstagram:
+    FixtureIdentifier: socialInstagram
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "Instagram"
     SocialChannel: "instagram"
     ExternalUrl: "https://www.instagram.com/precisionmfgco"
@@ -391,6 +415,9 @@ Dynamic\Base\Model\SocialLink:
     OwnerRelation: "SocialLinks"
 
   socialLinkedIn:
+    FixtureIdentifier: socialLinkedIn
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "LinkedIn"
     SocialChannel: "linkedin"
     ExternalUrl: "https://www.linkedin.com/company/precisionmfgco"
@@ -399,6 +426,9 @@ Dynamic\Base\Model\SocialLink:
     OwnerRelation: "SocialLinks"
 
   socialYouTube:
+    FixtureIdentifier: socialYouTube
+    PopulateMergeMatch:
+      - FixtureIdentifier
     Title: "YouTube"
     SocialChannel: "youtube"
     ExternalUrl: "https://www.youtube.com/@precisionmfgco"
